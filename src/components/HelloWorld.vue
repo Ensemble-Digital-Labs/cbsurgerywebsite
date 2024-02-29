@@ -17,8 +17,8 @@ defineProps({
     </h3>
     <h1>hiiiiiiiiiiiiiiiiiii</h1>
     <h6>huhuhuhuh</h6>
-    <div class="btn-fill-dark">learn more</div>
-    <div class="btn-fill-light">learn more</div>
+    <div class="btn-fill-dark">learn more</div><br>
+    <div class="btn-fill-light">contact us</div>
   </div>
 </template>
 
