@@ -1,0 +1,40 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-manrope text-[68px] text-extra-dark-teal font-extrabold;
+  }
+  h2{
+    @apply font-manrope text-[52px] text-extra-dark-teal font-extrabold;
+  }
+  p {
+    @apply font-archivo text-[16px] leading-6 text-paragraph-font font-normal;
+  }
+  h6{
+    @apply text-sm text-dark-teal font-manrope font-bold;
+  }
+}
+
+@layer components {
+  .btn-fill-dark {
+    @apply bg-dark-teal hover:bg-light-teal text-white font-bold py-2 px-4 rounded-sm;
+  }
+  .btn-fill-light {
+    @apply bg-extra-light-teal hover:bg-dark-teal text-white font-bold py-2 px-4 rounded-sm border-dark-teal;
+  }
+}
+
+/* @layer components {
+  .btn-fill-dark {
+    @apply bg-dark-teal hover:light-teal text-white font-bold py-2 px-4 rounded-sm;
+  }
+  .btn-fill-light {
+    @apply bg-extra-light-teal hover:dark-teal text-white font-bold py-2 px-4 rounded-sm border-dark-teal;
+  }
+} */
