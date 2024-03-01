@@ -11,22 +11,22 @@
     @apply font-manrope text-[42px] md:text-[60px] text-extra-dark-teal font-extrabold tracking-tight;
   }
   h2{
-    @apply font-manrope text-[52px] text-extra-dark-teal font-extrabold;
+    @apply font-manrope text-[32px] md:text-[52px] text-extra-dark-teal font-extrabold;
   }
   p {
     @apply font-archivo text-[16px] leading-6 text-paragraph-font font-normal;
   }
   h6{
-    @apply text-[14px] text-dark-teal font-manrope font-bold px-4;
+    @apply text-[14px] text-dark-teal font-manrope font-bold md:px-4;
   }
 }
 
 @layer components {
   .btn-fill-dark {
-    @apply bg-dark-teal hover:bg-light-teal text-white font-bold py-2.5 px-5 rounded-sm;
+    @apply bg-dark-teal hover:bg-light-teal text-white font-manrope text-[15px] font-bold py-2.5 px-5 rounded-[4px] h-[60px];
   }
   .btn-fill-light {
-    @apply bg-extra-light-teal hover:bg-dark-teal hover:text-white text-dark-teal font-bold py-2.5 px-5 rounded-sm border border-dark-teal;
+    @apply bg-extra-light-teal hover:bg-dark-teal hover:text-white text-dark-teal font-bold py-2.5 px-5 rounded-[4px] h-[60px] border border-dark-teal font-manrope text-[15px];
   }
 }
 
