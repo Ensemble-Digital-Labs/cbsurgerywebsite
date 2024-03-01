@@ -28,11 +28,11 @@
             ullamcorper ut erat consectetur.
             </p> 
     </div>
-    <div class="flex items-center justify-center">
+    <!-- <div class="flex items-center justify-center">
                     <button class="btn-fill-dark">
                         Book an Appointment
                     </button>
-    </div>
+    </div> -->
 </div>
 <div class="max-w-screen-xl mx-auto px-4">
         <div class="flex flex-col-reverse md:flex-row md:gap-10">
