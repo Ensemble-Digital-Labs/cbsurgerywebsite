@@ -38,12 +38,12 @@
         <div class="flex flex-col-reverse md:flex-row md:gap-10">
 
             <img src="@/assets/img/deepu.png" alt="" srcset="" class="md:w-6/12 object-contain object-right">
-            <div class="py-10 md:py-40 grid content-center md:w-6/12">
+            <div class="py-10 px-4 md:px-0 md:py-40 grid content-center md:w-6/12">
                 <h6 class="md:px-0">About</h6>
                 <h3 class=" text-dark-teal text-[22px] md:text-[47px] font-manrope font-extrabold tracking-tight">Dr. Deepu Sudhakaran, MD </h3>
-                <h4 class=" tracking-tight text-[#727272] font-manrope font-bold mt-2">CEO & FOUNDER</h4>
-                <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Care Philosophy</h3>
-                <p class="text-[#636571]">
+                <h4 class=" tracking-tight text-[#727272] font-manrope font-bold mb-2">CEO & FOUNDER</h4>
+                <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold pt-6">Care Philosophy</h3>
+                <p class="text-[#636571] py-2">
                     “I'm a very family-oriented person. I want patients to feel like I will treat them like family. I'll take very personal care of you from the time you see me until you have reached your goal.”
                 </p>
                 <div class="grid grid-cols gap-0 mb-6 sm:grid-cols-12">
