@@ -1,7 +1,7 @@
 <template>
-    <div class="max-w-screen-2xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row">
-            <div class="py-10 md:py-40 grid content-center md:w-6/12 md:pl-32">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-0">
+        <div class="flex flex-col md:flex-row md:pl-10">
+            <div class="py-10 sm:py-20 md:py-40 grid content-center md:w-6/12">
                 <h1 class=" leading-[40px] md:leading-[60px] mb-8">
                     Reclaim Your<br /> <span class="text-dark-teal"> Vibrant Health</span><br />
                     With Dr. Sudhakaran
@@ -12,16 +12,17 @@
                     natoque penatibus et magnis dis parturient.
                 </p>
             </div>
-            <img src="@/assets/img/hero.png" alt="" srcset="" class="md:w-6/12 hidden md:block">
+            <img src="@/assets/img/hero.png" alt="" srcset="" class="md:w-6/12 object-cover hidden md:block object-left">
 
         </div>
     </div>
 
 
-    <div class="max-w-screen-xl mx-auto px-6">
+    <div class="max-w-screen-xl mx-auto px-6 md:px-0">
         <div class="flex flex-col md:flex-row md:gap-10 mb-20 md:my-32">
             <div class="md:w-6/12">
-                <img src="@/assets/img/deepu-2.png" alt="" srcset="" class="w-full h-full object-contain object-bottom">
+                <img src="@/assets/img/deepu-2.png" alt="" srcset=""
+                    class="w-full h-full object-cover object-right  xl:object-contain xl:object-bottom">
             </div>
 
             <div class="grid content-center md:w-6/12 mt-[40px] md:mt-0">
@@ -88,7 +89,8 @@
                     </h3>
                 </div>
                 <div class="">
-                    <h3 class=" font-manrope text-[70px] md:text-[82px] text-extra-dark-teal font-medium text-left mb-6 md:mb-0">
+                    <h3
+                        class=" font-manrope text-[70px] md:text-[82px] text-extra-dark-teal font-medium text-left mb-6 md:mb-0">
                         <span class="text-dark-teal">$</span> 11,111
                     </h3>
                 </div>
@@ -149,9 +151,81 @@
         </div>
     </div>
 
+    <div class="grid xl:grid-cols-2 md:h-[740px]">
+        <div>
+            <div class="grid md:grid-cols-2 md:h-1/2 ">
+                <div class="bg-cover bg-no-repeat bg-center p-32" style="background-image: url('/assets/grid-img-1.png')">
 
+                </div>
+                <div class=" bg-dark-teal grid place-content-center p-16">
+                    <div>
+                        <h3 class=" font-manrope text-[20px] text-white font-bold text-center mb-2">
+                            The Best Services
+                        </h3>
+                        <p class="text-white text-center text-[16px] font-medium">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et magna.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 h-1/2">
+                <div class="bg-cover bg-no-repeat bg-center p-32 md:hidden"
+                    style="background-image: url('/assets/grid-img-2.png')">
 
+                </div>
 
+                <div class=" bg-extra-dark-teal grid place-content-center p-16 bg-cover">
+                    <div>
+                        <h3 class=" font-manrope text-[20px] text-white font-bold text-center mb-2">
+                            Expert Doctor
+                        </h3>
+                        <p class="text-white text-center text-[16px] font-medium">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et magna.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-cover bg-no-repeat bg-center p-32 hidden md:block"
+                    style="background-image: url('/assets/grid-img-2.png')">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-cover bg-no-repeat bg-center p-32" style="background-image: url('/assets/grid-img-3.png')">
+        </div>
+
+    </div>
+
+    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
+        <h2 class="mb-4">
+            Services
+        </h2>
+        <div class="grid md:grid-cols-12 gap-10">
+            <div class="md:col-span-8 grid content-end">
+                <p class="text-[#636571]">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et magna.
+                </p>
+            </div>
+            <div class="md:col-span-4 flex md:justify-end">
+                <button class="btn-fill-light">
+                    View All Services
+                </button>
+            </div>
+
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 my-10">
+            <ServiceCard v-for="i in 3" :key="i" :link="'/about'" :title="'Bariatrics Surgery'" :description="' This is description, This is description v'" :imageUrl="'/assets/grid-img-1.png'"></ServiceCard>
+        </div>
+    </div>
 </template>
-<script>
+<script setup>
+import ServiceCard from '@/components/ServiceCard.vue';
 </script>
