@@ -8,7 +8,7 @@
 
 @layer base {
   h1 {
-    @apply font-manrope text-[68px] text-extra-dark-teal font-extrabold;
+    @apply font-manrope text-[42px] md:text-[60px] text-extra-dark-teal font-extrabold tracking-tight;
   }
   h2{
     @apply font-manrope text-[52px] text-extra-dark-teal font-extrabold;
@@ -17,7 +17,7 @@
     @apply font-archivo text-[16px] leading-6 text-paragraph-font font-normal;
   }
   h6{
-    @apply text-sm text-dark-teal font-manrope font-bold;
+    @apply text-[14px] text-dark-teal font-manrope font-bold px-4;
   }
 }
 

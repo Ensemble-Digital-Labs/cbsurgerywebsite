@@ -14,7 +14,7 @@
 
             </div>
         </div>
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-screen-xl mx-auto">
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
                 <div class="flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -35,32 +35,32 @@
                             class="font-medium flex flex-col md:p-0 mt-4 border divide-y divide-zinc-400 md:divide-y-0 border-zinc-400 rounded-lg bg-gray-50 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                             <li>
                                 <router-link to="/"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold hover:text-white hover:bg-dark-teal"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-t-lg"
                                     aria-current="page">Home</router-link>
                             </li>
                             <li>
                                 <router-link to="/about"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white hover:bg-dark-teal"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent  hover:bg-dark-teal "
                                     aria-current="page">About</router-link>
                             </li>
                             <li>
                                 <router-link to="/services"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white hover:bg-dark-teal"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
                                     aria-current="page">Services</router-link>
                             </li>
                             <li>
                                 <router-link to="/am-i-candidate"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white hover:bg-dark-teal"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
                                     aria-current="page">Am I Candidate</router-link>
                             </li>
                             <li>
                                 <router-link to="/success-stories"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white hover:bg-dark-teal"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
                                     aria-current="page">Success stories</router-link>
                             </li>
                             <li>
                                 <router-link to="/contact-ud"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white hover:bg-dark-teal"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-b-lg"
                                     aria-current="page">Contact Us</router-link>
                             </li>
 
