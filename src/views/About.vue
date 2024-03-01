@@ -77,6 +77,10 @@
 
         </div>
     </div>
+    <OurTeam></OurTeam>
+    <TheTestimonial></TheTestimonial>
 </template>
-<script>
+<script setup>
+import OurTeam from '@/components/OurTeam.vue';
+import TheTestimonial from '@/components/TheTestimonial.vue';
 </script>

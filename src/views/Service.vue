@@ -4,9 +4,12 @@
 <div class="grid md:grid-cols-3 gap-4 my-10">
             <ServiceCard v-for="i in 5" :key="i" :link="'/about'" :title="'Bariatrics Surgery'" :description="' This is description, This is description v'" :imageUrl="'/assets/grid-img-1.png'"></ServiceCard>
         </div>
+        <TheTestimonial></TheTestimonial>
     </div>
+
 </template>
 <script setup>
 import HeroSection from '@/components/HeroSection.vue';
 import ServiceCard from '@/components/ServiceCard.vue';
+import TheTestimonial from '@/components/TheTestimonial.vue';
 </script>
