@@ -69,10 +69,10 @@
                             </div>
                         </div>
                         <div class="flex gap-2 pt-4">
-                            <img src="/src/assets/instagram.svg" class=" h-8 w-8" alt="Logo" />
-                            <img src="/src/assets/facebook.svg" class=" h-8 w-8" alt="Logo" />
-                            <img src="/src/assets/twitter.svg" class=" h-8 w-8" alt="Logo" />
-                            <img src="/src/assets/linkedin.svg" class=" h-8 w-8" alt="Logo" />
+                            <img src="/src/assets/social-media/instagram.svg" class=" h-8 w-8" alt="Logo" />
+                            <img src="/src/assets/social-media/facebook.svg" class=" h-8 w-8" alt="Logo" />
+                            <img src="/src/assets/social-media/twitter.svg" class=" h-8 w-8" alt="Logo" />
+                            <img src="/src/assets/social-media/linkedin.svg" class=" h-8 w-8" alt="Logo" />
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-extra-light-teal max-w-screen-2xl mx-auto py-10 md:py-36 px-4">
+    <div class="bg-extra-light-teal max-w-screen-2xl mx-auto py-20 md:py-36 md:pb-56 px-4">
         <h6 class="text-center">About us</h6>
-        <h2 class="text-center text-[40px]">Chesterfield</h2>
-        <h1 class="text-center text-[52px] -mt-4">Bariatric Surgery</h1>
+        <h2 class="text-center text-[20px] md:text-[40px]">Chesterfield</h2>
+        <h1 class="text-center text-[26px] md:text-[56px] -mt-4">Bariatric Surgery</h1>
     </div>
-    <div class="bg-white px-6 py-10 w-4/5 shadow-lg shadow-slate-200 -mt-28  mx-auto">
+    <div class="bg-white px-3 md:px-6 py-4 md:py-10 w-4/5 shadow-lg shadow-slate-200 -mt-14 md:-mt-48  mx-auto">
         <div class="text-center px-5 py-5">
             <p>
                 Lorem ipsum dolor sit amet consectetur. In metus viverra morbi mattis ultrices quis. Adipiscing feugiat
@@ -39,47 +39,37 @@
 
             <img src="@/assets/img/deepu.png" alt="" srcset="" class="md:w-6/12 object-contain object-right">
             <div class="py-10 md:py-40 grid content-center md:w-6/12">
-                <h6>More About Us</h6>
-                <h2 class=" tracking-tight">Chesterfield</h2>
-                <h1 class=" tracking-tight -mt-6">Bariatric Surgery:</h1>
-                <h2 class=" leading-[40px] md:leading-[55px] tracking-tight mb-8 font-medium text-[40px]">
-                    Where Dr. Sudhakaran's<br />
-                    Safe Hands Treat Patients<br />
-                    Like Family.
-                </h2>
-                <p class="text-[#636571] md:w-3/4 mb-6">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient.
+                <h6 class="md:px-0">About</h6>
+                <h3 class=" text-dark-teal text-[22px] md:text-[47px] font-manrope font-extrabold tracking-tight">Dr. Deepu Sudhakaran, MD </h3>
+                <h4 class=" tracking-tight text-[#727272] font-manrope font-bold mt-2">CEO & FOUNDER</h4>
+                <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Care Philosophy</h3>
+                <p class="text-[#636571]">
+                    “I'm a very family-oriented person. I want patients to feel like I will treat them like family. I'll take very personal care of you from the time you see me until you have reached your goal.”
                 </p>
-                <p class="text-[#636571] md:w-3/4 mb-6">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient.
-                </p>
-                <div class="grid grid-cols-2 gap-4 w-3/4 mb-6">
-                    <div class="flex items-center gap-2">
-                        <img src="@/assets/icons/tick.png" alt="" srcset="">
-                        <p class="text-extra-dark-teal font-bold font-manrope">Modern Equipments</p>
+                <div class="grid grid-cols gap-0 mb-6 sm:grid-cols-12">
+                    <div class="py-2 sm:col-span-4">
+                        <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Specialty</h3>
+                        <ul class="max-w-md space-y-1 text-[#636571] list-disc list-inside">
+                            <li class=" font-archivo text-base font-normal text-[#636571]">Bariatric Surgery</li>
+                            <li class=" font-archivo text-base font-normal text-[#636571]">General Surgery</li>
+                        </ul>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <img src="@/assets/icons/tick.png" alt="" srcset="">
-                        <p class="text-extra-dark-teal font-bold font-manrope">Expert Doctors</p>
+                    <div class="py-2 sm:col-span-8">
+                        <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Board Certifications</h3>
+                        <ul class="max-w-md space-y-1 text-[#636571] list-disc list-inside">
+                            <li class=" font-archivo text-base font-normal text-[#636571]">American Board of Surgery </li>
+                            <li class=" font-archivo text-base font-normal text-[#636571]">Amer Bd Surgery (Surgical Critical Care)</li>
+                        </ul>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <img src="@/assets/icons/tick.png" alt="" srcset="">
-                        <p class="text-extra-dark-teal font-bold font-manrope">Comfortable Clinic</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="@/assets/icons/tick.png" alt="" srcset="">
-                        <p class="text-extra-dark-teal font-bold font-manrope">Family like Enviorment</p>
+                    <div class="py-2 sm:col-span-12">
+                        <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Education</h3>
+                            <h4 class=" font-archivo text-base font-normal text-[#636571]"><b>Medical School</b>: Medical College Of Thiruvananthapuram</h4>
                     </div>
                 </div>
-
                 <div class="flex items-center gap-4">
-                    <button class="btn-fill-dark">
-                        he
-
+                    <button class="btn-fill-dark inline-flex items-center gap-2">
+                        Learn More
+                        <img src="/src/assets/arrow.png" alt="arrow" />
                     </button>
                 </div>
 
