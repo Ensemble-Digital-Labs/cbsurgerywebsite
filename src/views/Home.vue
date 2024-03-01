@@ -222,10 +222,19 @@
 
         </div>
         <div class="grid md:grid-cols-3 gap-4 my-10">
-            <ServiceCard v-for="i in 3" :key="i" :link="'/about'" :title="'Bariatrics Surgery'" :description="' This is description, This is description v'" :imageUrl="'/assets/grid-img-1.png'"></ServiceCard>
+            <ServiceCard v-for="i in 3" :key="i" :link="'/about'" :title="'Bariatrics Surgery'"
+                :description="' This is description, This is description v'" :imageUrl="'/assets/grid-img-1.png'">
+            </ServiceCard>
         </div>
     </div>
+
+    <OurTeam></OurTeam>
+    <TheTestimonial></TheTestimonial>
+
+
 </template>
 <script setup>
 import ServiceCard from '@/components/ServiceCard.vue';
+import OurTeam from '@/components/OurTeam.vue';
+import TheTestimonial from '@/components/TheTestimonial.vue';
 </script>
