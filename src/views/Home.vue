@@ -1,31 +1,39 @@
 <template>
     <div class="max-w-screen-2xl mx-auto px-6 md:px-0">
-        <div class="flex flex-col md:flex-row md:pl-10">
-            <div class="py-10 sm:py-20 md:py-40 grid content-center md:w-6/12">
+        <div class="flex flex-col lg:flex-row md:pl-10">
+            <div class="py-10 sm:py-20  md:py-10 lg:py-40 grid content-center lg:w-6/12">
                 <h1 class=" leading-[40px] md:leading-[60px] mb-8">
                     Reclaim Your<br /> <span class="text-dark-teal"> Vibrant Health</span><br />
                     With Dr. Sudhakaran
                 </h1>
-                <p class="text-[#636571] md:w-3/4">
+                <p class="text-[#636571] md:w-1/2 lg:w-3/4">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                     natoque penatibus et magnis dis parturient.
                 </p>
             </div>
-            <img src="@/assets/img/hero.png" alt="" srcset="" class="md:w-6/12 object-cover hidden md:block object-left">
+            <img src="@/assets/img/hero.png" alt="" srcset="" class="xl:w-6/12 object-cover hidden xl:block object-left">
+            <img src="@/assets/img/deepu-3.png" alt="" srcset=""
+                class="lg:w-6/12 object-cover object-left hidden lg:block xl:hidden">
 
         </div>
     </div>
 
 
-    <div class="max-w-screen-xl mx-auto px-6 md:px-0">
-        <div class="flex flex-col md:flex-row md:gap-10 mb-20 md:my-32">
-            <div class="md:w-6/12">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-0">
+        <div class="flex flex-col lg:flex-row lg:gap-10 mb-20 xl:my-32">
+            <div class="w-full lg:w-4/12 md:h-[600px] md:-mt-36 lg:-mt-0 lg:h-auto">
+                <!-- <img src="@/assets/img/deepu-2.png" alt="" srcset=""
+                    class="w-full h-full object-cover md:object-contain lg:object-cover object-right  xl:object-contain xl:object-bottom"> -->
+
                 <img src="@/assets/img/deepu-2.png" alt="" srcset=""
-                    class="w-full h-full object-cover object-right  xl:object-contain xl:object-bottom">
+                    class="w-full h-full object-cover md:object-contain lg:object-cover object-right block lg:hidden xl:block xl:object-right-bottom">
+
+                <img src="@/assets/img/home-2.png" alt="" srcset=""
+                    class="w-full h-full object-cover md:object-contain lg:object-cover object-right hidden lg:block xl:hidden  xl:object-contain xl:object-bottom">
             </div>
 
-            <div class="grid content-center md:w-6/12 mt-[40px] md:mt-0">
+            <div class="grid content-center w-full lg:w-8/12 mt-[40px] md:mt-0 md:p-10 lg:py-20 xl:p-0">
                 <h6>More About Us</h6>
                 <h3 class="font-manrope text-[28px] md:text-[40px] text-extra-dark-teal font-extrabold tracking-tight">
                     Chesterfield</h3>
@@ -82,7 +90,7 @@
 
     <div class="py-10 bg-[#F1F8FF] w-full">
         <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
-            <div class="flex flex-col md:flex-row items-center md:gap-10 w-full">
+            <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
                 <div class="">
                     <h3 class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-right ">
                         Pricing on Gastric Sleeve
@@ -195,13 +203,14 @@
             </div>
         </div>
 
-        <div class="bg-cover bg-no-repeat bg-center p-32" style="background-image: url('/assets/grid-img-3.png')">
+        <div class="bg-cover hidden xl:block bg-no-repeat bg-center p-32"
+            style="background-image: url('/assets/grid-img-3.png')">
         </div>
 
     </div>
 
     <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
-        <h2 class="mb-4">
+        <h2 class="mb-4 tracking-tight">
             Services
         </h2>
         <div class="grid md:grid-cols-12 gap-10">
@@ -230,8 +239,71 @@
 
     <OurTeam></OurTeam>
     <TheTestimonial></TheTestimonial>
+    <div class="w-full  h-[500px] relative my-10">
+        <div class="w-full grid grid-cols-12 h-[500px] bg-cover bg-center bg-white/90 bg-blend-overlay md:bg-blend-normal "
+            style="background-image: url('/assets/dedicated.jpg');">
+            <div class=" bg-cover hidden md:block col-span-10 lg:col-span-8"
+                style="background-image: url('/assets/design.png');">
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="w-full absolute top-0 left-0 h-[500px] grid place-content-center">
+            <div class="max-w-screen-xl mx-auto px-6 xl:px-0">
+                <div class="">
+                    <div>
+                        <h2 class="leading-[50px] tracking-tight mb-6">
+                            Dedicated to Give You<br />
+                            The Best Services
+                        </h2>
+                        <p class="text-[#636571] md:w-1/2 mb-6">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                            natoque penatibus et magnis dis parturient.
+                        </p>
+                        <div>
+                            <button class="btn-fill-dark">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
+            <h2 class="mb-4 tracking-tight">
+                Success Stories
+            </h2>
+            <div class="grid md:grid-cols-12 gap-10">
+                <div class="md:col-span-8 grid content-end">
+                    <p class="text-[#636571]">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et magna.
+                    </p>
+                </div>
+                <div class="md:col-span-4 flex md:justify-end">
+                    <button class="btn-fill-light">
+                        View All
+                    </button>
+                </div>
+
+            </div>
+            <div class="grid grid-cols-3 gap-2 md:gap-4 my-10">
+                <img src="@/assets/img/success-story-1.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-2.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-3.png" alt="" srcset="">
+            </div>
+        </div>
 
 
+    </div>
 </template>
 <script setup>
 import ServiceCard from '@/components/ServiceCard.vue';

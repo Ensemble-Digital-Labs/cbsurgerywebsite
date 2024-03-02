@@ -1,6 +1,6 @@
 <template>
     <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-20 md:my-40">
-        <div class="grid md:grid-cols-2 gap-4">
+        <div class="grid lg:grid-cols-2 gap-4">
             <div>
                 <h6 class=" mb-4 md:mb-8">
                     Our Testimonial
@@ -43,7 +43,6 @@
                 </Carousel>
             </div>
         </div>
-
     </div>
 </template>
 <script>
