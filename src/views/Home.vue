@@ -273,36 +273,34 @@
             </div>
 
         </div>
+    </div>
 
-        <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
-            <h2 class="mb-4 tracking-tight">
-                Success Stories
-            </h2>
-            <div class="grid md:grid-cols-12 gap-10">
-                <div class="md:col-span-8 grid content-end">
-                    <p class="text-[#636571]">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et magna.
-                    </p>
-                </div>
-                <div class="md:col-span-4 flex md:justify-end">
-                    <button class="btn-fill-light">
-                        View All
-                    </button>
-                </div>
+    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
+        <h2 class="mb-4 tracking-tight">
+            Success Stories
+        </h2>
+        <div class="grid md:grid-cols-12 gap-10">
+            <div class="md:col-span-8 grid content-end">
+                <p class="text-[#636571]">
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et magna.
+                </p>
+            </div>
+            <div class="md:col-span-4 flex md:justify-end">
+                <button class="btn-fill-light">
+                    View All
+                </button>
+            </div>
 
-            </div>
-            <div class="grid grid-cols-3 gap-2 md:gap-4 my-10">
-                <img src="@/assets/img/success-story-1.png" alt="" srcset="">
-                <img src="@/assets/img/success-story-2.png" alt="" srcset="">
-                <img src="@/assets/img/success-story-3.png" alt="" srcset="">
-            </div>
         </div>
-
-
+        <div class="grid grid-cols-3 gap-2 md:gap-4 my-10">
+            <img src="@/assets/img/success-story-1.png" alt="" srcset="">
+            <img src="@/assets/img/success-story-2.png" alt="" srcset="">
+            <img src="@/assets/img/success-story-3.png" alt="" srcset="">
+        </div>
     </div>
 </template>
 <script setup>
