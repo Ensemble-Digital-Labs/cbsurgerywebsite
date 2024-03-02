@@ -14,7 +14,7 @@
     @apply font-manrope text-[32px] md:text-[52px] text-extra-dark-teal font-extrabold;
   }
   p {
-    @apply font-archivo text-[16px] leading-6 text-paragraph-font font-normal;
+    @apply font-archivo text-sm md:text-[16px] leading-6 text-paragraph-font font-normal;
   }
   h6{
     @apply text-[14px] text-dark-teal font-manrope font-bold md:px-4;

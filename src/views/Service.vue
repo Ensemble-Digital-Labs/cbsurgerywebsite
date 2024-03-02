@@ -5,6 +5,7 @@
             <ServiceCard v-for="i in 5" :key="i" :link="'/about'" :title="'Bariatrics Surgery'" :description="' This is description, This is description v'" :imageUrl="'/assets/grid-img-1.png'"></ServiceCard>
         </div>
         <TheTestimonial></TheTestimonial>
+        <FAQ></FAQ>
     </div>
 
 </template>
@@ -12,4 +13,5 @@
 import HeroSection from '@/components/HeroSection.vue';
 import ServiceCard from '@/components/ServiceCard.vue';
 import TheTestimonial from '@/components/TheTestimonial.vue';
+import FAQ from '@/components/FAQ.vue';
 </script>
