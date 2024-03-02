@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl py-14">
+    <div class="max-w-7xl py-20">
         <div class="grid md:grid-cols-2 gap-2 place-content-center md:relative md:h-[450px] bg-extra-light-teal">
             <div class=" p-10 md:p-16 md:absolute md:top-0 md:left-0 md:right-0 md:w-1/2">
                 <div class="border p-2 w-32 rounded border-gray">

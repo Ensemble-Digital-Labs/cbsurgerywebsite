@@ -11,7 +11,6 @@ const routes = [
   { path: '/about', component: AboutVue },
   { path: '/services', component: ServiceVue },
   { path: '/success-stories', component: SuccessStoriesVue },
-  
   { path: '/am-i-candidate', component: AmICandidateVue },
 ]
 
