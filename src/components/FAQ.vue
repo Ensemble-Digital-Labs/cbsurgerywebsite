@@ -8,7 +8,7 @@
             <div id="accordion-collapse" data-accordion="collapse" class="py-10">
                 <h3 id="accordion-collapse-heading-1" class="p-1">
                     <button type="button"
-                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border border-[#EEEEEE] focus:text-dark-teal hover:bg-gray-100  gap-3"
+                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE] focus:text-dark-teal hover:bg-gray-100  gap-3"
                         data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
                         aria-controls="accordion-collapse-body-1">
                         <span class="text-left">Are your Doctors Certified ?</span>
@@ -32,7 +32,7 @@
                 </div>
                 <h3 id="accordion-collapse-heading-2" class="p-1">
                     <button type="button"
-                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border border-[#EEEEEE]   focus:text-dark-teal  hover:bg-gray-100  gap-3"
+                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE]   focus:text-dark-teal  hover:bg-gray-100  gap-3"
                         data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
                         aria-controls="accordion-collapse-body-2">
                         <span class="text-left">Do your surgeons perform the majority of cases open or laparoscopically?</span>
@@ -57,7 +57,7 @@
                 </div>
                 <h3 id="accordion-collapse-heading-3" class="p-1">
                     <button type="button"
-                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
+                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
                         data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
                         aria-controls="accordion-collapse-body-3">
                         <span class="text-left">What types of bariatric procedures have your surgeons performed?</span>
@@ -82,7 +82,7 @@
                 </div>
                 <h3 id="accordion-collapse-heading-4" class="p-1">
                     <button type="button"
-                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
+                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
                         data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
                         aria-controls="accordion-collapse-body-4">
                         <span class="text-left">What is the mortality rate?</span>
@@ -107,7 +107,7 @@
                 </div>
                 <h3 id="accordion-collapse-heading-5" class="p-1">
                     <button type="button"
-                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
+                        class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
                         data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
                         aria-controls="accordion-collapse-body-5">
                         <span class="text-left">Which bariatric procedure is best for me? Why? What are the risks involved?</span>
