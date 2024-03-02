@@ -1,11 +1,11 @@
 <template>
     <div class="bg-extra-light-teal max-w-screen-2xl mx-auto py-20 md:py-36 md:pb-56 px-4">
         <h6 class="text-center">About us</h6>
-        <h2 class="text-center text-[20px] md:text-[40px]">Chesterfield</h2>
-        <h1 class="text-center text-[26px] md:text-[56px] -mt-4">Bariatric Surgery</h1>
+        <h2 class="text-center text-[34px] md:text-[40px]">Chesterfield</h2>
+        <h1 class="text-center text-[36px] md:text-[56px] -mt-4">Bariatric Surgery</h1>
     </div>
-    <div class="bg-white px-3 md:px-6 py-4 md:py-10 w-4/5 shadow-lg shadow-slate-200 -mt-14 md:-mt-48  mx-auto">
-        <div class="text-center px-5 py-5">
+    <div class="bg-white px-1 md:px-6 py-4 md:py-10 w-10/12 md:w-4/5 shadow-lg shadow-slate-200 -mt-14 md:-mt-48  mx-auto">
+        <div class="text-center px-2 md:px-5 py-5">
             <p>
                 Lorem ipsum dolor sit amet consectetur. In metus viverra morbi mattis ultrices quis. Adipiscing feugiat
                 scelerisque euismod non. Ligula non dui tincidunt nibh maecenas. Non leo vitae quis cras sed tincidunt
