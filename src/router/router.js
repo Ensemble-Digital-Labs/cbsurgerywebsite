@@ -3,7 +3,6 @@ import AboutVue from "@/views/About.vue"
 import ServiceVue from "@/views/Service.vue"
 import SuccessStoriesVue from "@/views/SuccessStories.vue"
 import AmICandidateVue from "@/views/AmICandidate.vue"
-
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -20,4 +19,3 @@ const router = createRouter({
 })
 
 export default router;
-// 
