@@ -6,6 +6,8 @@
         </div>
         <TheTestimonial></TheTestimonial>
         <FAQ></FAQ>
+        <ContactSection></ContactSection>
+
     </div>
 
 </template>
@@ -14,4 +16,5 @@ import HeroSection from '@/components/HeroSection.vue';
 import ServiceCard from '@/components/ServiceCard.vue';
 import TheTestimonial from '@/components/TheTestimonial.vue';
 import FAQ from '@/components/FAQ.vue';
+import ContactSection from '@/components/ContactSection.vue';
 </script>
