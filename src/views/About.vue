@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-extra-light-teal max-w-screen-2xl mx-auto py-20 md:py-36 md:pb-56 px-4">
+    <div class="bg-extra-light-teal max-w-full mx-auto py-20 md:py-36 md:pb-56 px-4">
         <h6 class="text-center">About us</h6>
         <h2 class="text-center text-[34px] md:text-[40px]">Chesterfield</h2>
         <h1 class="text-center text-[36px] md:text-[56px] -mt-4">Bariatric Surgery</h1>
@@ -17,6 +17,7 @@
                 Eget sed cursus arcu orci a ultrices et velit. Ut est condimentum consequat scelerisque tortor felis tellus
                 massa urna. Lacus lacinia vel semper amet et scelerisque tellus. Egestas vulputate augue mi eu commodo
                 parturient. Tortor cras tortor vestibulum est pellentesque pulvinar morbi. At tristique eget justo at lectus
+                vel sed pharetra massa. Quam nam ac nulla mauris diam consequat.At tristique eget justo at lectus
                 vel sed pharetra massa. Quam nam ac nulla mauris diam consequat.
             </p>
             <p>

@@ -1,6 +1,6 @@
 <template>
     <HeroSection :title="'Make Appointment'"></HeroSection>
-    <div class="bg-white px-2 p- py-4 md:p-16 w-10/12 md:w-2/5 shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
+    <div class="bg-white p-8 md:p-16 w-full md:w-full lg:w-8/12 xl:w-5/12 md:shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
    
                         <div class="py-2">
                             <label for="firstName" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Your
@@ -67,7 +67,7 @@
                         </div>
                         </div>
 
-                        <p class="py-4 flex items-center gap-4">
+                        <p class="py-4 md:flex items-center gap-4">
                             <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
                             I consent to receiving email correspondence regarding my inquiry.<span class="text-dark-teal">*</span>
                         </p>
@@ -123,59 +123,8 @@
             <h2 class="text-center tracking-tight md:text-[40px] mb-6 md:mb-8">
                 What is <span class="text-dark-teal">BMI</span>
             </h2>
-            <p class="text-center"> A prevailing misconception surrounding weight loss surgery is its exclusive application
-                to those
-                severely obese.</p>
-
-        </div>
-        <div class="mb-10 md:mb-20">
-            <h3 class="text-center tracking-tight mb-4 md:mb-10 font-manrope font-semibold text-[24px] text-extra-dark-teal">
-                Know Your BMI
-            </h3>
-            <div class="shadow-md rounded-xl shadow-zinc-500/20 p-4 max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-4 gap-4 content-end mb-6">
-                    <div>
-                        <label for="weight"
-                            class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Weight(lbs)</label>
-                        <input type="text" id="weight" v-model="weight"
-                            class="bg-gray-50 border border-zinc-400 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Your Weight in lbs." required />
-                    </div>
-
-                    <div>
-                        <label for="height-ft"
-                            class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Height(Feet)</label>
-                        <input type="text" id="height-ft" v-model="feet"
-                            class="bg-gray-50 border border-zinc-400 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Ft." required />
-                    </div>
-                    <div class="flex flex-col justify-end">
-                        <label for="height-ft"
-                            class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Height(Inch)</label>
-                        <input type="text" id="height-inc" v-model="inch"
-                            class="bg-gray-50 border border-zinc-400 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="In." required />
-                    </div>
-                    <div class="flex flex-col justify-end">
-                        <!-- <label for="first_name" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Height</label> -->
-                        <button class="btn-fill-dark h-11" @click="calculateBMI()">
-                            Calculate
-                        </button>
-                    </div>
-
-                </div>
-                <div >
-                    <h3 class="block text-[16px] font-bold font-manrope text-zinc-800 text-center" v-if="BMI">
-                        Your BMI is : {{ BMI }}
-                    </h3>
-                    <h3 class="block text-[16px] font-bold font-manrope text-red-500 text-center mt-6" v-if="error">
-                        {{ error }}
-                    </h3>
-
-                </div>
-
-
-            </div>
+            <p class="text-center"> Body Mass Index (BMI) is a measure commonly used to assess whether a person has a healthy body weight in relation to their height.
+</p>
 
         </div>
         <div>
@@ -205,7 +154,7 @@
                 </div>
                     <div class="bg-white max-w-96 h-fit grid place-content-center p-8 md:p-12">
                         <h3 class="font-manrope tracking-tight font-semibold max-w-60 text-[#000A2D] text-3xl md:text-5xl mb-8">Dedicated to Give You the Best Treatment </h3>
-                        <button class="btn-fill-dark w-full">View Services</button>
+                        <router-link to="/services"><button class="btn-fill-dark w-full">View Services</button></router-link>
                     </div>
             </div>
         </div>
@@ -213,4 +162,11 @@
 </template>
 <script setup>
 import HeroSection from '@/components/HeroSection.vue';
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
 </script>
