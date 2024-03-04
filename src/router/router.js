@@ -18,7 +18,7 @@ const routes = [
   { path: '/success-stories', component: SuccessStoriesVue },
   { path: '/am-i-candidate', component: AmICandidateVue },
   { path: '/contact-us', component: ContactPageVue },
-  { path: '/appointment', component: Appointment },
+  { path: '/appointments', component: Appointment },
 ]
 
 const router = createRouter({
