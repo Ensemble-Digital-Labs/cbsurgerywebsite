@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-extra-light-teal max-w-screen-2xl mx-auto py-20 md:py-36 md:pb-56 px-4">
+    <div class="bg-extra-light-teal  py-20 md:py-36 md:pb-56 px-4">
         <h6 class="text-center">About us</h6>
         <h2 class="text-center text-[34px] md:text-[40px]">Chesterfield</h2>
         <h1 class="text-center text-[36px] md:text-[56px] -mt-4">Bariatric Surgery</h1>
@@ -28,15 +28,16 @@
                 ullamcorper ut erat consectetur.
             </p>
         </div>
-        <!-- <div class="flex items-center justify-center">
+        <!--
+        <div class="flex items-center justify-center">
                     <button class="btn-fill-dark">
                         Book an Appointment
                     </button>
-    </div> -->
+        </div> -->
     </div>
+
     <div class="max-w-screen-xl mx-auto px-4">
         <div class="flex flex-col-reverse md:flex-row md:gap-10">
-
             <img src="@/assets/img/deepu.png" alt="" srcset="" class="md:w-6/12 object-contain object-right">
             <div class="py-10 px-4 md:px-0 md:py-40 grid content-center md:w-6/12">
                 <h6 class="md:px-0">About</h6>
@@ -71,15 +72,14 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-4">
-                    <a href="/dr-deepu-sudhakaran">
+                    <router-link to="/dr-deepu-sudhakaran">
                         <button class="btn-fill-dark inline-flex items-center gap-2">
                             Learn More
                             <img src="/src/assets/arrow.png" alt="arrow" />
                         </button>
-                    </a>
+                    </router-link>
                 </div>
             </div>
-
         </div>
     </div>
     <OurTeam></OurTeam>
