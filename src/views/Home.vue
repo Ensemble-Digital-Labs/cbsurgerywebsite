@@ -22,7 +22,7 @@
 
     <div class="max-w-screen-2xl mx-auto px-6 md:px-0">
         <div class="flex flex-col lg:flex-row lg:gap-10 mb-20 xl:my-32">
-            <div class="w-full lg:w-4/12 md:h-[600px] md:-mt-36 lg:-mt-0 lg:h-auto">
+            <div class="w-full lg:w-5/12 md:h-[600px] md:-mt-36 lg:-mt-0 lg:h-auto">
                 <!-- <img src="@/assets/img/deepu-2.png" alt="" srcset=""
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right  xl:object-contain xl:object-bottom"> -->
 
@@ -33,7 +33,7 @@
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right hidden lg:block xl:hidden  xl:object-contain xl:object-bottom">
             </div>
 
-            <div class="grid content-center w-full lg:w-8/12 mt-[40px] md:mt-0 md:p-10 lg:py-20 xl:p-0">
+            <div class="grid content-center w-full lg:w-7/12 mt-[40px] md:mt-0 md:p-10 lg:py-20 xl:p-0">
                 <h6>More About Us</h6>
                 <h3 class="font-manrope text-[28px] md:text-[40px] text-extra-dark-teal font-extrabold tracking-tight">
                     Chesterfield</h3>
@@ -75,12 +75,18 @@
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
-                    <button class="btn-fill-dark">
-                        Learn More
-                    </button>
-                    <button class="btn-fill-light">
-                        Request an Appointment
-                    </button>
+                    <router-link to="/about-us">
+                        <button class="btn-fill-dark">
+                            Learn More
+                        </button>
+                    </router-link>
+                    <router-link to="/appointments">
+                        <button class="btn-fill-light">
+                            Request an Appointment
+                        </button>
+                    </router-link>
+
+
                 </div>
 
             </div>
@@ -224,9 +230,11 @@
                 </p>
             </div>
             <div class="md:col-span-4 flex md:justify-end">
-                <button class="btn-fill-light">
-                    View All Services
-                </button>
+                <router-link to="/services">
+                    <button class="btn-fill-light">
+                        View All Services
+                    </button>
+                </router-link>
             </div>
 
         </div>
@@ -263,9 +271,11 @@
                             natoque penatibus et magnis dis parturient.
                         </p>
                         <div>
-                            <button class="btn-fill-dark">
-                                Learn More
-                            </button>
+                            <router-link to="/services">
+                                <button class="btn-fill-dark">
+                                    Learn More
+                                </button>
+                            </router-link>
                         </div>
                     </div>
 
@@ -290,9 +300,11 @@
                 </p>
             </div>
             <div class="md:col-span-4 flex md:justify-end">
-                <button class="btn-fill-light">
-                    View All
-                </button>
+                <router-link to="/success-stories">
+                    <button class="btn-fill-light">
+                        View All
+                    </button>
+                </router-link>
             </div>
 
         </div>

@@ -10,7 +10,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   { path: '/', component: HomeVue  },
-  { path: '/about', component: AboutVue },
+  { path: '/about-us', component: AboutVue },
   { path: '/dr-deepu-sudhakaran', component: DrDeepuVue },
   { path: '/services', component: ServiceVue },
   { path: '/services/1', component: ServiceSinglePage },
