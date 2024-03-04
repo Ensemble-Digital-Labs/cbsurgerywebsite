@@ -1,14 +1,14 @@
 <template>
     <footer class="bg-extra-dark-teal ">
         <div class="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:pt-6">
-            <div class="md:flex md:justify-evenly md:gap-10">
+            <div class="md:flex justify-around sm:gap-4 md:gap-10 lg:gap-20">
                 <div class="mb-6 md:mb-0">
                     <a href="/" class="flex items-center">
-                        <img src="/src/assets/footer-logo.svg" class=" h-auto w-1/2 md:w-56" alt="Logo" />
+                        <img src="/src/assets/footer-logo.svg" class=" h-auto w-1/2 md:w-60" alt="Logo" />
                     </a>
                 </div>
-                <div class="grid grid-cols gap-8 sm:gap-10 sm:grid-cols-12 ">
-                    <div class="sm:col-span-3">
+                <div class="grid grid-cols gap-8 sm:gap-2 md:gap-4 sm:grid-cols-12 w-full">
+                    <div class="sm:col-span-3 md:col-span-5 lg:col-span-3">
                         <h2 class="mb-6 font-manrope text-white font-bold text-[22px]">Helpful Link</h2>
                         <hr class="text-white w-20 h-2 my-4">
                         <ul class="text-gray-500 dark:text-gray-400 font-medium space-y-1">
@@ -30,7 +30,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="sm:col-span-3">
+                    <div class="sm:col-span-4 md:col-span-5 lg:col-span-4">
                         <h2 class="mb-6 font-manrope text-white font-bold text-[22px]">Contact Us</h2>
                         <hr class="text-white w-20 h-2 my-4">
                         <div class="flex flex-col gap-2">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sm:col-span-6">
+                    <div class="sm:col-span-5 md:col-span-7 lg:col-span-5">
                         <h2 class="mb-6 font-manrope text-white font-bold text-[22px]">Follow Us</h2>
                         <hr class="text-white w-20 h-2 my-4">
                         <div class=" max-w-xs mb-6">
