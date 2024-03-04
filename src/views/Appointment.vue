@@ -1,7 +1,87 @@
 <template>
     <HeroSection :title="'Make Appointment'"></HeroSection>
+    <div class="bg-white px-2 p- py-4 md:p-16 w-10/12 md:w-2/5 shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
+   
+                        <div class="py-2">
+                            <label for="firstName" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Your
+                                Name<span class="text-dark-teal">*</span></label>
+                            <input type="text" id="firstName" v-model="firstName"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Full name here" required />
+                        </div>
+                        <div class="py-2">
+                            
+                            <div class="md:flex gap-2">
+                                <label for="Gender" class="block mb-2 pr-4 text-[16px] font-bold font-manrope text-zinc-800">Gender<span class="text-dark-teal">*</span></label>
+                                <div class="flex items-center me-4">
+                                    <input id="inline-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
+                                    <label for="inline-radio" class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Male</label>
+                                </div>
+                                <div class="flex items-center me-4">
+                                    <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
+                                    <label for="inline-2-radio" class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Female</label>
+                                </div>
+                                <div class="flex items-center me-4">
+                                    <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
+                                    <label for="inline-2-radio" class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Other</label>
+                                </div>
+                            </div>
+
+                        </div>
+                   
+                        <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 py-2">
+                        <div>
+                            <label for="dob"
+                                class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Date Of Birth<span
+                                    class="text-dark-teal">*</span></label>
+                            <input type="date" id="dob" v-model="dob"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                             required />
+                        </div>
+                        <div>
+                            <label for="appointmentDate"
+                                class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Preferred Date of Appointment<span
+                                    class="text-dark-teal">*</span></label>
+                            <input type="date" id="appointmentDate" v-model="appointmentDate"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required />
+                        </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 py-2">
+                        <div>
+                            <label for="phoneNumber"
+                                class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Phone Number<span
+                                    class="text-dark-teal">*</span></label>
+                            <input type="text" id="phoneNumber" v-model="phoneNumber"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Add Phone Number " required />
+                        </div>
+                        <div>
+                            <label for="email"
+                                class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Email<span
+                                    class="text-dark-teal">*</span></label>
+                            <input type="email" id="email" v-model="email"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Add Email" required />
+                        </div>
+                        </div>
+
+                        <p class="py-4 flex items-center gap-4">
+                            <input id="inline-2-radio" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
+                            I consent to receiving email correspondence regarding my inquiry.<span class="text-dark-teal">*</span>
+                        </p>
+
+                    <div class="w-full">
+                        <button class="btn-fill-dark h-11 w-full py-4 grid content-center">
+                            Submit
+                        </button>
+                    </div>
+        
+</div>
+
     <div class="max-w-screen-xl mx-auto my-10 lg:my-20 px-6 xl:px-0">
-        <h3 class="text-center text-[40px] text-extra-dark-teal font-manrope font-extrabold py-10 tracking-tight">Why Bariatric Surgery?</h3>
+        <h3 class="text-center text-[30px] md:text-[40px] text-extra-dark-teal font-manrope font-extrabold py-10 tracking-tight">Why Bariatric Surgery?</h3>
         <div class="grid md:grid-cols-2 gap-8 md:gap-10">
             <div class="grid gap-2">
                 <p>
