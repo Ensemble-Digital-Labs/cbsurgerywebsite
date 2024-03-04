@@ -6,6 +6,7 @@ import ServiceSinglePage from "@/views/ServiceSinglePage.vue"
 import SuccessStoriesVue from "@/views/SuccessStories.vue"
 import AmICandidateVue from "@/views/AmICandidate.vue"
 import ContactPageVue from "@/views/ContactPage.vue"
+import Appointment from "@/views/Appointment.vue"
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -17,6 +18,7 @@ const routes = [
   { path: '/success-stories', component: SuccessStoriesVue },
   { path: '/am-i-candidate', component: AmICandidateVue },
   { path: '/contact-us', component: ContactPageVue },
+  { path: '/appointment', component: Appointment },
 ]
 
 const router = createRouter({
