@@ -39,7 +39,7 @@
                                     aria-current="page">Home</router-link>
                             </li>
                             <li>
-                                <router-link to="/about"
+                                <router-link to="/about-us"
                                     class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent  hover:bg-dark-teal "
                                     aria-current="page">About</router-link>
                             </li>
