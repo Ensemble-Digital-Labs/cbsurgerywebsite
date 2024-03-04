@@ -59,18 +59,19 @@
                                     aria-current="page">Success stories</router-link>
                             </li>
                             <li>
-                                <router-link to="/contact-ud"
+                                <router-link to="/contact-us"
                                     class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-b-lg"
                                     aria-current="page">Contact Us</router-link>
                             </li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-    </div>
-</header></template> 
+        </div>
+    </header>
+</template> 
 <script setup>
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'

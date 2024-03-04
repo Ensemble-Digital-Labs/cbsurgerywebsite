@@ -4,7 +4,7 @@
             <div class="md:flex md:justify-evenly md:gap-20">
                 <div class="mb-6 md:mb-0">
                     <a href="/" class="flex items-center">
-                        <img src="/src/assets/footer-logo.svg" class=" h-64 w-96" alt="Logo" />
+                        <img src="/src/assets/footer-logo.svg" class=" h-auto md:w-96" alt="Logo" />
                     </a>
                 </div>
                 <div class="grid grid-cols gap-8 sm:gap-10 sm:grid-cols-12 ">
@@ -37,17 +37,15 @@
                             </div>
                             <div class="flex gap-2">
                                 <img src="/src/assets/icons/location.svg" class="h-5 w-4">
-                                <a href="#" class=" font-archivo text-white ">10004 Kennerly Road, Suite 295B Saint Louis,
+                                <a href="#" class=" font-archivo text-white ">10004 Kennerly Road,<br/> Suite 295B Saint Louis,<br/>
                                     MO 63128</a>
                             </div>
                             <div class="flex gap-2">
                                 <img src="/src/assets/icons/email.svg" class="h-5 w-4">
                                 <a href="mailto:Info@Chesterfieldbariatricsurgery.com"
-                                    class=" font-archivo text-white ">Info@Chesterfieldbariatricsurgery.com</a>
+                                    class=" font-archivo text-white">Info@Chesterfieldbariatric.com</a>
                             </div>
-
                         </div>
-                        
                     </div>
                     <div class="sm:col-span-4">
                         <h2 class="mb-6 font-manrope text-white font-bold text-[22px]">Follow Us</h2>
@@ -83,6 +81,7 @@
             </div>
 
         </div>
-</footer></template> 
+</footer>
+</template> 
 <script>
 </script>
