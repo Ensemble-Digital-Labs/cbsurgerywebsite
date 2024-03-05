@@ -7,9 +7,9 @@
                     <div class="border p-2 w-32 rounded border-gray">
                         <h6>Contact Us</h6>
                     </div>
-                    <h2 class="pt-4 leading-none tracking-tight"><b>Become The Next</b>
+                    <h2 class="mt-4 leading-[40px] md:leading-[60px] tracking-tight"><b>Become The Next</b>
                         Happy Member of our Family</h2>
-                    <p class="py-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                         Aenean commodo ligula eget dolor. Aenean massa.</p>
                     <router-link to="/appointments">
                         <button class=" btn-fill-dark">Request an Appointment </button>

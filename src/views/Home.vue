@@ -26,7 +26,7 @@
                 <!-- <img src="@/assets/img/deepu-2.png" alt="" srcset=""
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right  xl:object-contain xl:object-bottom"> -->
 
-                <img src="@/assets/img/deepu-2.png" alt="" srcset=""
+                <img src="@/assets/img/deepu-6.png" alt="" srcset=""
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right block lg:hidden xl:block xl:object-right-bottom">
 
                 <img src="@/assets/img/home-2.png" alt="" srcset=""
