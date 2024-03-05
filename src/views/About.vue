@@ -1,11 +1,11 @@
 <template>
     <div class="bg-extra-light-teal max-w-full mx-auto py-20 md:py-36 md:pb-56 px-4">
         <h6 class="text-center">About us</h6>
-        <h2 class="text-center text-[34px] md:text-[40px]">Chesterfield</h2>
-        <h1 class="text-center text-[36px] md:text-[56px] -mt-4">Bariatric Surgery</h1>
+        <h2 class="text-center text-[28px] md:text-[40px] mb-2 md:mb-6">Chesterfield</h2>
+        <h1 class="text-center text-[36px] md:text-[56px] leading-10 -mt-4">Bariatric Surgery</h1>
     </div>
-    <div class="bg-white px-1 md:px-6 py-4 md:py-10 w-10/12 md:w-4/5 shadow-lg shadow-slate-200 -mt-14 md:-mt-48  mx-auto">
-        <div class="text-center px-2 md:px-5 py-5">
+    <div class="bg-white px-1 md:px-6 py-4 md:py-10 w-full md:w-4/5 shadow-lg shadow-slate-200 -mt-14 md:-mt-48  mx-auto">
+        <div class="text-center px-4 md:px-5 py-5">
             <p>
                 Lorem ipsum dolor sit amet consectetur. In metus viverra morbi mattis ultrices quis. Adipiscing feugiat
                 scelerisque euismod non. Ligula non dui tincidunt nibh maecenas. Non leo vitae quis cras sed tincidunt
@@ -37,28 +37,35 @@
         </div> -->
     </div>
 
-    <div class="max-w-screen-xl mx-auto px-4 my-10">
-        <div class="flex flex-col-reverse md:flex-row md:gap-10">
-            <img src="@/assets/img/deepu.png" alt="" srcset="" class="md:w-6/12 object-contain object-right">
-            <div class="py-10 px-4 md:px-0 grid content-center md:w-6/12">
-                <h6 class="md:px-0">About</h6>
+    <div class="max-w-screen-xl mx-auto px-4 md:px-6 my-10">
+        <div class="flex flex-col md:flex-row items-start md:gap-10">
+            <div class="md:w-6/12 md:h-[450px]">
+                <img src="@/assets/img/deepu-4.png"
+                    class="h-full object-cover object-right" alt="" srcset="">
+            </div>
+            <!-- <img src="@/assets/img/deepu.png" alt="" srcset="" class="md:w-6/12 object-contain object-right"> -->
+            <div class="py-10 grid content-center md:w-6/12">
+                <!-- <h6 class="md:px-0">About</h6>
                 <h3 class=" text-dark-teal text-[22px] md:text-[47px] font-manrope font-extrabold tracking-tight">Dr. Deepu
                     Sudhakaran, MD </h3>
-                <h4 class=" tracking-tight text-[#727272] font-manrope font-bold mb-2">CEO & FOUNDER</h4>
-                <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold pt-6">Care Philosophy</h3>
-                <p class="text-[#636571] py-2">
+                <h4 class=" tracking-tight text-[#727272] font-manrope font-bold mb-2">CEO & FOUNDER</h4> -->
+                <h6 class="px-0 mb-4">More About</h6>
+                <h2 class=" text-dark-teal tracking-tight md:text-[40px] leading-[40px] mb-3">Dr. Deepu Sudhakaran, MD</h2>
+                <h3 class=" font-manrope text-[#727272] text-[20px] font-extrabold mb-2">CEO & FOUNDER</h3>
+                <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold mb-2">Care Philosophy</h3>
+                <p class="text-[#636571]">
                     “I'm a very family-oriented person. I want patients to feel like I will treat them like family. I'll
                     take very personal care of you from the time you see me until you have reached your goal.”
                 </p>
                 <div class="grid grid-cols gap-0 mb-6 sm:grid-cols-12">
-                    <div class="py-2 sm:col-span-4">
+                    <div class="py-2 sm:col-span-4 md:hidden lg:block">
                         <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Specialty</h3>
                         <ul class="max-w-md space-y-1 text-[#636571] list-disc list-inside">
                             <li class=" font-archivo text-base font-normal text-[#636571]">Bariatric Surgery</li>
                             <li class=" font-archivo text-base font-normal text-[#636571]">General Surgery</li>
                         </ul>
                     </div>
-                    <div class="py-2 sm:col-span-8">
+                    <div class="py-2 sm:col-span-8 md:hidden lg:block">
                         <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Board Certifications</h3>
                         <ul class="max-w-md space-y-1 text-[#636571] list-disc list-inside">
                             <li class=" font-archivo text-base font-normal text-[#636571]">American Board of Surgery </li>
@@ -66,12 +73,13 @@
                                 Critical Care)</li>
                         </ul>
                     </div>
-                    <div class="py-2 sm:col-span-12">
+                    <div class="py-2 sm:col-span-12 md:hidden lg:block">
                         <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Education</h3>
                         <h4 class=" font-archivo text-base font-normal text-[#636571]"><b>Medical School</b>: Medical
                             College Of Thiruvananthapuram</h4>
                     </div>
                 </div>
+
                 <div class="flex items-center gap-4">
                     <router-link to="/dr-deepu-sudhakaran">
                         <button class="btn-fill-dark inline-flex items-center gap-2">
@@ -79,6 +87,32 @@
                             <img src="/src/assets/arrow.png" alt="arrow" />
                         </button>
                     </router-link>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="grid grid-cols gap-0 mb-6 md:grid-cols-12">
+                <div class="py-2 md:col-span-6 hidden md:block lg:hidden">
+                    <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Specialty</h3>
+                    <ul class="max-w-md space-y-1 text-[#636571] list-disc list-inside">
+                        <li class=" font-archivo text-base font-normal text-[#636571]">Bariatric Surgery</li>
+                        <li class=" font-archivo text-base font-normal text-[#636571]">General Surgery</li>
+                    </ul>
+                </div>
+                <div class="py-2 md:col-span-6 hidden md:block lg:hidden">
+                    <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Board Certifications
+                    </h3>
+                    <ul class="max-w-md space-y-1 text-[#636571] list-disc list-inside">
+                        <li class=" font-archivo text-base font-normal text-[#636571]">American Board of Surgery 
+                        </li>
+                        <li class=" font-archivo text-base font-normal text-[#636571]">Amer Bd Surgery (Surgical
+                            Critical Care)</li>
+                    </ul>
+                </div>
+                <div class="py-2 sm:col-span-12 hidden md:block lg:hidden">
+                    <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Education</h3>
+                    <h4 class=" font-archivo text-base font-normal text-[#636571]"><b>Medical School</b>: Medical
+                        College Of Thiruvananthapuram</h4>
                 </div>
             </div>
         </div>
