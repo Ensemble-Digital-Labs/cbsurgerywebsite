@@ -1,7 +1,7 @@
 <template>
-    <div class="max-w-screen-2xl mx-auto px-6 md:px-0">
-        <div class="flex flex-col lg:flex-row md:pl-10">
-            <div class="py-10 sm:py-20  md:py-10 lg:py-40 grid content-center lg:w-6/12">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-0">
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row md:pl-10">
+            <div class="py-10 sm:pl-6 md:pl-0 sm:py-20  md:py-10 lg:py-40 grid content-center lg:w-6/12">
                 <h1 class=" leading-[40px] md:leading-[60px] mb-8">
                     Reclaim Your<br /> <span class="text-dark-teal"> Vibrant Health</span><br />
                     With Dr. Sudhakaran
@@ -12,22 +12,21 @@
                     natoque penatibus et magnis dis parturient.
                 </p>
             </div>
-            <img src="@/assets/img/hero.png" alt="" srcset="" class="xl:w-6/12 object-cover hidden xl:block object-left">
+            <img src="@/assets/img/hero.png" alt="" srcset="" class="xl:w-6/12 object-cover  hidden xl:block object-left">
             <img src="@/assets/img/deepu-3.png" alt="" srcset=""
-                class="lg:w-6/12 object-cover object-left hidden lg:block xl:hidden">
-
+                class="lg:w-6/12 object-cover object-left hidden sm:block md:hidden sm:w-5/12 lg:block xl:hidden">
         </div>
     </div>
 
 
     <div class="max-w-screen-2xl mx-auto px-6 md:px-0">
-        <div class="flex flex-col lg:flex-row lg:gap-10 mb-20 xl:my-32">
+        <div class="flex flex-col  lg:flex-row lg:gap-10 mb-20 xl:my-32">
             <div class="w-full lg:w-5/12 md:h-[600px] md:-mt-36 lg:-mt-0 lg:h-auto">
                 <!-- <img src="@/assets/img/deepu-2.png" alt="" srcset=""
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right  xl:object-contain xl:object-bottom"> -->
 
                 <img src="@/assets/img/deepu-6.png" alt="" srcset=""
-                    class="w-full h-full object-cover md:object-contain lg:object-cover object-right block lg:hidden xl:block xl:object-right-bottom">
+                    class="w-full h-full sm:w-1/2 md:w-full object-cover md:object-contain lg:object-cover object-right block sm:hidden md:block lg:hidden xl:block xl:object-right-bottom">
 
                 <img src="@/assets/img/home-2.png" alt="" srcset=""
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right hidden lg:block xl:hidden  xl:object-contain xl:object-bottom">
@@ -46,12 +45,12 @@
                     Safe Hands Treat Patients<br />
                     Like Family.
                 </h2>
-                <p class="text-[#636571] md:w-3/4 mb-2">
+                <p class="text-[#636571] sm:w-3/4 mb-2">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                     natoque penatibus et magnis dis parturient.
                 </p>
-                <p class="text-[#636571] md:w-3/4 mb-6">
+                <p class="text-[#636571] sm:w-3/4 mb-6">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                     natoque penatibus et magnis dis parturient.
@@ -98,7 +97,7 @@
         <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
             <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
                 <div class="">
-                    <h3 class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-right ">
+                    <h3 class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-center sm:text-right ">
                         Pricing on Gastric Sleeve
                     </h3>
                 </div>
