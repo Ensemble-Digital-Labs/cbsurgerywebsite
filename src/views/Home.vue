@@ -168,7 +168,7 @@
     <div class="grid xl:grid-cols-2 md:h-[740px]">
         <div>
             <div class="grid md:grid-cols-2 md:h-1/2 ">
-                <div class="bg-cover bg-no-repeat bg-center p-32" style="background-image: url('/assets/grid-img-1.png')">
+                <div class="bg-cover bg-no-repeat bg-center p-32" style="background-image: url('/assets/img/grid-img-1.png')">
 
                 </div>
                 <div class=" bg-dark-teal grid place-content-center p-16">
@@ -186,7 +186,7 @@
             </div>
             <div class="grid md:grid-cols-2 h-1/2">
                 <div class="bg-cover bg-no-repeat bg-center p-32 md:hidden"
-                    style="background-image: url('/assets/grid-img-2.png')">
+                    style="background-image: url('/assets/img/grid-img-2.png')">
 
                 </div>
 
@@ -203,14 +203,14 @@
                     </div>
                 </div>
                 <div class="bg-cover bg-no-repeat bg-center p-32 hidden md:block"
-                    style="background-image: url('/assets/grid-img-2.png')">
+                    style="background-image: url('/assets/img/grid-img-2.png')">
 
                 </div>
             </div>
         </div>
 
         <div class="bg-cover hidden xl:block bg-no-repeat bg-center p-32"
-            style="background-image: url('/assets/grid-img-3.png')">
+            style="background-image: url('/assets/img/grid-img-3.png')">
         </div>
 
     </div>
@@ -240,7 +240,7 @@
         </div>
         <div class="grid md:grid-cols-3 gap-4 my-10">
             <ServiceCard v-for="i in 3" :key="i" :link="'/about'" :title="'Bariatrics Surgery'"
-                :description="' This is description, This is description v'" :imageUrl="'/assets/grid-img-1.png'">
+                :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
             </ServiceCard>
         </div>
     </div>
@@ -249,9 +249,9 @@
     <TheTestimonial></TheTestimonial>
     <div class="w-full  h-[500px] relative my-10">
         <div class="w-full grid grid-cols-12 h-[500px] bg-cover bg-center bg-white/90 bg-blend-overlay md:bg-blend-normal "
-            style="background-image: url('/assets/dedicated.jpg');">
+            style="background-image: url('/assets/img/dedicated.jpg');">
             <div class=" bg-cover hidden md:block col-span-10 lg:col-span-8"
-                style="background-image: url('/assets/design.png');">
+                style="background-image: url('/assets/img/design.png');">
             </div>
             <div>
 

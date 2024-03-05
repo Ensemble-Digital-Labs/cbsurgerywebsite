@@ -56,17 +56,17 @@ export default defineComponent({
     data() {
         return {
             testimonials: [{
-                name: 'Ameer',imageUrl:"/assets/grid-img-1.png", testimonial: `Lorem ipsum dolor sit amet, consectetur
+                name: 'Ameer',imageUrl:"/assets/img/grid-img-1.png", testimonial: `Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et magna.`}, {
-                name: 'Divya',imageUrl:"/assets/grid-img-1.png", testimonial: `Lorem ipsum dolor sit amet, consectetur
+                name: 'Divya',imageUrl:"/assets/img/grid-img-1.png", testimonial: `Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et magna.`}, {
-                name: 'Jishnu',imageUrl:"/assets/grid-img-1.png", testimonial: `Lorem ipsum dolor sit amet, consectetur
+                name: 'Jishnu',imageUrl:"/assets/img/grid-img-1.png", testimonial: `Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit, sed do eiusmod tempor

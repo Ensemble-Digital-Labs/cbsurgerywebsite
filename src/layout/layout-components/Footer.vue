@@ -78,9 +78,16 @@
                     </div>
                 </div>
             </div>
-            <hr class="my-6 border-[#ffffff17] max-w-7xl sm:mx-auto lg:my-6" />
+            <hr class="my-6 border-[#ffffff17] max-w-7xl sm:mx-auto lg:my-8" />
             <div class="w-full mx-auto">
                 <span class="text-sm text-white block mx-auto text-center">Copyright © 2024. All rights reserved</span>
+            </div>
+            <!-- Sticky button -->
+            <div class="fixed bottom-10 right-0 left-0 flex justify-center">
+                <router-link to="/appointments">
+                    <button class="btn-fill-dark">Book an Appointment</button>
+                </router-link>
+                
             </div>
 
         </div>

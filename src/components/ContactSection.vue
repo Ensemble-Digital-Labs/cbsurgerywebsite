@@ -1,6 +1,6 @@
 <template>
     <div class="max-w-screen-xl mx-auto my-10 md:my-20">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-7xl mx-auto">
             <div
                 class="grid lg:grid-cols-3 gap-2 rounded-lg place-content-center lg:relative lg:h-[500px] xl:h-[450px] bg-extra-light-teal">
                 <div class=" lg:col-span-2 p-10 lg:p-16 lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:w-1/2">
