@@ -12,7 +12,8 @@
                     natoque penatibus et magnis dis parturient.
                 </p>
             </div>
-            <img src="@/assets/img/hero.png" alt="" srcset="" class="xl:w-6/12 object-cover  hidden xl:block object-left">
+            <img src="@/assets/img/hero.png" alt="" srcset=""
+                class="xl:w-6/12 object-cover  hidden xl:block object-left">
             <img src="@/assets/img/deepu-3.png" alt="" srcset=""
                 class="lg:w-6/12 object-cover object-left hidden sm:block md:hidden sm:w-5/12 lg:block xl:hidden">
         </div>
@@ -97,7 +98,8 @@
         <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
             <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
                 <div class="">
-                    <h3 class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-center sm:text-right ">
+                    <h3
+                        class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-center sm:text-right ">
                         Pricing on Gastric Sleeve
                     </h3>
                 </div>
@@ -134,11 +136,11 @@
     </div>
 
     <div class="py-10 bg-[#F1F8FF] w-full">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <div class="grid grid-cols-3 gap-4 ">
+        <div class="max-w-screen-xl mx-auto px-4" ref="target">
+            <div class="grid grid-cols-3 gap-4 " v-element-visibility="[onElementVisibility, { scrollTarget: target }]">
                 <div>
                     <h1 class="text-[35px] md:text-[72px] text-center">
-                        90 <span class=" text-dark-teal">+</span>
+                        {{ isVisible ? happyClients.toFixed(0) : '0' }}<span class=" text-dark-teal">+</span>
                     </h1>
                     <p class=" text-[14px] md:text-[20px] text-[#636571] text-center">
                         Happy Clients
@@ -146,7 +148,7 @@
                 </div>
                 <div>
                     <h1 class="text-[35px] md:text-[72px] text-center">
-                        12 <span class=" text-dark-teal">+</span>
+                        {{ isVisible ? yearsOfExperience.toFixed(0) : '0' }} <span class=" text-dark-teal">+</span>
                     </h1>
                     <p class="text-[14px] md:text-[20px] text-[#636571] text-center">
                         Year Experience
@@ -154,7 +156,7 @@
                 </div>
                 <div>
                     <h1 class="text-[35px] md:text-[72px] text-center">
-                        20 <span class=" text-dark-teal">+</span>
+                        {{ isVisible ? staffs.toFixed(0) : '0' }}  <span class=" text-dark-teal">+</span>
                     </h1>
                     <p class="text-[14px] md:text-[20px] text-[#636571] text-center">
                         Doctor & Staff
@@ -164,10 +166,16 @@
         </div>
     </div>
 
+    <!-- with options -->
+    <!-- <div v-element-visibility="onElementVisibility">
+        {{ isVisible ? 'inside' : 'outside' }}
+    </div> -->
+
     <div class="grid xl:grid-cols-2 md:h-[740px]">
         <div>
             <div class="grid md:grid-cols-2 md:h-1/2 ">
-                <div class="bg-cover bg-no-repeat bg-center p-32" style="background-image: url('/assets/img/grid-img-1.png')">
+                <div class="bg-cover bg-no-repeat bg-center p-32"
+                    style="background-image: url('/assets/img/grid-img-1.png')">
 
                 </div>
                 <div class=" bg-dark-teal grid place-content-center p-16">
@@ -318,10 +326,67 @@
 
 
 </template>
+
+<script>
+import { ref } from 'vue'
+import { vElementVisibility } from '@vueuse/components'
+
+const target = ref(null)
+// const isVisible = ref(false)
+
+// function onElementVisibility(state) {
+//     isVisible.value = state
+//     console.log(state)
+//     if (state) {
+//         gsap.to(this, { duration: 1, happyClients: 90 || 0 })
+//         gsap.to(this, { duration: 1, yearsOfExperience: 12 || 0 })
+//         gsap.to(this, { duration: 1, staffs: 20 || 0 })
+//     }
+// }
+
+import gsap from 'gsap'
+
+export default {
+    data() {
+        return {
+            number: 0,
+            happyClients: 0,
+            yearsOfExperience: 0,
+            staffs: 0,
+            isVisible: false
+        }
+    },
+    watch: {
+        // whenever question changes, this function will run
+        isVisible(newValue, oldValue) {
+            if (newValue) {
+                gsap.to(this, { duration: 1, happyClients: 90 || 0 })
+                gsap.to(this, { duration: 1, yearsOfExperience: 12 || 0 })
+                gsap.to(this, { duration: 1, staffs: 20 || 0 })
+            }
+        }
+    },
+    methods: {
+        onElementVisibility(state) {
+            this.isVisible = state
+        }
+
+    }
+    //   mounted(){
+    //     this.number = 90
+    //     gsap.to(this, { duration: 1, happyClients: 90 || 0 })
+    //     gsap.to(this, { duration: 1, yearsOfExperience: 12 || 0 })
+    //     gsap.to(this, { duration: 1, staffs: 20 || 0 })
+    //   }
+}
+
+</script>
+
 <script setup>
 import ServiceCard from '@/components/ServiceCard.vue';
 import OurTeam from '@/components/OurTeam.vue';
 import TheTestimonial from '@/components/TheTestimonial.vue';
 import FAQ from '@/components/FAQ.vue';
 import ContactSectionVue from '@/components/ContactSection.vue';
+
 </script>

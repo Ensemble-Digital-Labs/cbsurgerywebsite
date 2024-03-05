@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/components": "^10.9.0",
     "flowbite": "^2.3.0",
+    "gsap": "^3.12.5",
     "vue": "^3.4.15",
     "vue-router": "^4.3.0",
     "vue3-carousel": "^0.3.1"

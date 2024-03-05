@@ -10,7 +10,7 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-4 my-10" v-if="selectedTab === 'Conditions Treated'">
-            <ServiceCard v-for="i in 6" :key="i" :link="'/about'" :title="'Bariatrics Surgery'" :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'"></ServiceCard>
+            <ServiceCard v-for="i in 6" :key="i" :link="'/about'" :title="'Bariatrics Surgery'" :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-2.png'"></ServiceCard>
         </div>
         <TheTestimonial></TheTestimonial>
         <FAQ></FAQ>

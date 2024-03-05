@@ -83,14 +83,20 @@
                 <span class="text-sm text-white block mx-auto text-center">Copyright © 2024. All rights reserved</span>
             </div>
             <!-- Sticky button -->
-            <div class="fixed bottom-10 right-0 left-0 flex justify-center">
-                <router-link to="/appointments">
-                    <button class="btn-fill-dark">Book an Appointment</button>
-                </router-link>
-            </div>
+
 
         </div>
     </footer>
+    <div class="fixed bottom-1/2 right-0 -rotate-90 translate-x-[80px] -translate-y-[110px] w-56">
+                <router-link to="/appointments">
+                    <button class="btn-fill-light w-52">Patient Portal</button>
+                </router-link>
+            </div>
+            <div class="fixed bottom-1/2 right-0 shadow -rotate-90 translate-x-[80px] translate-y-[110px] w-56">
+                <router-link to="/appointments">
+                    <button class="btn-fill-dark w-52 ">Book an Appointment</button>
+                </router-link>
+            </div>
 </template> 
 <script>
 </script>
