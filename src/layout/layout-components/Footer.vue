@@ -46,8 +46,8 @@
                             </div>
                             <div class="flex gap-2 items-start">
                                 <img src="/src/assets/icons/email.svg" class="h-5 w-4">
-                                <a href="mailto:Info@Chesterfieldbariatricsurgery.com"
-                                    class=" font-archivo text-white  text-[15px]">Info@Chesterfieldbariatric.com</a>
+                                <a href="mailto:info@chesterfieldbariatricsurgery.com"
+                                    class=" font-archivo text-white  text-[15px]">info@chesterfieldbariatric.com</a>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,6 @@
                 <router-link to="/appointments">
                     <button class="btn-fill-dark">Book an Appointment</button>
                 </router-link>
-                
             </div>
 
         </div>

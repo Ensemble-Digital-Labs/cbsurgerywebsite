@@ -84,7 +84,7 @@
                     <router-link to="/dr-deepu-sudhakaran">
                         <button class="btn-fill-dark inline-flex items-center gap-2">
                             Learn More
-                            <img src="/src/assets/arrow.png" alt="arrow" />
+                            <img src="/src/assets/icons/arrow.png" alt="arrow" />
                         </button>
                     </router-link>
                 </div>
