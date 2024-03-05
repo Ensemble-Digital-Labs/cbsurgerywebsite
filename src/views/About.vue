@@ -37,14 +37,16 @@
         </div> -->
     </div>
 
-    <div class="max-w-screen-xl mx-auto px-4 md:px-6 my-10">
-        <div class="flex flex-col md:flex-row items-start md:gap-10">
-            <div class="md:w-6/12 md:h-[450px]">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-0 md:px-6 my-10">
+        <div class="flex flex-col sm:flex-row items-start sm:gap-4 md:gap-10">
+            <div class="sm:w-5/12 md:w-6/12 md:h-[450px] lg:h-[600px] xl:h-auto">
                 <img src="@/assets/img/deepu-4.png"
-                    class="h-full object-cover object-right" alt="" srcset="">
+                    class="h-full object-cover object-right hidden md:block xl:hidden" alt="" srcset="">
+                <img src="@/assets/img/deepu-2.png"
+                    class="h-full sm:h-96 md:h-full object-cover object-right md:hidden xl:block" alt="" srcset="">
             </div>
             <!-- <img src="@/assets/img/deepu.png" alt="" srcset="" class="md:w-6/12 object-contain object-right"> -->
-            <div class="py-10 grid content-center md:w-6/12">
+            <div class="py-10 grid content-center sm:w-7/12 sm:pr-4 md:w-6/12">
                 <!-- <h6 class="md:px-0">About</h6>
                 <h3 class=" text-dark-teal text-[22px] md:text-[47px] font-manrope font-extrabold tracking-tight">Dr. Deepu
                     Sudhakaran, MD </h3>
@@ -57,7 +59,7 @@
                     “I'm a very family-oriented person. I want patients to feel like I will treat them like family. I'll
                     take very personal care of you from the time you see me until you have reached your goal.”
                 </p>
-                <div class="grid grid-cols gap-0 mb-6 sm:grid-cols-12">
+                <div class="grid grid-cols gap-0 mb-2 sm:grid-cols-12">
                     <div class="py-2 sm:col-span-4 md:hidden lg:block">
                         <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Specialty</h3>
                         <ul class="max-w-md space-y-1 text-[#636571] list-disc list-inside">

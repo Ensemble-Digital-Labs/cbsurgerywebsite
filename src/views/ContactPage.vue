@@ -3,13 +3,13 @@
     <div class="max-w-screen-xl mx-auto">
         <div class="grid md:grid-cols-12 lg:grid-cols-2 md:gap-4">
             <div class="md:col-span-7 lg:col-span-1">
-                <div class="py-10 space-y-4  px-4 md:px-8 lg:px-10 xl:px-0">
+                <div class="py-10 space-y-4  px-4 sm:px-40 md:px-8 lg:px-10 xl:px-0">
                     <div>
                         <div>
                             <label for="firstName" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Your
                                 Name<span class="text-dark-teal">*</span></label>
                             <input type="text" id="firstName" v-model="firstName"
-                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-dark-teal focus:border-dark-teal block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-dark-teal dark:focus:border-dark-teal"
                                 placeholder="Full Name" required />
                         </div>
                     </div>
@@ -19,7 +19,7 @@
                                 class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Phone<span
                                     class="text-dark-teal">*</span></label>
                             <input type="text" id="phoneNumber" v-model="phoneNumber"
-                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-dark-teal focus:border-dark-teal block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-dark-teal dark:focus:border-dark-teal"
                                 placeholder="Add Phone number " required />
                         </div>
                         <div>
@@ -27,7 +27,7 @@
                                 class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Email<span
                                     class="text-dark-teal">*</span></label>
                             <input type="email" id="email" v-model="email"
-                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-dark-teal focus:border-dark-teal block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-dark-teal dark:focus:border-dark-teal"
                                 placeholder="Add Email" required />
                         </div>
                         
@@ -38,7 +38,7 @@
                             class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Comments / Questions<span
                                 class="text-dark-teal">*</span></label>
                         <textarea id="M+message" v-model="message" rows="6"
-                            class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-dark-teal focus:border-dark-teal block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-dark-teal dark:focus:border-dark-teal"
                             placeholder="Type here..." required></textarea>
 
                     </div>
@@ -51,8 +51,8 @@
 
             </div>
 
-            <div class=" bg-dark-teal xl:bg-extra-dark-teal xl:m-10 p-2 py-4 md:p-6 xl:p-10 md:col-span-5 lg:col-span-1">
-                <h3 class=" font-manrope font-medium text-xl xl:text-3xl text-white mb-8">
+            <div class=" bg-dark-teal xl:bg-extra-dark-teal xl:m-10 p-4 sm:p-10 py-4 md:p-6 xl:p-10 md:col-span-5 lg:col-span-1">
+                <h3 class=" font-manrope font-medium text-xl xl:text-3xl text-white mb-4 md:mb-8">
                     Contact Us
                 </h3>
                 <div class="flex flex-col mb-10 gap-2">
