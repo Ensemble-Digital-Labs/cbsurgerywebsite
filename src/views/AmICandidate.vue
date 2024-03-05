@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="max-w-screen-xl mx-auto my-10 lg:my-20 px-6 xl:px-0">
+    <div class="max-w-screen-xl mx-auto my-10 lg:my-20 px-4 md:px-6 xl:px-0">
         <div class="mb-10 d:mb-20">
             <h2 class="text-center tracking-tight md:text-[40px] mb-6 md:mb-8">
                 What is <span class="text-dark-teal">BMI</span>
@@ -103,7 +103,7 @@
                 BMI is widely used as a screening tool to categorize individuals into different weight categories:
             </h3>
             <img src="@/assets/img/bmi.svg" class="mx-auto mb-10 md:mb-20" alt="" srcset="">
-            <p class="text-center w-full md:w-3/4 mx-auto px-6 md:px-0">
+            <p class="text-center w-full md:w-3/4 mx-auto px-2 sm:px-6 md:px-0">
 
                 While BMI provides a useful general guideline for assessing weight status, it doesn't directly measure body
                 fat or account for factors such as muscle mass, bone density, or distribution of fat, which can vary among
