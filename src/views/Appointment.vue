@@ -2,14 +2,14 @@
     <HeroSection :title="'Make Appointment'"></HeroSection>
     <div class="bg-white p-8 md:p-16 w-full md:w-full lg:w-8/12 xl:w-5/12 md:shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
    
-                        <div class="py-2">
+                        <div class="my-2">
                             <label for="firstName" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Your
                                 Name<span class="text-dark-teal">*</span></label>
                             <input type="text" id="firstName" v-model="firstName"
                                 class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 placeholder="Full name here" required />
                         </div>
-                        <div class="py-2">
+                        <div class="my-2">
                             
                             <div class="md:flex gap-2">
                                 <label for="Gender" class="block mb-2 pr-4 text-[16px] font-bold font-manrope text-zinc-800">Gender<span class="text-dark-teal">*</span></label>
@@ -29,7 +29,7 @@
 
                         </div>
                    
-                        <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 py-2">
+                        <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-2">
                         <div>
                             <label for="dob"
                                 class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Date Of Birth<span
@@ -48,7 +48,7 @@
                         </div>
                         </div>
 
-                        <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 py-2">
+                        <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-2">
                         <div>
                             <label for="phoneNumber"
                                 class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Phone Number<span
