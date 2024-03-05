@@ -261,7 +261,7 @@
             <div class="max-w-screen-xl mx-auto px-6 xl:px-0">
                 <div class="">
                     <div>
-                        <h2 class="leading-[50px] tracking-tight mb-6">
+                        <h2 class="leading-[40px] md:leading-[60px] tracking-tight mb-6">
                             Dedicated to Give You<br />
                             The Best Services
                         </h2>
@@ -314,9 +314,15 @@
             <img src="@/assets/img/success-story-3.png" alt="" srcset="">
         </div>
     </div>
+    <FAQ></FAQ>
+    <ContactSectionVue></ContactSectionVue>
+
+
 </template>
 <script setup>
 import ServiceCard from '@/components/ServiceCard.vue';
 import OurTeam from '@/components/OurTeam.vue';
 import TheTestimonial from '@/components/TheTestimonial.vue';
+import FAQ from '@/components/FAQ.vue';
+import ContactSectionVue from '@/components/ContactSection.vue';
 </script>

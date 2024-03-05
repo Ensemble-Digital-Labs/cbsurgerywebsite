@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full content-center mx-auto">
-        <div class="max-w-4xl mx-auto">
+    <div class="w-full content-center mx-auto my-20">
+        <div class="max-w-4xl mx-auto px-4 md:px-10">
             <h6 class="text-center">FAQ</h6>
-            <h3 class="text-center py-7 text-[#000A2D] text-2xl md:text-[52px] font-extrabold font-manrope">Frequently Asked Questions</h3>
+            <h3 class="text-center my-7 text-[#1f1f1f] leading-tight text-2xl md:text-[52px] font-extrabold font-manrope">Frequently Asked Questions</h3>
             <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
             <p class="text-center">Aenean commodo ligula aenean massa.</p>
-            <div id="accordion-collapse" data-accordion="collapse" class="py-10">
+            <div id="accordion-collapse" data-accordion="collapse" class="my-10">
                 <h3 id="accordion-collapse-heading-1" class="p-1">
                     <button type="button"
                         class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE] focus:text-dark-teal hover:bg-gray-100  gap-3"
