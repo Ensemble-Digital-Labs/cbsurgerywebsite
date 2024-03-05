@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-screen-xl mx-auto mt-10 md:mt-20">
+    <div class="max-w-screen-xl mx-auto mt-10 md:mt-20 xl:mb-20">
         <div class="max-w-7xl mx-auto">
             <div
                 class="grid lg:grid-cols-3 gap-2 rounded-lg place-content-center lg:relative lg:h-[600px] xl:h-[450px] bg-extra-light-teal">

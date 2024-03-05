@@ -1,10 +1,10 @@
 <template>
-    <div class="max-w-screen-xl mx-auto mb-10 md:my-10 px-4 md:px-10 xl:px-0">
+    <div class="max-w-screen-xl mx-auto mb-10 md:my-10 px-4 md:px-0 xl:px-0">
         <div class="grid md:grid-cols-12 md:gap-4 lg:gap-10">
-            <div class="md:col-span-6">
-                <img src="@/assets/img/deepu-2.png" class="xl:h-full xl:w-full object-cover object-right" alt="" srcset="">
+            <div class="md:col-span-6 sm:h-[400px] md:h-auto flex justify-end">
+                <img src="@/assets/img/deepu-6.png" class="h-full w-full sm:w-8/12 md:w-full object-cover object-right sm:object-top md:object-right" alt="" srcset="">
             </div>
-            <div class="md:col-span-6 pt-10 md:pt-4 xl:py-10">
+            <div class="md:col-span-6 pt-10 md:pt-4 xl:py-10 md:pr-4">
                 <h6 class="px-0 mb-4">More About</h6>
                 <h2 class=" text-dark-teal tracking-tight md:text-[40px] leading-[40px] mb-2">Dr. Deepu Sudhakaran, MD</h2>
                 <h3 class=" font-manrope text-[#727272] text-[20px] font-extrabold mb-4">CEO & FOUNDER</h3>
@@ -33,7 +33,7 @@
 
             </div>
         </div>
-        <div class="mt-4 lg:hidden">
+        <div class="mt-4 lg:hidden md:px-4">
             <p class="text-[#636571]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 tempor magna et justo rhoncus, at congue libero facilisis. Integer eget arcu semper, gravida sem a,
