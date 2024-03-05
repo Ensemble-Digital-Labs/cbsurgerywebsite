@@ -121,7 +121,7 @@
         <h6 class="text-center mb-4">
             Why Choose Us
         </h6>
-        <h2 class="tracking-tight mb-6 text-[30px] leading-[40px] md:text-[44px] text-center">
+        <h2 class="tracking-tight mb-6 text-[30px] leading-[40px] md:leading-[52px] md:text-[44px] text-center">
             Guiding Your Bariatric Journey with <span class=" text-dark-teal">Family</span> Care
         </h2>
         <p class="text-[#636571] md:w-3/4 mb-6 mx-auto text-center">

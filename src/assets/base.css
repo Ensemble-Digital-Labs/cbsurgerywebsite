@@ -8,7 +8,7 @@
 
 @layer base {
   h1 {
-    @apply font-manrope text-[42px] md:text-[60px] text-extra-dark-teal font-extrabold tracking-tight;
+    @apply font-manrope text-[38px] md:text-[60px] text-extra-dark-teal font-extrabold tracking-tight;
   }
   h2{
     @apply font-manrope text-[32px] md:text-[52px] text-extra-dark-teal font-extrabold;

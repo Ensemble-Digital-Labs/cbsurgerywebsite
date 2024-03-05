@@ -17,9 +17,9 @@
         <div class="max-w-screen-xl mx-auto">
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
                 <div class="flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="@/assets/cbs-logo.svg" class="h-24 md:h-28 w-auto" alt="Chester logo" />
-                    </a>
+                    <router-link to="/" class="md:w-full lg:w-fit">
+                        <img src="@/assets/cbs-logo.svg" class="w-40 md:w-48 lg:w-56 h-auto  md:mx-auto lg:mx-0 md:mb-4 lg:mb-0" alt="Chester logo" />
+                    </router-link>
                     <button data-collapse-toggle="navbar-default" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-dark-teal rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-light-teal"
                         aria-controls="navbar-default" aria-expanded="false">
@@ -30,7 +30,7 @@
                                 d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
                     </button>
-                    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <div class="hidden w-full md:block md:w-auto md:mx-auto lg:mx-0" id="navbar-default">
                         <ul
                             class="font-medium flex flex-col md:p-0 mt-4 border divide-y divide-zinc-400 md:divide-y-0 border-zinc-400 rounded-lg bg-gray-50 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                             <li>
