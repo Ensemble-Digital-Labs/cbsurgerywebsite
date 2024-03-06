@@ -4,5 +4,8 @@
             Our Team
         </h2>
         <img src="@/assets/img/team-img.png" alt="">
+        <div class="grid grid-cols-2">
+            
+        </div>
     </div>
 </template>

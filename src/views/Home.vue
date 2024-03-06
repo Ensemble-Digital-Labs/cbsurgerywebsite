@@ -2,14 +2,16 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-0">
         <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row md:pl-10">
             <div class="py-10 sm:pl-6 md:pl-0 sm:py-20  md:py-10 lg:py-40 grid content-center lg:w-6/12">
-                <h1 class=" leading-[40px] md:leading-[60px] mb-8">
+                <h1 class=" leading-[40px] md:leading-[65px] mb-8">
                     Reclaim Your<br /> <span class="text-dark-teal"> Vibrant Health</span><br />
                     With Dr. Sudhakaran
                 </h1>
                 <p class="text-[#636571] md:w-1/2 lg:w-3/4">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient.
+                    <!-- Precision, Progress, Transformation -->
+                    Precision, Progress, Transformation. 
+                <!-- </p>
+                <p class="text-[#636571] md:w-1/2 lg:w-3/4"> -->
+                    Experience personalized care and innovative solutions for sustainable weight loss and vibrant health
                 </p>
             </div>
             <img src="@/assets/img/hero.png" alt="" srcset=""
@@ -26,7 +28,7 @@
                 <!-- <img src="@/assets/img/deepu-2.png" alt="" srcset=""
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right  xl:object-contain xl:object-bottom"> -->
 
-                <img src="@/assets/img/deepu-6.png" alt="" srcset=""
+                <img src="@/assets/img/deepu-7.png" alt="" srcset=""
                     class="w-full h-full sm:w-1/2 md:w-full object-cover md:object-contain lg:object-cover object-right block sm:hidden md:block lg:hidden xl:block xl:object-right-bottom">
 
                 <img src="@/assets/img/home-2.png" alt="" srcset=""
@@ -45,16 +47,20 @@
                     Where Dr. Sudhakaran's<br />
                     Safe Hands Treat Patients<br />
                     Like Family.
+                    <!-- Robotic Mastery for<br /> Your Weight Loss<br /> Success -->
                 </h2>
                 <p class="text-[#636571] sm:w-3/4 md:w-full xl:w-3/4 mb-2">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient.
+                    Dr. Sudhakaran, a distinguished bariatric surgeon renowned for expertise in robotic surgery, offers
+                    a unique approach to weight loss solutions. With a focus on precision and innovation, Dr. Sudhakaran
+                    has mastered the art of robotic-assisted procedures, providing patients with unparalleled care and
+                    exceptional outcomes.
+
                 </p>
                 <p class="text-[#636571] sm:w-3/4  md:w-full xl:w-3/4 mb-6">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                    natoque penatibus et magnis dis parturient.
+                    Specializing in minimally invasive techniques, Dr. Sudhakaran utilizes state-of-the-art robotic
+                    technology to perform bariatric surgeries with unmatched precision. This advanced approach ensures
+                    smaller incisions, reduced recovery times, and minimized discomfort for patients undergoing weight
+                    loss procedures.
                 </p>
                 <div class="grid md:grid-cols-2 gap-4 w-3/4 mb-6">
                     <div class="flex items-center gap-x-2">
@@ -126,11 +132,11 @@
             Guiding Your Bariatric Journey with <span class=" text-dark-teal">Family</span> Care
         </h2>
         <p class="text-[#636571] md:w-3/4 mb-6 mx-auto text-center">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-            natoque penatibus et magnis dis parturient. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-            natoque penatibus et magnis dis parturient.
+            Our program offers a streamlined and cost-effective approach to weight loss surgery within a short
+            timeframe. No referrals, clearances, or pre-surgical testing are needed before your visit. We handle
+            everything in-house, from comprehensive consultation to testing and surgery, all completed in as little as 2
+            days. Additionally, we provide hotel accommodations and VIP ground transportation to and from all
+            appointments for your convenience.
         </p>
 
     </div>
@@ -156,7 +162,7 @@
                 </div>
                 <div>
                     <h1 class="text-[35px] md:text-[72px] text-center">
-                        {{ isVisible ? staffs.toFixed(0) : '0' }}  <span class=" text-dark-teal">+</span>
+                        {{ isVisible ? staffs.toFixed(0) : '0' }} <span class=" text-dark-teal">+</span>
                     </h1>
                     <p class="text-[14px] md:text-[20px] text-[#636571] text-center">
                         Doctor & Staff
@@ -184,9 +190,7 @@
                             The Best Services
                         </h3>
                         <p class="text-white text-center text-[16px] font-medium">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et magna.
+                            We deliver the best services, exceeding expectations and setting the standard for excellence in every aspect of our work
                         </p>
                     </div>
                 </div>
@@ -203,10 +207,7 @@
                             Expert Doctor
                         </h3>
                         <p class="text-white text-center text-[16px] font-medium">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et magna.
-                        </p>
+                            With a commitment to personalized care, Dr. Sudhakaran takes the time to understand each patient's unique needs and goals.</p>
                     </div>
                 </div>
                 <div class="bg-cover bg-no-repeat bg-center p-32 hidden md:block"
@@ -245,18 +246,31 @@
             </div>
 
         </div>
-        <div class="grid md:grid-cols-3 gap-4 my-10">
-            <ServiceCard v-for="i in 3" :key="i" :link="'/about'" :title="'Bariatrics Surgery'"
+        <div class="grid md:grid-cols-2 gap-10 my-10">
+            <ServiceCard :link="'/about'" :title="'Bariatrics Surgery'"
                 :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
             </ServiceCard>
+            <ServiceCard :link="'/about'" :title="'General Surgery'"
+                :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
+            </ServiceCard>
+        </div>
+    </div>
+
+    <div class="w-full bg-no-repeat bg-cover bg-center"  style="background-image: url('/assets/img/robotic-surgery.png');">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20 py-10 text-center">
+        <h3 class="font-manrope text-white text-[32px] md:text-[52px] font-extrabold">Robotic surgery</h3>
+        <h4 class="font-manrope text-white text-xl font-bold py-4">Precision Surgery for Life-Changing Results</h4>
+        <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure designed to aid weight loss in morbidly obese individuals who have not seen success with traditional diet and exercise methods. There are various types of bariatric surgery, but they generally involve reducing the stomach's size and rerouting a section of the intestine. This results in feelings of fullness with less food and some malabsorption of nutrients.</p>
+        <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using robotic technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging systems that provide a magnified, 3-dimensional view of the surgical site. The procedure involves making a few small incisions through which robotic arms with surgical instruments are inserted and controlled. Your surgeon operates the robotic arms from a console near the operating table, allowing for highly precise movements.</p>
+        <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized bariatric surgery, enabling procedures to be performed on individuals with higher body mass indices than previously possible with traditional methods. Robotic surgery offers benefits such as reduced operating time, postoperative pain, scarring, and recovery time. Additionally, the risk of complications is significantly minimized.</p>
         </div>
     </div>
 
     <OurTeam></OurTeam>
     <TheTestimonial></TheTestimonial>
     <div class="w-full  h-[500px] relative my-10">
-        <div class="w-full grid grid-cols-12 h-[500px] bg-cover bg-center bg-white/90 bg-blend-overlay md:bg-blend-normal "
-            style="background-image: url('/assets/img/dedicated.jpg');">
+        <div class="w-full hidden lg:grid grid-cols-12 h-[500px]  bg-cover bg-top bg-white/90 bg-blend-overlay md:bg-blend-normal "
+            style="background-image: url('/assets/img/dedicated.png');">
             <div class=" bg-cover hidden md:block col-span-10 lg:col-span-8"
                 style="background-image: url('/assets/img/design.png');">
             </div>
@@ -298,13 +312,13 @@
         </h2>
         <div class="grid md:grid-cols-12 gap-10">
             <div class="md:col-span-8 grid content-end">
-                <p class="text-[#636571]">
+                <!-- <p class="text-[#636571]">
                     Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et magna.
-                </p>
+                </p> -->
             </div>
             <div class="md:col-span-4 flex md:justify-end">
                 <router-link to="/success-stories">

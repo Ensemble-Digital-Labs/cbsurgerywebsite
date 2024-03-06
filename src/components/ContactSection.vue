@@ -9,8 +9,8 @@
                     </div>
                     <h2 class="mt-4 leading-[40px] md:leading-[60px] tracking-tight"><b>Become The Next</b>
                         Happy Member of our Family</h2>
-                    <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <p class="my-4">Join our community and experience the warmth and support of being a valued member of
+                        our family. Start your journey with us today!</p>
                     <router-link to="/appointments">
                         <button class=" btn-fill-dark">Request an Appointment </button>
                     </router-link>

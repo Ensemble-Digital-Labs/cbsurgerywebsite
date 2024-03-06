@@ -2,10 +2,10 @@
     <HeroSection :title="'Our Services'"></HeroSection>
     <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
         <div class="flex items-center justify-between">
-            <a class="w-full text-center font-manrope font-extrabold  tracking-tight text-[16px] p-4 cursor-pointer grid place-content-center min-h-20"
+            <a class="w-full text-center font-manrope font-extrabold  tracking-tight text-[16px] p-2 cursor-pointer grid place-content-center min-h-16"
                 :class="selectedTab === 'Procedures Performed' ? 'text-white bg-dark-teal' : 'text-dark-teal bg-extra-light-teal'"
                 @click="selectedTab = 'Procedures Performed'">Procedures Performed</a>
-            <a class="w-full text-center font-manrope font-extrabold tracking-tight text-[16px] p-4 cursor-pointer min-h-20 grid place-content-center"
+            <a class="w-full text-center font-manrope font-extrabold tracking-tight text-[16px] p-2 cursor-pointer min-h-16 grid place-content-center"
                 :class="selectedTab === 'Conditions Treated' ? 'text-white bg-dark-teal' : 'text-dark-teal bg-extra-light-teal'"
                 @click="selectedTab = 'Conditions Treated'">Conditions Treated</a>
         </div>
