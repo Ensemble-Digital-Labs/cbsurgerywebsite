@@ -2,52 +2,107 @@
     <div class="max-w-screen-xl mx-auto mb-10 md:my-10 px-4 md:px-0 xl:px-0">
         <div class="grid md:grid-cols-12 md:gap-4 lg:gap-10">
             <div class="md:col-span-6 sm:h-[400px] md:h-auto flex justify-end">
-                <img src="@/assets/img/deepu-6.png" class="h-full w-full sm:w-8/12 md:w-full object-cover object-right sm:object-top md:object-right" alt="" srcset="">
+                <img src="@/assets/img/deepu-6.png"
+                    class="h-full w-full sm:w-8/12 md:w-full xl:max-h-[550px] xl:object-contain object-cover object-right sm:object-top md:object-right"
+                    alt="" srcset="">
             </div>
             <div class="md:col-span-6 pt-10 md:pt-4 xl:py-10 md:pr-4">
                 <h6 class="px-0 mb-4">More About</h6>
-                <h2 class=" text-dark-teal tracking-tight md:text-[40px] leading-[40px] mb-2">Dr. Deepu Sudhakaran, MD</h2>
+                <h2 class=" text-dark-teal tracking-tight md:text-[40px] leading-[40px] mb-2">Dr. Deepu Sudhakaran, MD
+                </h2>
                 <h3 class=" font-manrope text-[#727272] text-[20px] font-extrabold mb-4">CEO & FOUNDER</h3>
                 <div class="grid gap-4">
                     <p class="text-[#636571]">
-                        <span class="font-bold text-dark-teal">Dr. Deepu Sudhakaran,</span> MD, MBA, FACS, FASMBS Lorem
-                        ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        tempor magna et justo rhoncus, at congue libero facilisis. Integer eget arcu semper, gravida sem a,
-                        tempus nulla. Ut nec felis sit amet neque malesuada auctor. Vestibulum ante ipsum primis in faucibus
-                        orci luctus et ultrices posuere cubilia curae; Maecenas ac
+                        <span class="font-bold text-dark-teal"></span> With a diverse and accomplished background
+                        spanning across various continents, I bring a wealth of experience to the field of medicine and
+                        healthcare administration. My journey began with earning an MBBS (Bachelor of Medicine and
+                        Surgery) from the Medical College in Thiruvananthapuram, India, solidifying my foundation in
+                        medicine. Building upon this, I delved into research as a Research Associate at Adelaide
+                        University and the Royal Adelaide Hospital in Australia from June 1999 to May 2002.
                     </p>
-                    <p class="text-[#636571] hidden lg:block">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        tempor magna et justo rhoncus, at congue libero facilisis. Integer eget arcu semper, gravida sem a,
-                        tempus nulla. Ut nec felis sit amet neque malesuada auctor. Vestibulum ante ipsum primis in faucibus
-                        orci luctus et ultrices posuere cubilia curae; Maecenas ac
+                    <p class="text-[#636571] md:hidden lg:block">
+                        To enhance my skills in surgical technology, I pursued an Associate Degree at Austin Community
+                        College in Texas from January 2003 to December 2004. Recognizing the importance of business
+                        acumen in healthcare, I furthered my education with an MBA from the EMBA Washington University
+                        in St. Louis-Olin Business School, focusing on courses such as Financial Accounting,
+                        Negotiations & Conflict Management, and Corporate Strategy, among others. Seeking deeper insight
+                        into managing healthcare delivery, I completed the Managing Health Care Delivery program at
+                        Harvard Business School in Boston, Massachusetts, honing skills in operational design, strategy,
+                        and innovation.
                     </p>
-                    <p class="text-[#636571]  hidden lg:block">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                        tempor magna et justo rhoncus, at congue libero facilisis. Integer eget arcu semper, gravida sem a,
-                        tempus nulla. Ut nec felis sit amet neque malesuada auctor. Vestibulum ante ipsum primis in faucibus
-                        orci luctus et ultrices posuere cubilia curae; Maecenas ac
-                    </p>
+
                 </div>
 
 
             </div>
         </div>
-        <div class="mt-4 lg:hidden md:px-4">
-            <p class="text-[#636571]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                tempor magna et justo rhoncus, at congue libero facilisis. Integer eget arcu semper, gravida sem a,
-                tempus nulla. Ut nec felis sit amet neque malesuada auctor. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Maecenas ac
-            </p>
-            <p class="text-[#636571]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                tempor magna et justo rhoncus, at congue libero facilisis. Integer eget arcu semper, gravida sem a,
-                tempus nulla. Ut nec felis sit amet neque malesuada auctor. Vestibulum ante ipsum primis in faucibus
-                orci luctus et ultrices posuere cubilia curae; Maecenas ac
-            </p>
-        </div>
+        <p class="text-[#636571] hidden md:block lg:hidden md:px-6 lg:px-2">
+                        To enhance my skills in surgical technology, I pursued an Associate Degree at Austin Community
+                        College in Texas from January 2003 to December 2004. Recognizing the importance of business
+                        acumen in healthcare, I furthered my education with an MBA from the EMBA Washington University
+                        in St. Louis-Olin Business School, focusing on courses such as Financial Accounting,
+                        Negotiations & Conflict Management, and Corporate Strategy, among others. Seeking deeper insight
+                        into managing healthcare delivery, I completed the Managing Health Care Delivery program at
+                        Harvard Business School in Boston, Massachusetts, honing skills in operational design, strategy,
+                        and innovation.
+                    </p>
+        <p class="text-[#636571] lg:block mt-0 lg:mt-10 md:px-6 lg:px-2">
+            Complementing my medical expertise, I also completed courses in Essentials of Health Law and the
+            Chief Medical Officer Academy, offered by the American College of Physician Executive, which
+            equipped me with crucial knowledge in healthcare regulations, quality improvement, and
+            leadership essentials.
+        </p>
 
+        <p class="text-[#636571] lg:block md:px-6 lg:px-2">
+            Additionally, the Surgeon as Leaders program by the American College of Surgeons further refined my
+            leadership skills, emphasizing attributes of effective leadership and strategies for organizational
+            transformation. To round out my leadership capabilities, I completed the Leadership for Physician Executives
+            course offered by Harvard Medical School and the Levinson Institute, focusing on topics such as stress
+            management, negotiation, and leading during times of change.
+
+        </p>
+        <p class="text-[#636571] lg:block md:px-6 lg:px-2">
+            My journey from the operating room to the boardroom has been shaped by a commitment to excellence in
+            healthcare delivery, leadership, and continuous learning, preparing me to drive positive change and
+            innovation in the healthcare industry.
+        </p>
+
+
+        <!-- <div class="mt-4 lg:hidden md:px-4">
+
+            <p class="text-[#636571]">
+                To enhance my skills in surgical technology, I pursued an Associate Degree at Austin Community
+                College in Texas from January 2003 to December 2004. Recognizing the importance of business
+                acumen in healthcare, I furthered my education with an MBA from the EMBA Washington University
+                in St. Louis-Olin Business School, focusing on courses such as Financial Accounting,
+                Negotiations & Conflict Management, and Corporate Strategy, among others. Seeking deeper insight
+                into managing healthcare delivery, I completed the Managing Health Care Delivery program at
+                Harvard Business School in Boston, Massachusetts, honing skills in operational design, strategy,
+                and innovation.
+            </p>
+            <p class="text-[#636571] lg:block mt-10">
+                Complementing my medical expertise, I also completed courses in Essentials of Health Law and the
+                Chief Medical Officer Academy, offered by the American College of Physician Executive, which
+                equipped me with crucial knowledge in healthcare regulations, quality improvement, and
+                leadership essentials.
+            </p>
+
+            <p class="text-[#636571] lg:block">
+                Additionally, the Surgeon as Leaders program by the American College of Surgeons further refined my
+                leadership skills, emphasizing attributes of effective leadership and strategies for organizational
+                transformation. To round out my leadership capabilities, I completed the Leadership for Physician
+                Executives
+                course offered by Harvard Medical School and the Levinson Institute, focusing on topics such as stress
+                management, negotiation, and leading during times of change.
+
+            </p>
+            <p class="text-[#636571] lg:block">
+                My journey from the operating room to the boardroom has been shaped by a commitment to excellence in
+                healthcare delivery, leadership, and continuous learning, preparing me to drive positive change and
+                innovation in the healthcare industry.
+            </p>
+
+        </div> -->
 
 
     </div>
@@ -153,7 +208,8 @@
                                     May 1997</span>, Medical College
                                 Thiruvananthapuram, University of Kerala, India.
                             </li>
-                            <li><span class="font-bold">Research Associate,</span> <span class="text-dark-teal font-medium">
+                            <li><span class="font-bold">Research Associate,</span> <span
+                                    class="text-dark-teal font-medium">
                                     June 1999 – May 2002</span> Adelaide University,
                                 Royal Adelaide Hospital, Australia.</li>
                             <li><span class="font-bold">Associate Degree in Surgical Technology,</span><span
@@ -188,7 +244,8 @@
                         Work Experience
                     </p>
                     <div>
-                        <ol class="list-decimal ml-2 md:ml-10 font-archivo text-[16px] text-[#636571] list-inside space-y-2">
+                        <ol
+                            class="list-decimal ml-2 md:ml-10 font-archivo text-[16px] text-[#636571] list-inside space-y-2">
                             <li>
                                 <span class="font-bold">Mercy Hospitals, St. Louis, MO</span> - <span
                                     class="text-dark-teal font-medium">July 2021 – Current</span>,<br />

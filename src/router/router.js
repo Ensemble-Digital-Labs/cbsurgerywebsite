@@ -2,7 +2,8 @@ import HomeVue from "@/views/Home.vue"
 import AboutVue from "@/views/About.vue"
 import DrDeepuVue from "@/views/DrDeepu.vue"
 import ServiceVue from "@/views/Service.vue"
-import ServiceSinglePage from "@/views/ServiceSinglePage.vue"
+import ServiceSinglePage1 from "@/views/ServiceSinglePage1.vue"
+import ServiceSinglePage2 from "@/views/ServiceSinglePage2.vue"
 import SuccessStoriesVue from "@/views/SuccessStories.vue"
 import AmICandidateVue from "@/views/AmICandidate.vue"
 import ContactPageVue from "@/views/ContactPage.vue"
@@ -14,7 +15,8 @@ const routes = [
   { path: '/about-us', component: AboutVue },
   { path: '/dr-deepu-sudhakaran', component: DrDeepuVue },
   { path: '/services', component: ServiceVue },
-  { path: '/services/1', component: ServiceSinglePage },
+  { path: '/services/1', component: ServiceSinglePage1 },
+  { path: '/services/2', component: ServiceSinglePage2 },
   { path: '/success-stories', component: SuccessStoriesVue },
   { path: '/am-i-candidate', component: AmICandidateVue },
   { path: '/contact-us', component: ContactPageVue },

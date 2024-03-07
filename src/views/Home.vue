@@ -247,11 +247,11 @@
 
         </div>
         <div class="grid md:grid-cols-2 gap-10 my-10">
-            <ServiceCard :link="'/about'" :title="'Bariatrics Surgery'"
+            <ServiceCard :link="'/services/1'" :title="'Bariatrics Surgery'"
                 :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
             </ServiceCard>
-            <ServiceCard :link="'/about'" :title="'General Surgery'"
-                :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
+            <ServiceCard :link="'/services/2'" :title="'General Surgery'"
+                :description="' This is description, This is description v'" :imageUrl="'/assets/img/general-surgery.png'">
             </ServiceCard>
         </div>
     </div>

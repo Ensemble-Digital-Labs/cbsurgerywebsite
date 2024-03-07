@@ -1,7 +1,7 @@
 <template>
     <HeroSection :title="'Our Services'"></HeroSection>
     <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
-        <div class="flex items-center justify-between">
+        <!-- <div class="flex items-center justify-between">
             <a class="w-full text-center font-manrope font-extrabold  tracking-tight text-[16px] p-2 cursor-pointer grid place-content-center min-h-16"
                 :class="selectedTab === 'Procedures Performed' ? 'text-white bg-dark-teal' : 'text-dark-teal bg-extra-light-teal'"
                 @click="selectedTab = 'Procedures Performed'">Procedures Performed</a>
@@ -18,6 +18,14 @@
         <div class="grid md:grid-cols-3 gap-4 my-10" v-if="selectedTab === 'Conditions Treated'">
             <ServiceCard v-for="i in 6" :key="i" :link="'/about'" :title="'Bariatrics Surgery'"
                 :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
+            </ServiceCard>
+        </div> -->
+        <div class="grid md:grid-cols-2 gap-10 my-10">
+            <ServiceCard :link="'/services/1'" :title="'Bariatrics Surgery'"
+                :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
+            </ServiceCard>
+            <ServiceCard :link="'/services/2'" :title="'General Surgery'"
+                :description="' This is description, This is description v'" :imageUrl="'/assets/img/general-surgery.png'">
             </ServiceCard>
         </div>
     </div>
