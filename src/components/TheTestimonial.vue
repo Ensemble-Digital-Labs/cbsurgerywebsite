@@ -58,11 +58,9 @@ export default defineComponent({
     data() {
         return {
             testimonials: [{
-                name: 'Ameer', imageUrl: "/assets/img/grid-img-1.png", testimonial: `Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et magna.`}, {
+                name: 'Kimberly Fear', imageUrl: "/assets/img/grid-img-1.png", testimonial: `Since I started my weight loss journey I have lost nearly 50lbs so far thanks to the wonderful staff and Dr Sudakaran.
+                                        I would recommend Dr Sudakaran to anyone  wanting Bariatrics surgery . My surgery went so smooth . It has been a challenge but worth it .`
+            }, {
                 name: 'Janell Floyd', imageUrl: "/assets/img/grid-img-1.png", testimonial: `Dr Sudhakaran is very thorough. Very easy to talk to.
                                          I don’t feel like I’m being judged. The staff is exceptional   Easy to make appointments. 
                                          Brittany is very good at making sure you have everything done for your insurance. 

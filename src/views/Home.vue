@@ -8,8 +8,8 @@
                 </h1>
                 <p class="text-[#636571] md:w-1/2 lg:w-3/4">
                     <!-- Precision, Progress, Transformation -->
-                    Precision, Progress, Transformation. 
-                <!-- </p>
+                    Precision, Progress, Transformation.
+                    <!-- </p>
                 <p class="text-[#636571] md:w-1/2 lg:w-3/4"> -->
                     Experience personalized care and innovative solutions for sustainable weight loss and vibrant health
                 </p>
@@ -190,7 +190,8 @@
                             The Best Services
                         </h3>
                         <p class="text-white text-center text-[16px] font-medium">
-                            We deliver the best services, exceeding expectations and setting the standard for excellence in every aspect of our work
+                            We deliver the best services, exceeding expectations and setting the standard for excellence
+                            in every aspect of our work
                         </p>
                     </div>
                 </div>
@@ -207,7 +208,8 @@
                             Expert Doctor
                         </h3>
                         <p class="text-white text-center text-[16px] font-medium">
-                            With a commitment to personalized care, Dr. Sudhakaran takes the time to understand each patient's unique needs and goals.</p>
+                            With a commitment to personalized care, Dr. Sudhakaran takes the time to understand each
+                            patient's unique needs and goals.</p>
                     </div>
                 </div>
                 <div class="bg-cover bg-no-repeat bg-center p-32 hidden md:block"
@@ -251,18 +253,33 @@
                 :description="' This is description, This is description v'" :imageUrl="'/assets/img/grid-img-1.png'">
             </ServiceCard>
             <ServiceCard :link="'/services/2'" :title="'General Surgery'"
-                :description="' This is description, This is description v'" :imageUrl="'/assets/img/general-surgery.png'">
+                :description="' This is description, This is description v'"
+                :imageUrl="'/assets/img/general-surgery.png'">
             </ServiceCard>
         </div>
     </div>
 
-    <div class="w-full bg-no-repeat bg-cover bg-center"  style="background-image: url('/assets/img/robotic-surgery.png');">
+    <div class="w-full bg-no-repeat bg-cover bg-center"
+        style="background-image: url('/assets/img/robotic-surgery.png');">
         <div class="max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20 py-10 text-center">
-        <h3 class="font-manrope text-white text-[32px] md:text-[52px] font-extrabold">Robotic surgery</h3>
-        <h4 class="font-manrope text-white text-xl font-bold py-4">Precision Surgery for Life-Changing Results</h4>
-        <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure designed to aid weight loss in morbidly obese individuals who have not seen success with traditional diet and exercise methods. There are various types of bariatric surgery, but they generally involve reducing the stomach's size and rerouting a section of the intestine. This results in feelings of fullness with less food and some malabsorption of nutrients.</p>
-        <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using robotic technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging systems that provide a magnified, 3-dimensional view of the surgical site. The procedure involves making a few small incisions through which robotic arms with surgical instruments are inserted and controlled. Your surgeon operates the robotic arms from a console near the operating table, allowing for highly precise movements.</p>
-        <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized bariatric surgery, enabling procedures to be performed on individuals with higher body mass indices than previously possible with traditional methods. Robotic surgery offers benefits such as reduced operating time, postoperative pain, scarring, and recovery time. Additionally, the risk of complications is significantly minimized.</p>
+            <h3 class="font-manrope text-white text-[32px] md:text-[52px] font-extrabold">Robotic surgery</h3>
+            <h4 class="font-manrope text-white text-xl font-bold py-4">Precision Surgery for Life-Changing Results</h4>
+            <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure designed to aid
+                weight loss in morbidly obese individuals who have not seen success with traditional diet and exercise
+                methods. There are various types of bariatric surgery, but they generally involve reducing the stomach's
+                size and rerouting a section of the intestine. This results in feelings of fullness with less food and
+                some malabsorption of nutrients.</p>
+            <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using robotic
+                technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging systems that
+                provide a magnified, 3-dimensional view of the surgical site. The procedure involves making a few small
+                incisions through which robotic arms with surgical instruments are inserted and controlled. Your surgeon
+                operates the robotic arms from a console near the operating table, allowing for highly precise
+                movements.</p>
+            <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized bariatric
+                surgery, enabling procedures to be performed on individuals with higher body mass indices than
+                previously possible with traditional methods. Robotic surgery offers benefits such as reduced operating
+                time, postoperative pain, scarring, and recovery time. Additionally, the risk of complications is
+                significantly minimized.</p>
         </div>
     </div>
 
@@ -306,10 +323,10 @@
         </div>
     </div>
 
-    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
-        <h2 class="mb-4 tracking-tight">
+    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-40">
+        <!-- <h2 class="mb-4 tracking-tight">
             Success Stories
-        </h2>
+        </h2> -->
         <div class="grid md:grid-cols-12 gap-10">
             <div class="md:col-span-8 grid content-end">
                 <!-- <p class="text-[#636571]">
@@ -319,6 +336,9 @@
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et magna.
                 </p> -->
+                <h2 class="tracking-tight">
+                    Success Stories
+                </h2>
             </div>
             <div class="md:col-span-4 flex md:justify-end">
                 <router-link to="/success-stories">

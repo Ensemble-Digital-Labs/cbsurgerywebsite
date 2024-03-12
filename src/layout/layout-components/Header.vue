@@ -35,32 +35,32 @@
                             class="font-medium flex flex-col md:p-0 mt-4 border divide-y divide-zinc-400 md:divide-y-0 border-zinc-400 rounded-lg bg-gray-50 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                             <li>
                                 <router-link to="/"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-t-lg"
+                                    class="block py-3 px-3 font-manrope  font-extrabold hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-t-lg" :class="this.$route.path === '/' ? 'text-dark-teal': 'text-[#211C1A]'"
                                     aria-current="page">Home</router-link>
                             </li>
                             <li>
                                 <router-link to="/about-us"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent  hover:bg-dark-teal "
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent  hover:bg-dark-teal " :class="this.$route.path === '/about-us' ? 'text-dark-teal': 'text-[#211C1A]'"
                                     aria-current="page">About</router-link>
                             </li>
                             <li>
                                 <router-link to="/services"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal " :class="this.$route.path === '/services' ? 'text-dark-teal': 'text-[#211C1A]'"
                                     aria-current="page">Services</router-link>
                             </li>
                             <li>
                                 <router-link to="/am-i-candidate"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal " :class="this.$route.path === '/am-i-candidate' ? 'text-dark-teal': 'text-[#211C1A]'"
                                     aria-current="page">Am I Candidate</router-link>
                             </li>
                             <li>
                                 <router-link to="/success-stories"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal " :class="this.$route.path === '/success-stories' ? 'text-dark-teal': 'text-[#211C1A]'"
                                     aria-current="page">Success stories</router-link>
                             </li>
                             <li>
                                 <router-link to="/contact-us"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-b-lg"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-b-lg" :class="this.$route.path === '/contact-us' ? 'text-dark-teal': 'text-[#211C1A]'"
                                     aria-current="page">Contact Us</router-link>
                             </li>
 
@@ -74,7 +74,7 @@
 </template> 
 <script setup>
 import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite'
+import { initFlowbite } from 'flowbite' 
 
 // initialize components based on data attribute selectors
 onMounted(() => {
