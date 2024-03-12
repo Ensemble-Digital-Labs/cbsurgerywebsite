@@ -36,11 +36,13 @@
                         <div class="flex flex-col gap-2">
                             <div class="flex items-start gap-2">
                                 <img src="/src/assets/icons/phone.svg" class="h-5 w-4">
-                                <a href="tel:314 412 4430" class=" font-archivo text-white  text-[15px]">314 412 4430</a>
+                                <a href="tel:314 412 4430" class=" font-archivo text-white  text-[15px]">314 412
+                                    4430</a>
                             </div>
                             <div class="flex items-start gap-2">
                                 <img src="/src/assets/icons/location.svg" class="h-5 w-4">
-                                <span class=" font-archivo text-white text-[15px] ">10004 Kennerly Road,<br /> Suite 295B
+                                <span class=" font-archivo text-white text-[15px] ">10004 Kennerly Road,<br /> Suite
+                                    295B
                                     Saint Louis,<br />
                                     MO 63128</span>
                             </div>
@@ -87,16 +89,33 @@
 
         </div>
     </footer>
-    <div class="fixed bottom-1/2 right-0 -rotate-90 translate-x-[80px] -translate-y-[110px] w-56">
-                <router-link to="/appointments">
-                    <button class="btn-fill-light w-52">Patient Portal</button>
-                </router-link>
-            </div>
-            <div class="fixed bottom-1/2 right-0 shadow -rotate-90 translate-x-[80px] translate-y-[110px] w-56">
-                <router-link to="/appointments">
-                    <button class="btn-fill-dark w-52 ">Book an Appointment</button>
-                </router-link>
-            </div>
-</template> 
+    <div class="fixed hidden md:block bottom-1/2 right-0 -rotate-90 translate-x-[80px] -translate-y-[110px] w-56">
+        <router-link to="/appointments">
+            <button class="btn-fill-light w-52">Patient Portal</button>
+        </router-link>
+    </div>
+    <div
+        class="fixed  hidden md:block bottom-1/2 right-0 shadow -rotate-90 translate-x-[80px] translate-y-[110px] w-56">
+        <router-link to="/appointments">
+            <button class="btn-fill-dark w-52 ">Book an Appointment</button>
+        </router-link>
+    </div>
+
+    <div class="fixed bottom-0 flex w-full">
+        <div class="block md:hidden w-1/2">
+            <router-link to="/appointments">
+                <button class="btn-fill-light w-full rounded-none">Patient Portal</button>
+            </router-link>
+        </div>
+        <div
+            class="block md:hidden w-1/2">
+            <router-link to="/appointments">
+                <button class="btn-fill-dark w-full rounded-none">Book an Appointment</button>
+            </router-link>
+        </div>
+    </div>
+
+
+</template>
 <script>
 </script>

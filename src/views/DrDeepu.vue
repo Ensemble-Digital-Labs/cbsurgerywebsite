@@ -10,7 +10,11 @@
                 <h6 class="px-0 mb-4">More About</h6>
                 <h2 class=" text-dark-teal tracking-tight md:text-[40px] leading-[40px] mb-2">Dr. Deepu Sudhakaran, MD
                 </h2>
-                <h3 class=" font-manrope text-[#727272] text-[20px] font-extrabold mb-4">CEO & FOUNDER</h3>
+                <div class="flex flex-col md:flex-row md:items-center md:gap-4">
+                    <h3 class=" font-manrope text-[#727272] text-[20px] font-extrabold mb-4">CEO & FOUNDER</h3>
+                    <div class="bg-dark-teal p-3 rounded-lg text-white font-manrope font-bold text-[18px] md:text-[20px] mb-4 w-fit">
+                        26 years of Medical Experience                    </div>
+                </div>
                 <div class="grid gap-4">
                     <p class="text-[#636571]">
                         <span class="font-bold text-dark-teal"></span> With a diverse and accomplished background
@@ -32,20 +36,18 @@
                     </p>
 
                 </div>
-
-
             </div>
         </div>
         <p class="text-[#636571] hidden md:block lg:hidden md:px-6 lg:px-2">
-                        To enhance my skills in surgical technology, I pursued an Associate Degree at Austin Community
-                        College in Texas from January 2003 to December 2004. Recognizing the importance of business
-                        acumen in healthcare, I furthered my education with an MBA from the EMBA Washington University
-                        in St. Louis-Olin Business School, focusing on courses such as Financial Accounting,
-                        Negotiations & Conflict Management, and Corporate Strategy, among others. Seeking deeper insight
-                        into managing healthcare delivery, I completed the Managing Health Care Delivery program at
-                        Harvard Business School in Boston, Massachusetts, honing skills in operational design, strategy,
-                        and innovation.
-                    </p>
+            To enhance my skills in surgical technology, I pursued an Associate Degree at Austin Community
+            College in Texas from January 2003 to December 2004. Recognizing the importance of business
+            acumen in healthcare, I furthered my education with an MBA from the EMBA Washington University
+            in St. Louis-Olin Business School, focusing on courses such as Financial Accounting,
+            Negotiations & Conflict Management, and Corporate Strategy, among others. Seeking deeper insight
+            into managing healthcare delivery, I completed the Managing Health Care Delivery program at
+            Harvard Business School in Boston, Massachusetts, honing skills in operational design, strategy,
+            and innovation.
+        </p>
         <p class="text-[#636571] lg:block mt-0 lg:mt-10 md:px-6 lg:px-2">
             Complementing my medical expertise, I also completed courses in Essentials of Health Law and the
             Chief Medical Officer Academy, offered by the American College of Physician Executive, which
@@ -114,6 +116,24 @@
             “I'm a very family-oriented person. I want patients to feel like I will treat them like family. I'll take
             very personal care of you from the time you see me until you have reached your goal.”
         </p>
+    </div>
+    <div class="max-w-screen-xl mx-auto md:my-10  px-4 md:px-10 xl:px-0 mb-10">
+        <p class="font-bold text-dark-teal mb-6 text-[20px]">
+            Membership in Specialty Organizations
+        </p>
+        <!-- <p class="text-[#636571]">
+            “I'm a very family-oriented person. I want patients to feel like I will treat them like family. I'll take
+            very personal care of you from the time you see me until you have reached your goal.”
+        </p> -->
+        <Carousel v-bind="settings" :breakpoints="breakpoints" :autoplay="1000" :wrap-around="true">
+            <Slide v-for="slide in 9" :key="slide">
+                <img :src="`/assets/img/logos/logo-${slide}.png`" class="mx-4 w-32" alt="" srcset="">
+            </Slide>
+
+            <!-- <template #addons>
+                <Navigation />
+            </template> -->
+        </Carousel>
     </div>
     <div class="max-w-screen-xl mx-auto md:my-10  px-4 md:px-10 xl:px-0 mb-10">
         <div class="grid md:grid-cols-2 gap-10 md:gap-20">
@@ -370,3 +390,40 @@
 
     </div>
 </template>
+
+<script>
+import { defineComponent } from 'vue'
+import { Carousel, Navigation, Slide } from 'vue3-carousel'
+
+import 'vue3-carousel/dist/carousel.css'
+
+export default defineComponent({
+    name: 'Breakpoints',
+    components: {
+        Carousel,
+        Slide,
+        Navigation,
+    },
+    data: () => ({
+        // carousel settings
+        settings: {
+            itemsToShow: 1,
+            snapAlign: 'center',
+        },
+        // breakpoints are mobile first
+        // any settings not specified will fallback to the carousel settings
+        breakpoints: {
+            // 700px and up
+            700: {
+                itemsToShow: 3.5,
+                snapAlign: 'center',
+            },
+            // 1024 and up
+            1024: {
+                itemsToShow: 5,
+                snapAlign: 'start',
+            },
+        },
+    }),
+})
+</script>
