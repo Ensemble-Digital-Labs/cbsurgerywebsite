@@ -165,7 +165,7 @@
                         {{ isVisible ? staffs.toFixed(0) : '0' }} <span class=" text-dark-teal">+</span>
                     </h1>
                     <p class="text-[14px] md:text-[20px] text-[#636571] text-center">
-                        Doctor & Staff
+                        Number of Robotic Surgery
                     </p>
                 </div>
             </div>
@@ -239,8 +239,8 @@
                     incididunt ut labore et magna.
                 </p> -->
                 <h2 class="mb-4 tracking-tight">
-            Services
-        </h2>
+                    Services
+                </h2>
             </div>
             <div class="md:col-span-4 flex md:justify-end">
                 <router-link to="/services">
@@ -307,7 +307,8 @@
                             The Best Services
                         </h2>
                         <p class="text-[#636571] md:w-1/2 mb-6">
-                            We are committed to offering exceptional services personalized to your preferences, we strive to
+                            We are committed to offering exceptional services personalized to your preferences, we
+                            strive to
                             ensure your journey is smooth and gratifying. Our promise is to provide exceptional service
                             that is precisely crafted to your specifications, ensuring a seamless and rewarding
                             experience.
@@ -399,9 +400,9 @@ export default {
         // whenever question changes, this function will run
         isVisible(newValue, oldValue) {
             if (newValue) {
-                gsap.to(this, { duration: 1, happyClients: 90 || 0 })
-                gsap.to(this, { duration: 1, yearsOfExperience: 12 || 0 })
-                gsap.to(this, { duration: 1, staffs: 20 || 0 })
+                gsap.to(this, { duration: 1, happyClients: 3000 || 0 })
+                gsap.to(this, { duration: 1, yearsOfExperience: 26 || 0 })
+                gsap.to(this, { duration: 1, staffs: 200 || 0 })
             }
         }
     },

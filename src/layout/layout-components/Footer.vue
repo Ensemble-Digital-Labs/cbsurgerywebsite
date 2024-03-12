@@ -89,9 +89,9 @@
 
         </div>
     </footer>
-    <div class="fixed hidden md:block bottom-1/2 right-0 -rotate-90 translate-x-[80px] -translate-y-[110px] w-56">
-        <router-link to="/appointments">
-            <button class="btn-fill-light w-52">Patient Portal</button>
+    <!-- <div class="fixed hidden md:block bottom-1/2 right-0 -rotate-90 translate-x-[80px] -translate-y-[110px] w-56">
+        <router-link to="/am-i-candidate">
+            <button class="btn-fill-light w-52">Am I a Candidate</button>
         </router-link>
     </div>
     <div
@@ -99,12 +99,23 @@
         <router-link to="/appointments">
             <button class="btn-fill-dark w-52 ">Book an Appointment</button>
         </router-link>
-    </div>
+    </div> -->
 
+    <div class="fixed hidden md:block bottom-0 left-1/2 w-56">
+        <router-link to="/am-i-candidate">
+            <button class="btn-fill-light w-52">Am I a Candidate</button>
+        </router-link>
+    </div>
+    <div
+        class="fixed hidden md:block bottom-0 right-1/2 shadow w-56">
+        <router-link to="/appointments">
+            <button class="btn-fill-dark w-52 ">Book an Appointment</button>
+        </router-link>
+    </div>
     <div class="fixed bottom-0 flex w-full">
         <div class="block md:hidden w-1/2">
-            <router-link to="/appointments">
-                <button class="btn-fill-light w-full rounded-none">Patient Portal</button>
+            <router-link to="/am-i-candidate">
+                <button class="btn-fill-light w-full rounded-none">Am I a Candidate</button>
             </router-link>
         </div>
         <div
