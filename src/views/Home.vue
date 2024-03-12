@@ -226,18 +226,21 @@
     </div>
 
     <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
-        <h2 class="mb-4 tracking-tight">
+        <!-- <h2 class="mb-4 tracking-tight">
             Services
-        </h2>
+        </h2> -->
         <div class="grid md:grid-cols-12 gap-10">
             <div class="md:col-span-8 grid content-end">
-                <p class="text-[#636571]">
+                <!-- <p class="text-[#636571]">
                     Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et magna.
-                </p>
+                </p> -->
+                <h2 class="mb-4 tracking-tight">
+            Services
+        </h2>
             </div>
             <div class="md:col-span-4 flex md:justify-end">
                 <router-link to="/services">
@@ -304,9 +307,11 @@
                             The Best Services
                         </h2>
                         <p class="text-[#636571] md:w-1/2 mb-6">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                            natoque penatibus et magnis dis parturient.
+                            We are committed to offering exceptional services personalized to your preferences, we strive to
+                            ensure your journey is smooth and gratifying. Our promise is to provide exceptional service
+                            that is precisely crafted to your specifications, ensuring a seamless and rewarding
+                            experience.
+
                         </p>
                         <div>
                             <router-link to="/services">
