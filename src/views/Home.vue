@@ -240,35 +240,17 @@
             <!-- <h2 class="mb-4 tracking-tight">
             Services
         </h2> -->
-            <div class="grid md:grid-cols-12 gap-10">
-                <div class="md:col-span-8 grid content-end">
-                    <!-- <p class="text-[#636571]">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et magna.Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et magna.
-                </p> -->
-                    <h2 class="mb-4 tracking-tight">
-                        Services
-                    </h2>
-                </div>
-                <div class="md:col-span-4 flex md:justify-end">
-                    <router-link to="/services">
-                        <button class="btn-fill-light">
-                            View All Services
-                        </button>
-                    </router-link>
-                </div>
+            <h2 class="mb-4 tracking-tight text-center">
+                Services
+            </h2>
 
-            </div>
             <div class="grid md:grid-cols-2 gap-10 my-10">
                 <ServiceCard :link="'/services/1'" :title="'Bariatrics Surgery'"
-                    :description="' This is description, This is description v'"
+                    :description="' Bariatric surgery, commonly referred to as weight loss surgery, includes procedures designed to aid individuals facing obesity in attaining long-term weight reduction and enhancing their overall well-being.'"
                     :imageUrl="'/assets/img/grid-img-1.png'">
                 </ServiceCard>
                 <ServiceCard :link="'/services/2'" :title="'General Surgery'"
-                    :description="' This is description, This is description v'"
+                    :description="' General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.'"
                     :imageUrl="'/assets/img/general-surgery.png'">
                 </ServiceCard>
             </div>
@@ -307,6 +289,26 @@
         </div>
 
         <OurTeam></OurTeam>
+        
+        <div class="py-10 bg-[#F1F8FF] w-full">
+            <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
+                <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
+                    <div class="">
+                        <h3
+                            class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-center sm:text-right ">
+                            Am I a Candidate ?
+                        </h3>
+                    </div>
+                    <div>
+                        <a href="/am-i-candidate/#calculate-bmi">
+                        <button class="btn-fill-dark">
+                            Check Now
+                        </button>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <TheTestimonial></TheTestimonial>
         <div class="w-full  h-[500px] relative my-10" id="dedicated">
             <div class="w-full hidden lg:grid grid-cols-12 h-[500px]  bg-cover bg-top bg-white/90 bg-blend-overlay md:bg-blend-normal "
@@ -446,7 +448,7 @@ export default {
 </script>
 
 <script setup>
-import PublicPageLayout from '../layout/PublicPageLayout.vue'
+import PublicPageLayout from '../layout/PublicPageLayout.vue';
 import ServiceCard from '@/components/ServiceCard.vue';
 import OurTeam from '@/components/OurTeam.vue';
 import TheTestimonial from '@/components/TheTestimonial.vue';

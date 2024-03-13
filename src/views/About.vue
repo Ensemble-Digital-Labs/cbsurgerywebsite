@@ -142,7 +142,7 @@
 
 </template>
 <script setup>
-import PublicPageLayout from '../layout/PublicPageLayout.vue'
+import PublicPageLayout from '../layout/PublicPageLayout.vue';
 
 import OurTeam from '@/components/OurTeam.vue';
 import TheTestimonial from '@/components/TheTestimonial.vue';

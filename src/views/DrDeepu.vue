@@ -1,4 +1,5 @@
 <template>
+<PublicPageLayout>
     <div class="max-w-screen-xl mx-auto mb-10 md:my-10 px-4 md:px-0 xl:px-0">
         <div class="grid md:grid-cols-12 md:gap-4 lg:gap-10">
             <div class="md:col-span-6 sm:h-[400px] md:h-auto flex justify-end">
@@ -389,12 +390,16 @@
         </div>
 
     </div>
+</PublicPageLayout>
+  
 </template>
+<script setup>
+import PublicPageLayout from '../layout/PublicPageLayout.vue';
+</script>
 
 <script>
 import { defineComponent } from 'vue'
 import { Carousel, Navigation, Slide } from 'vue3-carousel'
-
 import 'vue3-carousel/dist/carousel.css'
 
 export default defineComponent({
