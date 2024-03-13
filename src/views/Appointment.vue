@@ -218,3 +218,19 @@ onMounted(() => {
     initFlowbite();
 })
 </script>
+<script>
+export default {
+    methods:{
+        appointmentFormSubmit(){
+            axios.post('appointmentFormSubmitMail.php', this.contactInfo)
+                .then(function (response) {
+                    console.log(response);
+                    this.message = "Thank you for contacting us!"
+                }.bind(this))
+                .catch(function (error) {
+                    this.message = "Oops!, Something wrong happend!"
+                }.bind(this));
+        }
+    }
+}
+</script>
