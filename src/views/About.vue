@@ -37,12 +37,12 @@
         </div> -->
     </div>
 
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-0 md:px-6 my-10">
-        <div class="flex flex-col sm:flex-row items-start sm:gap-4 md:gap-10">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-0 md:px-6 my-20">
+        <div class="flex flex-col sm:flex-row items-end sm:gap-4 md:gap-10">
             <div class="sm:w-5/12 md:w-6/12 md:h-[450px] lg:h-[600px] xl:h-auto">
-                <img src="@/assets/img/deepu-4.png"
+                <img src="@/assets/img/deepu-7.png"
                     class="h-full object-cover object-right hidden md:block xl:hidden" alt="" srcset="">
-                <img src="@/assets/img/deepu-2.png"
+                <img src="@/assets/img/deepu-7.png"
                     class="h-full sm:h-96 md:h-full object-cover object-right md:hidden xl:block" alt="" srcset="">
             </div>
             <!-- <img src="@/assets/img/deepu.png" alt="" srcset="" class="md:w-6/12 object-contain object-right"> -->
