@@ -87,8 +87,8 @@
 
                 </div>
                 <div>
-                    <h3 class="block text-[16px] font-bold font-manrope text-zinc-800 text-center">
-                        Your BMI is : {{ BMI }} <span class="text-red-600">Your BMI is very high, would you like to book an appointment !</span>
+                    <h3 class="block text-[16px] font-bold font-manrope text-zinc-800 text-center" v-if=BMI>
+                        Your BMI is : {{ BMI }} <span class="text-red-600" v-if="BMI>34.9">, Your BMI is very high, Would you like to <router-link to="/appointments" class="underline">book an appointment</router-link>!</span>
                     </h3>
                     <h3 class="block text-[16px] font-bold font-manrope text-red-500 text-center mt-6" v-if="error">
                         {{ error }}

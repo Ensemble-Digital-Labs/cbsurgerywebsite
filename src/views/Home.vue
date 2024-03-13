@@ -300,11 +300,11 @@
                         </h3>
                     </div>
                     <div>
-                        <a href="/am-i-candidate/#calculate-bmi">
+                        <router-link to="/am-i-candidate/#calculate-bmi">
                         <button class="btn-fill-dark">
                             Check Now
                         </button>
-                    </a>
+                    </router-link>
                     </div>
                 </div>
             </div>
