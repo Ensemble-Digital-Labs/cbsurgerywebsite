@@ -6,15 +6,18 @@
                 <div class="grid gap-2">
                     <p>
                         In the United States, more than 30% of adults are classified as obese. Obesity poses significant
-                        health risks beyond mere appearance, including diabetes, hypertension, elevated cholesterol levels,
+                        health risks beyond mere appearance, including diabetes, hypertension, elevated cholesterol
+                        levels,
                         sleep disturbances, and osteoarthritis.
                     </p>
                     <p class="hidden lg:block"> A prevalent misconception regarding weight loss surgery is its exclusive
-                        suitability for severely obese individuals. Surprisingly, even if one is just 50 pounds overweight,
+                        suitability for severely obese individuals. Surprisingly, even if one is just 50 pounds
+                        overweight,
                         they may qualify as a candidate for weight loss surgery. It's crucial to consider weight loss
                         surgery before significant health issues arise.
                     </p>
-                    <p class="hidden lg:block"> Despite concerted efforts by many overweight and obese individuals to lose
+                    <p class="hidden lg:block"> Despite concerted efforts by many overweight and obese individuals to
+                        lose
                         weight through dietary changes and physical activity, a considerable number face challenges.
                         Sometimes, these difficulties extend beyond personal control, influenced by genetic factors or
                         underlying medical conditions. If you find yourself in this situation, weight loss surgery could
@@ -26,12 +29,15 @@
 
             </div>
             <div class="grid gap-6 lg:hidden my-8">
-                <p> A prevalent misconception regarding weight loss surgery is its exclusive suitability for severely obese
-                    individuals. Surprisingly, even if one is just 50 pounds overweight, they may qualify as a candidate for
+                <p> A prevalent misconception regarding weight loss surgery is its exclusive suitability for severely
+                    obese
+                    individuals. Surprisingly, even if one is just 50 pounds overweight, they may qualify as a candidate
+                    for
                     weight loss surgery. It's crucial to consider weight loss surgery before significant health issues
                     arise.
                 </p>
-                <p>Despite concerted efforts by many overweight and obese individuals to lose weight through dietary changes
+                <p>Despite concerted efforts by many overweight and obese individuals to lose weight through dietary
+                    changes
                     and physical activity, a considerable number face challenges. Sometimes, these difficulties extend
                     beyond personal control, influenced by genetic factors or underlying medical conditions. If you find
                     yourself in this situation, weight loss surgery could present a viable solution.</p>
@@ -43,10 +49,8 @@
                 <h2 class="text-center tracking-tight md:text-[40px] mb-6 md:mb-8">
                     What is <span class="text-dark-teal">BMI</span>
                 </h2>
-                <p class="text-center"> A prevailing misconception surrounding weight loss surgery is its exclusive
-                    application
-                    to those
-                    severely obese.</p>
+                <p class="text-center"> Body Mass Index (BMI) is a measure commonly used to assess whether a person has
+                    a healthy body weight in relation to their height.</p>
 
             </div>
             <div class="mb-10 md:mb-20">
@@ -108,12 +112,11 @@
                 <img src="@/assets/img/bmi.svg" class="mx-auto mb-10 md:mb-20" alt="" srcset="">
                 <p class="text-center w-full md:w-3/4 mx-auto px-2 sm:px-6 md:px-0">
 
-                    While BMI provides a useful general guideline for assessing weight status, it doesn't directly measure
-                    body
-                    fat or account for factors such as muscle mass, bone density, or distribution of fat, which can vary
-                    among
-                    individuals. Therefore, BMI should be interpreted cautiously and may need to be complemented with other
-                    assessments for a more comprehensive evaluation of an individual's health status.
+                    Although BMI serves as a helpful general reference for evaluating weight status, it does not
+                    directly quantify body fat or consider factors like muscle mass, bone density, or fat distribution,
+                    all of which can differ from person to person. Consequently, interpreting BMI requires caution, and
+                    additional assessments may be necessary to provide a more thorough evaluation of an individual's
+                    health status.
                 </p>
             </div>
 
