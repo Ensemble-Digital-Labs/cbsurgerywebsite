@@ -167,7 +167,7 @@
                             {{ isVisible ? yearsOfExperience.toFixed(0) : '0' }} <span class=" text-dark-teal">+</span>
                         </h1>
                         <p class="text-[14px] md:text-[20px] text-[#636571] text-center">
-                            Year Experience
+                           Total Year of Experience
                         </p>
                     </div>
                     <div>
@@ -295,7 +295,7 @@
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
                     <div class="">
                         <h3
-                            class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-center sm:text-right ">
+                            class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-center sm:text-right">
                             Am I a Candidate ?
                         </h3>
                     </div>
