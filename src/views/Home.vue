@@ -300,17 +300,17 @@
                         </h3>
                     </div>
                     <div>
-                        <a href="/am-i-candidate/#calculate-bmi">
+                        <router-link to="/am-i-candidate/#calculate-bmi">
                         <button class="btn-fill-dark">
                             Check Now
                         </button>
-                    </a>
+                    </router-link>
                     </div>
                 </div>
             </div>
         </div>
         <TheTestimonial></TheTestimonial>
-        <div class="w-full  h-[500px] relative my-10">
+        <div class="w-full  h-[500px] relative my-10" id="dedicated">
             <div class="w-full hidden lg:grid grid-cols-12 h-[500px]  bg-cover bg-top bg-white/90 bg-blend-overlay md:bg-blend-normal "
                 style="background-image: url('/assets/img/dedicated.png');">
                 <div class=" bg-cover hidden md:block col-span-10 lg:col-span-8"
