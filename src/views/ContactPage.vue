@@ -1,5 +1,6 @@
 <template>
-    <HeroSectionVue :title="'Contact Us'"></HeroSectionVue>
+    <PublicPageLayout>
+        <HeroSectionVue :title="'Contact Us'"></HeroSectionVue>
     <div class="max-w-screen-xl mx-auto">
         <div class="grid md:grid-cols-12 lg:grid-cols-2 md:gap-4">
             <div class="md:col-span-7 lg:col-span-1">
@@ -89,8 +90,12 @@
         </div>
 
     </div>
+
+    </PublicPageLayout>
+    
 </template>
 
 <script setup>
+import PublicPageLayout from '../layout/PublicPageLayout.vue';
 import HeroSectionVue from '@/components/HeroSection.vue';
 </script>
