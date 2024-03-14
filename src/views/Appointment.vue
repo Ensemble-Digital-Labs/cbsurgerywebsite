@@ -3,89 +3,95 @@
         <HeroSection :title="'Make Appointment'"></HeroSection>
         <div
             class="bg-white p-4 sm:p-16 w-full md:w-full lg:w-8/12 xl:w-5/12 md:shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
+            <form @submit.prevent="appointmentFormSubmit()">
+                <div class="my-4">
+                    <label for="firstName" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Your
+                        Name<span class="text-dark-teal">*</span></label>
+                    <input type="text" id="Name" v-model="AppointmentInfo.name"
+                        class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Full name" required />
+                </div>
+                <div class="my-4">
 
-            <div class="my-4">
-                <label for="firstName" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Your
-                    Name<span class="text-dark-teal">*</span></label>
-                <input type="text" id="firstName" v-model="firstName"
-                    class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Full name" required />
-            </div>
-            <div class="my-4">
-
-                <div class="md:flex gap-2">
-                    <label for="Gender"
-                        class="block mb-2 pr-4 text-[16px] font-bold font-manrope text-zinc-800">Gender<span
-                            class="text-dark-teal">*</span></label>
-                    <div class="flex items-center me-4">
-                        <input id="inline-radio" type="radio" value="" name="inline-radio-group"
-                            class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
-                        <label for="inline-radio"
-                            class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Male</label>
+                    <div class="md:flex gap-2">
+                        <label for="Gender"
+                            class="block mb-2 pr-4 text-[16px] font-bold font-manrope text-zinc-800">Gender<span
+                                class="text-dark-teal">*</span></label>
+                        <div class="flex items-center me-4">
+                            <input id="Male" type="radio" value="Male" name="inline-radio-group"
+                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" v-model="AppointmentInfo.gender">
+                            <label for="inline-radio"
+                                class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Male</label>
+                        </div>
+                        <div class="flex items-center me-4">
+                            <input id="Female" type="radio" value="Female" name="inline-radio-group"
+                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" v-model="AppointmentInfo.gender">
+                            <label for="inline-2-radio"
+                                class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Female</label>
+                        </div>
+                        <div class="flex items-center me-4">
+                            <input id="Other" type="radio" value="Other" name="inline-radio-group"
+                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" v-model="AppointmentInfo.gender">
+                            <label for="inline-2-radio"
+                                class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Other</label>
+                        </div>
                     </div>
-                    <div class="flex items-center me-4">
-                        <input id="inline-2-radio" type="radio" value="" name="inline-radio-group"
-                            class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
-                        <label for="inline-2-radio"
-                            class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Female</label>
+
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-4">
+                    <div>
+                        <label for="dob" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Date Of
+                            Birth<span class="text-dark-teal">*</span></label>
+                        <input type="date" id="dob" v-model="AppointmentInfo.dob"
+                            class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required />
                     </div>
-                    <div class="flex items-center me-4">
-                        <input id="inline-2-radio" type="radio" value="" name="inline-radio-group"
-                            class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
-                        <label for="inline-2-radio"
-                            class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Other</label>
+                    <div>
+                        <label for="appointmentDate"
+                            class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Preferred
+                            Date of Appointment<span class="text-dark-teal">*</span></label>
+                        <input type="date" id="appointmentDate" v-model="AppointmentInfo.appointmentDate"
+                            class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required />
                     </div>
                 </div>
 
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-4">
-                <div>
-                    <label for="dob" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Date Of
-                        Birth<span class="text-dark-teal">*</span></label>
-                    <input type="date" id="dob" v-model="dob"
-                        class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        required />
+                <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-4">
+                    <div>
+                        <label for="phoneNumber"
+                            class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Phone
+                            Number<span class="text-dark-teal">*</span></label>
+                        <input type="text" id="phoneNumber" v-model="AppointmentInfo.phoneNumber"
+                            class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Add Phone Number " required />
+                    </div>
+                    <div>
+                        <label for="email"
+                            class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Email<span
+                                class="text-dark-teal">*</span></label>
+                        <input type="email" id="email" v-model="AppointmentInfo.email"
+                            class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Add Email" required />
+                    </div>
                 </div>
-                <div>
-                    <label for="appointmentDate"
-                        class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Preferred
-                        Date of Appointment<span class="text-dark-teal">*</span></label>
-                    <input type="date" id="appointmentDate" v-model="appointmentDate"
-                        class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        required />
+
+                <p class="py-4 md:flex items-center gap-4">
+                    <input id="inline-2-radio" type="radio" value=""
+                        class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" required checked>
+                    I consent to receiving email correspondence regarding my inquiry.<span
+                        class="text-dark-teal">*</span>
+                </p>
+
+                <div class="w-full">
+                    <button class="btn-fill-dark h-11 w-full py-4 grid content-center" type="submit">
+                        Submit
+                    </button>
+                    <p class="text-dark-teal font-bold font-manrope" v-if="message">
+                        {{ message }}
+                    </p>
                 </div>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-4">
-                <div>
-                    <label for="phoneNumber" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Phone
-                        Number<span class="text-dark-teal">*</span></label>
-                    <input type="text" id="phoneNumber" v-model="phoneNumber"
-                        class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Add Phone Number " required />
-                </div>
-                <div>
-                    <label for="email" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Email<span
-                            class="text-dark-teal">*</span></label>
-                    <input type="email" id="email" v-model="email"
-                        class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="Add Email" required />
-                </div>
-            </div>
-
-            <p class="py-4 md:flex items-center gap-4">
-                <input id="inline-2-radio" type="radio" value="" name="inline-radio-group"
-                    class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal">
-                I consent to receiving email correspondence regarding my inquiry.<span class="text-dark-teal">*</span>
-            </p>
-
-            <div class="w-full">
-                <button class="btn-fill-dark h-11 w-full py-4 grid content-center">
-                    Submit
-                </button>
-            </div>
-
+            </form>
         </div>
 
         <div class="max-w-screen-xl mx-auto my-10 lg:my-20 px-6 xl:px-0">
@@ -191,6 +197,7 @@
 
 </template>
 <script setup>
+import axios from 'axios';
 import PublicPageLayout from '../layout/PublicPageLayout.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import { onMounted } from 'vue'
@@ -202,15 +209,39 @@ onMounted(() => {
 })
 </script>
 <script>
+// export default {
+//     methods: {
+//         appointmentFormSubmit() {
+//             axios.post('appointmentFormSubmitMail.php', this.contactInfo)
+//                 .then(function (response) {
+//                     console.log(response);
+//                     this.message = "Thank you for contacting us!"
+//                 }.bind(this))
+//                 .catch(function (error) {
+//                     this.message = "Oops!, Something wrong happend!"
+//                 }.bind(this));
+//         }
+//     }
+// }
+
 export default {
-    methods:{
-        appointmentFormSubmit(){
-            axios.post('appointmentFormSubmitMail.php', this.contactInfo)
+    data() {
+        return {
+            AppointmentInfo: {},
+            message: '',
+        }
+    },
+    methods: {
+        appointmentFormSubmit() {
+            console.log(this.AppointmentInfo);
+            axios.post('https://cbsurgery.getupsolutions.net/appointmentFormSubmitMail.php', this.AppointmentInfo)
                 .then(function (response) {
                     console.log(response);
                     this.message = "Thank you for contacting us!"
+
                 }.bind(this))
                 .catch(function (error) {
+                    console.log(error);
                     this.message = "Oops!, Something wrong happend!"
                 }.bind(this));
         }
