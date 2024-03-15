@@ -137,18 +137,18 @@ export default {
         }
     },
     methods: {
-        calculateBMI() {
-            if (this.weight > 0 && (this.feet > 0 || this.inch > 0)) {
-                this.error = false
-                var height = Number(this.feet) * 12 + Number(this.inch)
-                console.log(height);
-                this.BMI = Number(this.weight) / (height ** 2) * 703
-                this.BMI = Math.round(this.BMI * 100) / 100
-            } else {
-                this.BMI = 0
-                this.error = 'Please enter Weight and Height to calculate BMI'
-            }
-        }
+        // calculateBMI() {
+        //     if (this.weight > 0 && (this.feet > 0 || this.inch > 0)) {
+        //         this.error = false
+        //         var height = Number(this.feet) * 12 + Number(this.inch)
+        //         console.log(height);
+        //         this.BMI = Number(this.weight) / (height ** 2) * 703
+        //         this.BMI = Math.round(this.BMI * 100) / 100
+        //     } else {
+        //         this.BMI = 0
+        //         this.error = 'Please enter Weight and Height to calculate BMI'
+        //     }
+        // }
     }
 
 

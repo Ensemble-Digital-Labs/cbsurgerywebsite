@@ -28,6 +28,12 @@
   .btn-fill-light {
     @apply bg-extra-light-teal hover:bg-dark-teal hover:text-white text-dark-teal font-bold py-2.5 px-5 rounded-[4px] h-[60px] border border-dark-teal font-manrope text-[15px];
   }
+  .float-btn-dark {
+    @apply bg-dark-teal hover:bg-light-teal text-white font-manrope text-[15px] font-bold py-2.5 px-5 rounded-[4px] h-[45px];
+  }
+  .float-btn-light {
+    @apply bg-extra-light-teal hover:bg-dark-teal hover:text-white text-dark-teal font-bold py-2.5 px-5 rounded-[4px] h-[45px] border border-dark-teal font-manrope text-[15px];
+  }
 }
 
 /* @layer components {
