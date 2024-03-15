@@ -68,14 +68,14 @@
                             </form>
                         </div>
                         <div class="flex gap-4 items-center">
-                            <a href="https://www.instagram.com/chesterfield_bariatric_surgery/" target="_blank"><img src="/src/assets/social-media/instagram.svg"
-                                    class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://www.facebook.com/drsudhakaran1" target="_blank"><img src="/src/assets/social-media/facebook.svg"
-                                    class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://twitter.com/chesterfield_bs" target="_blank"><img src="/src/assets/social-media/twitter.svg"
-                                    class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://www.linkedin.com/company/100912652/admin/feed/posts/" target="_blank"><img src="/src/assets/social-media/linkedin.svg"
-                                    class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://www.instagram.com/chesterfield_bariatric_surgery/" target="_blank"><img
+                                    src="/src/assets/social-media/instagram.svg" class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://www.facebook.com/drsudhakaran1" target="_blank"><img
+                                    src="/src/assets/social-media/facebook.svg" class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://twitter.com/chesterfield_bs" target="_blank"><img
+                                    src="/src/assets/social-media/twitter.svg" class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://www.linkedin.com/company/100912652/admin/feed/posts/" target="_blank"><img
+                                    src="/src/assets/social-media/linkedin.svg" class=" h-8 w-8" alt="Logo" /></a>
                         </div>
                     </div>
                 </div>
@@ -106,8 +106,7 @@
             <button class="float-btn-light w-52">Am I a Candidate</button>
         </router-link>
     </div>
-    <div
-        class="fixed hidden md:block bottom-0 right-1/2 shadow w-56">
+    <div class="fixed hidden md:block bottom-0 right-1/2 shadow w-56">
         <router-link to="/appointments">
             <button class="float-btn-dark w-52 ">Book an Appointment</button>
         </router-link>
@@ -118,8 +117,7 @@
                 <button class="btn-fill-light w-full rounded-none">Am I a Candidate</button>
             </router-link>
         </div>
-        <div
-            class="block md:hidden w-1/2">
+        <div class="block md:hidden w-1/2">
             <router-link to="/appointments">
                 <button class="btn-fill-dark w-full rounded-none">Book an Appointment</button>
             </router-link>
@@ -130,3 +128,8 @@
 </template>
 <script>
 </script>
+<style>
+input.middle:focus {
+    outline-width: 0;
+}
+</style>
