@@ -60,7 +60,7 @@
                             <form @submit.prevent="SubscriptionFormSubmit()"
                                 class="flex rounded-md bg-extra-light-teal p-1 pl-4 focus-within:ring-2 focus-within:ring-cyan-600 hover:ring-2 hover:ring-cyan-600">
                                 <input v-model="mailInfo.email" id="email" type="email"
-                                    class="w-full appearance-none border-none bg-extra-light-teal text-black text-sm focus:outline-none"
+                                    class="w-full appearance-none border-none bg-extra-light-teal text-black text-sm focus:outline-none border-transparent focus:border-transparent focus:ring-0"
                                     placeholder="Email" required>
                                 <button
                                     class="ml-2 shrink-0 rounded-md text-white bg-dark-teal text-[16px] px-6 py-3 text-sm font-medium font-archivo hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50"
