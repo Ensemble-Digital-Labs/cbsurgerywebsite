@@ -143,7 +143,7 @@ export default {
     methods: {
         SubscriptionFormSubmit() {
             console.log(this.contactInfo);
-            axios.post('https://cbsurgery.getupsolutions.net/SubscriptionFormSubmitMail.php', this.mailInfo)
+            axios.post('/SubscriptionFormSubmitMail.php', this.mailInfo)
                 .then(function (response) {
                     console.log(response);
                     this.message = "Thank you for your subscription!"
