@@ -118,7 +118,7 @@ export default {
     methods: {
         contactFormSubmit() {
             console.log(this.contactInfo);
-            axios.post('https://cbsurgery.getupsolutions.net/contactFormSubmitMail.php', this.contactInfo)
+            axios.post('/contactFormSubmitMail.php', this.contactInfo)
                 .then(function (response) {
                     console.log(response);
                     this.message = "Thank you for contacting us!"

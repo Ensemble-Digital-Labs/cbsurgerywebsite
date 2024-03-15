@@ -57,25 +57,28 @@
                         <h2 class="mb-6 font-manrope text-white font-bold text-[22px]">Follow Us</h2>
                         <hr class="text-white w-20 h-2 my-4">
                         <div class=" max-w-xs mb-6">
-                            <form
+                            <form @submit.prevent="SubscriptionFormSubmit()"
                                 class="flex rounded-md bg-extra-light-teal p-1 pl-4 focus-within:ring-2 focus-within:ring-cyan-600 hover:ring-2 hover:ring-cyan-600">
-                                <input
-                                    class="w-full appearance-none bg-extra-light-teal text-black text-sm focus:outline-none"
-                                    placeholder="Email">
+                                <input v-model="mailInfo.email" id="email" type="email"
+                                    class="w-full appearance-none border-none bg-extra-light-teal text-black text-sm focus:outline-none"
+                                    placeholder="Email" required>
                                 <button
                                     class="ml-2 shrink-0 rounded-md text-white bg-dark-teal text-[16px] px-6 py-3 text-sm font-medium font-archivo hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50"
                                     type="submit">Sign Up</button>
                             </form>
+                            <p class="text-dark-teal font-bold font-manrope" v-if="message">
+                                    {{ message }}
+                                </p>
                         </div>
                         <div class="flex gap-4 items-center">
                             <a href="http://" target="_blank"><img src="/src/assets/social-media/instagram.svg"
                                     class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://www.facebook.com/profile.php?id=61556911598120" target="_blank"><img src="/src/assets/social-media/facebook.svg"
-                                    class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://www.facebook.com/profile.php?id=61556911598120" target="_blank"><img
+                                    src="/src/assets/social-media/facebook.svg" class=" h-8 w-8" alt="Logo" /></a>
                             <a href="http://" target="_blank"><img src="/src/assets/social-media/twitter.svg"
                                     class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="http://" target="_blank"><img src="/src/assets/social-media/linkedin.svg"
-                                    class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://www.linkedin.com/company/100912652/admin/feed/posts/" target="_blank"><img
+                                    src="/src/assets/social-media/linkedin.svg" class=" h-8 w-8" alt="Logo" /></a>
                         </div>
                     </div>
                 </div>
@@ -106,8 +109,7 @@
             <button class="float-btn-light w-52">Am I a Candidate</button>
         </router-link>
     </div>
-    <div
-        class="fixed hidden md:block bottom-0 right-1/2 shadow w-56">
+    <div class="fixed hidden md:block bottom-0 right-1/2 shadow w-56">
         <router-link to="/appointments">
             <button class="float-btn-dark w-52 ">Book an Appointment</button>
         </router-link>
@@ -118,8 +120,7 @@
                 <button class="btn-fill-light w-full rounded-none">Am I a Candidate</button>
             </router-link>
         </div>
-        <div
-            class="block md:hidden w-1/2">
+        <div class="block md:hidden w-1/2">
             <router-link to="/appointments">
                 <button class="btn-fill-dark w-full rounded-none">Book an Appointment</button>
             </router-link>
@@ -128,5 +129,31 @@
 
 
 </template>
+<script setup>
+import axios from 'axios';
+</script>
 <script>
+export default {
+    data() {
+        return {
+            mailInfo: {},
+            message: '',
+        }
+    },
+    methods: {
+        SubscriptionFormSubmit() {
+            console.log(this.contactInfo);
+            axios.post('https://cbsurgery.getupsolutions.net/SubscriptionFormSubmitMail.php', this.mailInfo)
+                .then(function (response) {
+                    console.log(response);
+                    this.message = "Thank you for your subscription!"
+
+                }.bind(this))
+                .catch(function (error) {
+                    console.log(error);
+                    this.message = "Oops!, Something wrong happend!"
+                }.bind(this));
+        }
+    }
+}
 </script>
