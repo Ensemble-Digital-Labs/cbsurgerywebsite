@@ -70,7 +70,7 @@
                         <div class="flex gap-4 items-center">
                             <a href="http://" target="_blank"><img src="/src/assets/social-media/instagram.svg"
                                     class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="http://" target="_blank"><img src="/src/assets/social-media/facebook.svg"
+                            <a href="https://www.facebook.com/profile.php?id=61556911598120" target="_blank"><img src="/src/assets/social-media/facebook.svg"
                                     class=" h-8 w-8" alt="Logo" /></a>
                             <a href="http://" target="_blank"><img src="/src/assets/social-media/twitter.svg"
                                     class=" h-8 w-8" alt="Logo" /></a>
@@ -103,13 +103,13 @@
 
     <div class="fixed hidden md:block bottom-0 left-1/2 w-56">
         <router-link to="/am-i-candidate">
-            <button class="btn-fill-light w-52">Am I a Candidate</button>
+            <button class="float-btn-light w-52">Am I a Candidate</button>
         </router-link>
     </div>
     <div
         class="fixed hidden md:block bottom-0 right-1/2 shadow w-56">
         <router-link to="/appointments">
-            <button class="btn-fill-dark w-52 ">Book an Appointment</button>
+            <button class="float-btn-dark w-52 ">Book an Appointment</button>
         </router-link>
     </div>
     <div class="fixed bottom-0 flex w-full">
