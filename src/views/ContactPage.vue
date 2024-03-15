@@ -119,15 +119,14 @@ export default {
         contactFormSubmit() {
             console.log(this.contactInfo);
             axios.post('https://cbsurgery.getupsolutions.net/contactFormSubmitMail.php', this.contactInfo)
-                .then(function (response) {
-                    console.log(response);
-                    this.message = "Thank you for contacting us!"
-
-                }.bind(this))
-                .catch(function (error) {
-                    console.log(error);
-                    this.message = "Oops!, Something wrong happend!"
-                }.bind(this));
+            .then(function (response) {
+                console.log(response);
+                this.message = "Thank you for contacting us!"
+            }.bind(this))
+            .catch(function (error) {
+                console.log(error);
+                this.message = "Oops!, Something wrong happend!"
+            }.bind(this));
         }
     }
 }

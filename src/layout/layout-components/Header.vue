@@ -2,23 +2,26 @@
     <header class="w-full border-b border-light-teal">
         <div class="mx-auto md:flex flex-col items-center py-4 px-2 hidden border-b border-b-zinc-100">
             <div class="flex flex-col md:flex-row md:items-center md:space-x-2 md:divide-x divide-light-teal">
-                <div class="flex items-center gap-2">
-                    <img src="@/assets/icons/phone.png" class="w-4 h-4">
-                    <p class="text-[#636468]">314 412 4430</p>
+                <div>
+                    <a href="tel:+3144124430" class="flex items-center gap-2">
+                        <img src="@/assets/icons/phone.png" class="w-4 h-4">
+                        <p class="text-[#636468]">314 412 4430</p>
+                    </a>
                 </div>
                 <div class="flex items-center gap-2 md:pl-2">
                     <img src="@/assets/icons/map.png" class="w-4 h-4">
                     <p class="text-[#636468]">10004 Kennerly Road
                         Suite 295B Saint Louis, MO 63128</p>
                 </div>
-
             </div>
         </div>
         <div class="max-w-screen-xl mx-auto">
             <nav class="bg-white border-gray-200 dark:bg-gray-900">
                 <div class="flex flex-wrap items-center justify-between mx-auto p-4">
                     <router-link to="/" class="md:w-full lg:w-fit">
-                        <img src="@/assets/cbs-logo.svg" class="w-40 md:w-48 lg:w-56 h-auto  md:mx-auto lg:mx-0 md:mb-4 lg:mb-0" alt="Chester logo" />
+                        <img src="@/assets/cbs-logo.svg"
+                            class="w-40 md:w-48 lg:w-56 h-auto  md:mx-auto lg:mx-0 md:mb-4 lg:mb-0"
+                            alt="Chester logo" />
                     </router-link>
                     <button data-collapse-toggle="navbar-default" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-dark-teal rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-light-teal"
@@ -35,32 +38,38 @@
                             class="font-medium flex flex-col md:p-0 mt-4 border divide-y divide-zinc-400 md:divide-y-0 border-zinc-400 rounded-lg bg-gray-50 md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
                             <li>
                                 <router-link to="/"
-                                    class="block py-3 px-3 font-manrope  font-extrabold hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-t-lg" :class="getRoute === '/' ? 'text-dark-teal': 'text-[#211C1A]'"
+                                    class="block py-3 px-3 font-manrope  font-extrabold hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-t-lg"
+                                    :class="getRoute === '/' ? 'text-dark-teal' : 'text-[#211C1A]'"
                                     aria-current="page">Home</router-link>
                             </li>
                             <li>
                                 <router-link to="/about-us"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent  hover:bg-dark-teal " :class="getRoute === '/about-us' ? 'text-dark-teal': 'text-[#211C1A]'"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent  hover:bg-dark-teal "
+                                    :class="getRoute === '/about-us' ? 'text-dark-teal' : 'text-[#211C1A]'"
                                     aria-current="page">About</router-link>
                             </li>
                             <li>
                                 <router-link to="/services"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal " :class="getRoute === '/services' ? 'text-dark-teal': 'text-[#211C1A]'"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
+                                    :class="getRoute === '/services' ? 'text-dark-teal' : 'text-[#211C1A]'"
                                     aria-current="page">Services</router-link>
                             </li>
                             <li>
                                 <router-link to="/am-i-candidate"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal " :class="getRoute === '/am-i-candidate' ? 'text-dark-teal': 'text-[#211C1A]'"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
+                                    :class="getRoute === '/am-i-candidate' ? 'text-dark-teal' : 'text-[#211C1A]'"
                                     aria-current="page">Am I Candidate</router-link>
                             </li>
                             <li>
                                 <router-link to="/success-stories"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal " :class="getRoute === '/success-stories' ? 'text-dark-teal': 'text-[#211C1A]'"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal "
+                                    :class="getRoute === '/success-stories' ? 'text-dark-teal' : 'text-[#211C1A]'"
                                     aria-current="page">Success stories</router-link>
                             </li>
                             <li>
                                 <router-link to="/contact-us"
-                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-b-lg" :class="getRoute === '/contact-us' ? 'text-dark-teal': 'text-[#211C1A]'"
+                                    class="block py-3 px-3 font-manrope text-[#211C1A] font-extrabold  hover:text-white md:hover:text-dark-teal md:hover:bg-transparent hover:bg-dark-teal rounded-b-lg"
+                                    :class="getRoute === '/contact-us' ? 'text-dark-teal' : 'text-[#211C1A]'"
                                     aria-current="page">Contact Us</router-link>
                             </li>
 
@@ -71,10 +80,10 @@
 
         </div>
     </header>
-</template> 
+</template>
 <script setup>
 import { onMounted } from 'vue'
-import { initFlowbite } from 'flowbite' 
+import { initFlowbite } from 'flowbite'
 
 // initialize components based on data attribute selectors
 onMounted(() => {
@@ -84,9 +93,9 @@ onMounted(() => {
 <script>
 export default {
     computed: {
-    getRoute() {
-        return this.$route.path;
+        getRoute() {
+            return this.$route.path;
+        }
     }
-}
 }
 </script>
