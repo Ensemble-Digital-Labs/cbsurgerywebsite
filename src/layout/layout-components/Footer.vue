@@ -158,8 +158,4 @@ export default {
     }
 }
 </script>
-<style>
-input.middle:focus {
-    outline-width: 0;
-}
-</style>
+

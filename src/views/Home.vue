@@ -167,7 +167,7 @@
                             {{ isVisible ? yearsOfExperience.toFixed(0) : '0' }} <span class=" text-dark-teal">+</span>
                         </h1>
                         <p class="text-[14px] md:text-[20px] text-[#636571] text-center">
-                           Total Year of Experience
+                            Total Year of Experience
                         </p>
                     </div>
                     <div>
@@ -191,7 +191,7 @@
             <div>
                 <div class="grid md:grid-cols-2 md:h-1/2 ">
                     <div class="bg-cover bg-no-repeat bg-center p-32"
-                        style="background-image: url('/assets/img/grid-img-1.png')">
+                        style="background-image: url('/assets/img/grid-img-og1.jpg')">
 
                     </div>
                     <div class=" bg-dark-teal grid place-content-center p-16">
@@ -209,7 +209,7 @@
                 </div>
                 <div class="grid md:grid-cols-2 h-1/2">
                     <div class="bg-cover bg-no-repeat bg-center p-32 md:hidden"
-                        style="background-image: url('/assets/img/grid-img-2.png')">
+                        style="background-image: url('/assets/img/grid-img-og1.jpg')">
 
                     </div>
 
@@ -224,7 +224,7 @@
                         </div>
                     </div>
                     <div class="bg-cover bg-no-repeat bg-center p-32 hidden md:block"
-                        style="background-image: url('/assets/img/grid-img-2.png')">
+                        style="background-image: url('/assets/img/grid-img-og2.jpg')">
 
                     </div>
                 </div>
@@ -256,40 +256,70 @@
             </div>
         </div>
 
-        <div class="w-full bg-no-repeat bg-cover bg-center"
-            style="background-image: url('/assets/img/robotic-surgery.png');">
-            <div class="max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20 py-10 text-center">
-                <h3 class="font-manrope text-white text-[32px] md:text-[52px] font-extrabold">Robotic surgery</h3>
-                <h4 class="font-manrope text-white text-xl font-bold py-4">Precision Surgery for Life-Changing Results
-                </h4>
-                <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure designed to
-                    aid
-                    weight loss in morbidly obese individuals who have not seen success with traditional diet and
-                    exercise
-                    methods. There are various types of bariatric surgery, but they generally involve reducing the
-                    stomach's
-                    size and rerouting a section of the intestine. This results in feelings of fullness with less food
-                    and
-                    some malabsorption of nutrients.</p>
-                <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using robotic
-                    technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging systems that
-                    provide a magnified, 3-dimensional view of the surgical site. The procedure involves making a few
-                    small
-                    incisions through which robotic arms with surgical instruments are inserted and controlled. Your
-                    surgeon
-                    operates the robotic arms from a console near the operating table, allowing for highly precise
-                    movements.</p>
-                <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized bariatric
-                    surgery, enabling procedures to be performed on individuals with higher body mass indices than
-                    previously possible with traditional methods. Robotic surgery offers benefits such as reduced
-                    operating
-                    time, postoperative pain, scarring, and recovery time. Additionally, the risk of complications is
-                    significantly minimized.</p>
+        <div class="w-full bg-no-repeat bg-cover bg-center bg-extra-dark-teal my-10 md:my-20 py-10">
+            <div class="max-w-screen-xl mx-auto">
+                <div class=" grid md:grid-cols-2 md:gap-10">
+
+                    <div>
+                        <h3 class="font-manrope text-white text-[32px] md:text-[52px] font-extrabold">Robotic surgery
+                        </h3>
+                        <h4 class="font-manrope text-white text-xl font-bold py-4">Precision Surgery for Life-Changing
+                            Results
+                        </h4>
+                        <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure
+                            designed to
+                            aid
+                            weight loss in morbidly obese individuals who have not seen success with traditional diet
+                            and
+                            exercise
+                            methods. There are various types of bariatric surgery, but they generally involve reducing
+                            the
+                            stomach's
+                            size and rerouting a section of the intestine. This results in feelings of fullness with
+                            less
+                            food
+                            and
+                            some malabsorption of nutrients.</p>
+
+                    </div>
+                    <div>
+
+                        <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700"
+                            controls>
+                            <source src="@/assets/vids/robotic-surgery.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+
+                </div>
+                <div class="py-4">
+                    <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using
+                        robotic
+                        technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging systems
+                        that
+                        provide a magnified, 3-dimensional view of the surgical site. The procedure involves making a
+                        few
+                        small
+                        incisions through which robotic arms with surgical instruments are inserted and controlled. Your
+                        surgeon
+                        operates the robotic arms from a console near the operating table, allowing for highly precise
+                        movements.</p>
+                    <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized
+                        bariatric
+                        surgery, enabling procedures to be performed on individuals with higher body mass indices than
+                        previously possible with traditional methods. Robotic surgery offers benefits such as reduced
+                        operating
+                        time, postoperative pain, scarring, and recovery time. Additionally, the risk of complications
+                        is
+                        significantly minimized.</p>
+                </div>
             </div>
+
         </div>
 
         <OurTeam></OurTeam>
-        
+
         <div class="py-10 bg-[#F1F8FF] w-full">
             <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
@@ -301,10 +331,10 @@
                     </div>
                     <div>
                         <router-link to="/am-i-candidate/#calculate-bmi">
-                        <button class="btn-fill-dark">
-                            Check Now
-                        </button>
-                    </router-link>
+                            <button class="btn-fill-dark">
+                                Check Now
+                            </button>
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -395,6 +425,7 @@
 <script>
 import { ref } from 'vue'
 import { vElementVisibility } from '@vueuse/components'
+// import RoboticVideo from '../assets/vids/robotic-surgery.MOV'
 
 const target = ref(null)
 // const isVisible = ref(false)
