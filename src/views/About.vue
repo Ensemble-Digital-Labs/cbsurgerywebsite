@@ -9,37 +9,32 @@
             class="bg-white px-1 md:px-6 py-4 md:py-10 w-full md:w-4/5 shadow-lg shadow-slate-200 -mt-14 md:-mt-48  mx-auto">
             <div class="text-center px-4 md:px-5 py-5">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. In metus viverra morbi mattis ultrices quis. Adipiscing
-                    feugiat
-                    scelerisque euismod non. Ligula non dui tincidunt nibh maecenas. Non leo vitae quis cras sed
-                    tincidunt
-                    egestas. Volutpat turpis in vitae integer tellus pharetra varius. Quis tempor dictum tristique eget
-                    tristique lorem ut viverra. Aliquet sapien vitae leo egestas porta a fermentum diam lectus. A eu
-                    nunc nunc
-                    pretium nulla consectetur.
+                    Chesterfield Bariatric Surgery, under the expert management of Dr. Deepu Sudhakaran, MD, is a
+                    distinguished bariatric clinic located in Saint Louis. Bariatric surgery is a specialized procedure
+                    aimed at helping individuals who struggle with severe obesity and related health conditions. It
+                    involves surgical alterations to the digestive system to promote weight loss and improve overall
+                    health. This procedure is typically recommended for individuals who have been unsuccessful in
+                    achieving significant weight loss through diet, exercise, and other non-surgical methods. Bariatric
+                    surgery can lead to substantial weight loss, improvement in obesity-related health issues such as
+                    type 2 diabetes and high blood pressure, and enhanced quality of life.
                 </p>
                 <p>
-                    Eget sed cursus arcu orci a ultrices et velit. Ut est condimentum consequat scelerisque tortor felis
-                    tellus
-                    massa urna. Lacus lacinia vel semper amet et scelerisque tellus. Egestas vulputate augue mi eu
-                    commodo
-                    parturient. Tortor cras tortor vestibulum est pellentesque pulvinar morbi. At tristique eget justo
-                    at lectus
-                    vel sed pharetra massa. Quam nam ac nulla mauris diam consequat.At tristique eget justo at lectus
-                    vel sed pharetra massa. Quam nam ac nulla mauris diam consequat.
+                    Dr. Deepu Sudhakaran, a highly skilled general surgery specialist with 26 years of experience, is
+                    dedicated to providing exceptional care to patients seeking bariatric solutions. Dr. Sudhakaran
+                    obtained their medical degree from the Medical College Thiruvananthapuram, India, in 1997, and
+                    completed a rigorous residency at LSU Health Sciences Center New Orleans School Of Medicine.
+                    Currently practicing at Practice and affiliated with Mercy Hospital Jefferson and Mercy Hospital
+                    South, Dr. Sudhakaran possesses extensive experience in treating various conditions, including
+                    obesity, at varying frequencies.
                 </p>
-                <p>
-                    Facilisis amet volutpat a sed dui. Leo quam duis adipiscing ac viverra lobortis. Facilisis aliquet
-                    laoreet
-                    senectus placerat. Dui viverra netus consectetur sed quisque sed pretium mauris lacus. Nisl eu nunc
-                    neque
-                    sed posuere semper id scelerisque. Ornare viverra quis quam varius. Blandit cum aliquam eget sem
-                    erat.
-                    Tempus lacus neque et volutpat. Venenatis tincidunt lectus at commodo ut leo donec. Sagittis nam
-                    aenean
-                    cursus vivamus gravida nibh feugiat. Amet nunc ut netus sapien. Pretium nisl eget felis tristique
-                    ullamcorper ut erat consectetur.
-                </p>
+                <!-- <p>
+                    Patients commend Dr. Sudhakaran, awarding an average rating of 4.5/5 based on 8 reviews. Their
+                    office warmly welcomes new patients and offers telehealth appointments for added convenience. Fluent
+                    in Hindi and Malayalam, Dr. Sudhakaran is board certified in Critical Care Surgery and accepts
+                    multiple insurance plans. Patients seeking compassionate care and expertise in bariatric surgery can
+                    rely on Dr. Deepu Sudhakaran and Chesterfield Bariatric Surgery for comprehensive treatment and
+                    support.
+                </p> -->
             </div>
             <!--
         <div class="flex items-center justify-center">

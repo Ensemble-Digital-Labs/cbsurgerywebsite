@@ -230,7 +230,7 @@
                 </div>
             </div>
 
-            <div class="bg-cover hidden xl:block bg-no-repeat bg-center p-32"
+            <div class="bg-cover hidden xl:block bg-no-repeat  bg-left p-32"
                 style="background-image: url('/assets/img/grid-img-3.png')">
             </div>
 
