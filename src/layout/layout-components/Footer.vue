@@ -71,14 +71,14 @@
                                 </p>
                         </div>
                         <div class="flex gap-4 items-center">
-                            <a href="http://" target="_blank"><img src="/src/assets/social-media/instagram.svg"
+                            <a href="https://www.instagram.com/chesterfield_bariatric_surgery/" target="_blank"><img src="/src/assets/social-media/instagram.svg"
                                     class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://www.facebook.com/profile.php?id=61556911598120" target="_blank"><img
-                                    src="/src/assets/social-media/facebook.svg" class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="http://" target="_blank"><img src="/src/assets/social-media/twitter.svg"
+                            <a href="https://www.facebook.com/drsudhakaran1" target="_blank"><img src="/src/assets/social-media/facebook.svg"
                                     class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://www.linkedin.com/company/100912652/admin/feed/posts/" target="_blank"><img
-                                    src="/src/assets/social-media/linkedin.svg" class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://twitter.com/chesterfield_bs" target="_blank"><img src="/src/assets/social-media/twitter.svg"
+                                    class=" h-8 w-8" alt="Logo" /></a>
+                            <a href="https://www.linkedin.com/company/100912652/admin/feed/posts/" target="_blank"><img src="/src/assets/social-media/linkedin.svg"
+                                    class=" h-8 w-8" alt="Logo" /></a>
                         </div>
                     </div>
                 </div>
