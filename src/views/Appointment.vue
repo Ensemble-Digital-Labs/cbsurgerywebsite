@@ -19,7 +19,7 @@
                                 class="text-dark-teal">*</span></label>
                         <div class="flex items-center me-4">
                             <input id="Male" type="radio" value="Male" name="inline-radio-group"
-                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" v-model="AppointmentInfo.gender">
+                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" checked v-model="AppointmentInfo.gender">
                             <label for="inline-radio"
                                 class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Male</label>
                         </div>
@@ -234,7 +234,7 @@ export default {
     methods: {
         appointmentFormSubmit() {
             console.log(this.AppointmentInfo);
-            axios.post('https://cbsurgery.getupsolutions.net/appointmentFormSubmitMail.php', this.AppointmentInfo)
+            axios.post('/appointmentFormSubmitMail.php', this.AppointmentInfo)
                 .then(function (response) {
                     console.log(response);
                     this.message = "Thank you for contacting us!"
