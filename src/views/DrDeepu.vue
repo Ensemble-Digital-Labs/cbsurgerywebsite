@@ -3,7 +3,7 @@
         <div class="max-w-screen-xl mx-auto mb-10 md:my-10 px-4 md:px-0 xl:px-0">
             <div class="grid md:grid-cols-12 md:gap-4 lg:gap-10">
                 <div class="md:col-span-6 sm:h-[400px] md:h-auto flex justify-end">
-                    <img src="@/assets/img/deepu-6.png"
+                    <img src="@/assets/img/deepu-9.png"
                         class="h-full w-full sm:w-8/12 md:w-full xl:max-h-[550px] xl:object-contain object-cover object-right sm:object-top md:object-right"
                         alt="" srcset="">
                 </div>
@@ -293,7 +293,9 @@
                         </div>
                     </div>
 
-                    <div>
+                    
+                </div>
+                <div>
                         <p class="font-bold text-dark-teal text-[20px] mb-4">
                             Education
                         </p>
@@ -336,8 +338,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="grid gap-10 place-content-start">
+                <!-- <div class="grid gap-10 place-content-start">
                     <div>
                         <p class="font-bold text-dark-teal text-[20px] mb-4">
                             Work Experience
@@ -466,7 +467,7 @@
                             India.<br />
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
