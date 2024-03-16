@@ -175,7 +175,7 @@
                             {{ isVisible ? staffs.toFixed(0) : '0' }} <span class=" text-dark-teal">+</span>
                         </h1>
                         <p class="text-[14px] md:text-[20px] text-[#636571] text-center">
-                            Number of Robotic Surgery
+                            Number of Robotic Surgeries
                         </p>
                     </div>
                 </div>
