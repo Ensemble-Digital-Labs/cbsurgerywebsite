@@ -78,8 +78,8 @@
                         </div>
                         <div class="flex gap-2">
                             <img src="/src/assets/icons/email.svg" class="h-5 w-4">
-                            <a href="mailto:Info@Chesterfieldbariatricsurgery.com"
-                                class="font-archivo text-white">Info@chesterfieldbariatric.com</a>
+                            <a href="mailto:info@cbsurgery.com"
+                                class="font-archivo text-white">info@cbsurgery.com</a>
                         </div>
                     </div>
                     <div>

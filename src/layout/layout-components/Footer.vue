@@ -48,8 +48,8 @@
                             </div>
                             <div class="flex gap-2 items-start">
                                 <img src="/src/assets/icons/email.svg" class="h-5 w-4">
-                                <a href="mailto:info@chesterfieldbariatricsurgery.com"
-                                    class=" font-archivo text-white  text-[15px]">info@chesterfieldbariatric.com</a>
+                                <a href="mailto:info@cbsurgery.com"
+                                    class=" font-archivo text-white  text-[15px]">info@cbsurgery.com</a>
                             </div>
                         </div>
                     </div>
