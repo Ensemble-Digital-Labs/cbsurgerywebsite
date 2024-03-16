@@ -210,7 +210,6 @@
                 <div class="grid md:grid-cols-2 h-1/2">
                     <div class="bg-cover bg-no-repeat bg-center p-32 md:hidden"
                         style="background-image: url('/assets/img/grid-img-og1.jpg')">
-
                     </div>
 
                     <div class=" bg-extra-dark-teal grid place-content-center p-16 bg-cover">
