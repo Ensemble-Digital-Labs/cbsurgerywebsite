@@ -18,21 +18,26 @@
                 </p> -->
             </div>
             <div class="p-4">
-                <Carousel :autoplay="2000" :wrap-around="true">
+                <Carousel :autoplay="4000" :wrap-around="true">
                     <Slide v-for="testimonial in testimonials" :key="testimonial">
                         <div class="rounded-lg border border-zinc-300 p-4">
-                            <div class="grid md:grid-cols-5 md:gap-8">
-                                <div class="md:col-span-3">
+                            <div>
+                                <div>
                                     <p class="text-[#636571] text-[15px] italic mb-4 text-left">
-                                        "{{ testimonial.testimonial }}"
+                                        "{{ testimonial.text }}"
                                     </p>
+                                    <div class="mb-2">
+                                        <StarRating :rating="Number(testimonial.rating)" v-bind:star-size="20"
+                                            :text-class="'hidden'"></StarRating>
+
+                                    </div>
                                     <h3
                                         class=" font-manrope font-bold text-[18px] text-extra-dark-teal text-left mb-4 md:mb-0">
-                                        {{ testimonial.name }}
+                                        {{ testimonial.author_name }}
                                     </h3>
                                 </div>
-                                <img :src="`${testimonial.imageUrl}`" alt=""
-                                    class="md:col-span-2 md:w-full md:h-full w-20 h-20 rounded-full object-cover md:rounded-lg">
+                                <!-- <img :src="`${testimonial.imageUrl}`" alt=""
+                                    class="md:col-span-2 md:w-full md:h-full w-20 h-20 rounded-full object-cover md:rounded-lg"> -->
 
                             </div>
                         </div>
@@ -48,26 +53,41 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
 import { Carousel, Pagination, Slide } from 'vue3-carousel'
-
+import axios from 'axios';
 import 'vue3-carousel/dist/carousel.css'
 
-export default defineComponent({
-    name: 'Autoplay',
+
+export default {
+    async mounted() {
+        fetch("/last-review-fetch-date.txt")
+            .then((res) => res.text())
+            .then((text) => {
+                const data = JSON.parse(text)
+                const today = new Date();
+                const date = new Date(data.date);
+                const diffTime = Math.abs(today - date);
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) - 1;
+                console.log(diffDays);
+                if (diffDays > 7) {
+                    console.log(JSON.parse(data.reviews));
+                    this.testimonials = data.reviews
+                    axios.get('/getGoogleMapReviews.php').then(function (result) {
+                        this.testimonials = result.data
+                        console.log(this.testimonials.data);
+                    }.bind(this))
+                } else {
+                    console.log(JSON.parse(data.reviews));
+                    this.testimonials = JSON.parse(data.reviews)
+                }
+            })
+            .catch((e) => console.error(e));
+
+
+    },
     data() {
         return {
-            testimonials: [{
-                name: 'Kimberly Fear', imageUrl: "/assets/img/grid-img-1.png", testimonial: `Since I started my weight loss journey I have lost nearly 50lbs so far thanks to the wonderful staff and Dr Sudakaran.
-                                        I would recommend Dr Sudakaran to anyone  wanting Bariatrics surgery . My surgery went so smooth . It has been a challenge but worth it .`
-            }, {
-                name: 'Janell Floyd', imageUrl: "/assets/img/grid-img-1.png", testimonial: `Dr Sudhakaran is very thorough. Very easy to talk to.
-                                         I don’t feel like I’m being judged. The staff is exceptional   Easy to make appointments. 
-                                         Brittany is very good at making sure you have everything done for your insurance. 
-                                         I don’t think I could have made a better choice.`}, {
-                name: 'Senett B', imageUrl: "/assets/img/testimonial-3.png", testimonial: `This is the best decision of my life and would do 
-                                        it all over again if I had too! Thanks Dr. Sudhakaran for all the support and guidance and for 
-                                        helping me to get close to my goal to live a healthier life for me, my daughter and two foster sons!`}]
+            testimonials: []
         }
     },
     components: {
@@ -75,5 +95,8 @@ export default defineComponent({
         Slide,
         Pagination,
     },
-})
+}
+</script>
+<script setup>
+import StarRating from 'vue-star-rating'
 </script>
