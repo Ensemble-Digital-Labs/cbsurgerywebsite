@@ -7,7 +7,7 @@
 
 <!-- our team with slider -->
 
-        <!-- <div class="md:flex flex-row md:items-start gap-10 lg:gap-16">
+        <div class="md:flex flex-row md:items-start gap-10 lg:gap-16">
             <div class="grid grid-rows-2 gap-2 lg:gap-10 w-full md:w-1/4">
 
                 <div class=" w-fit flex flex-col items-center justify-center mb-20 ">
@@ -44,11 +44,11 @@
 
                 </Carousel>
             </div>
-        </div> -->
+        </div>
 
 
 
-        <div class="md:flex flex-row md:items-start gap-10 lg:gap-16">
+        <!-- <div class="md:flex flex-row md:items-start gap-10 lg:gap-16">
             <div class="grid grid-rows-2 gap-2 lg:gap-10 w-full md:w-1/4">
 
                 <div class=" w-fit flex flex-col items-center justify-center mb-20 ">
@@ -76,36 +76,36 @@
             <div class="w-full md:w-3/4">
                 <img src="@/assets/img/team-img.png">
             </div>
-        </div> 
+        </div>  -->
 
 
 
     </div>
 </template>
 
-<!-- <script> -->
-// import { defineComponent } from 'vue'
-// import { Carousel, Pagination, Slide } from 'vue3-carousel'
+<script>
+ import { defineComponent } from 'vue'
+ import { Carousel, Pagination, Slide } from 'vue3-carousel'
 
-// import 'vue3-carousel/dist/carousel.css'
+ import 'vue3-carousel/dist/carousel.css'
 
-// export default defineComponent({
-//     name: 'Autoplay',
-//     data() {
-//         return {
-//             testimonials: [{
-//               imageUrl: "/assets/img/grid-img-1.png"
-//             }, {
-//                 imageUrl: "/assets/img/grid-img-2.png"
-//                             }, {
-//                imageUrl: "/assets/img/grid-img-3.png"
-//                                     }]
-//         }
-//     },
-//     components: {
-//         Carousel,
-//         Slide,
-//         Pagination,
-//     },
-// })
-<!-- </script> -->
+ export default defineComponent({
+     name: 'Autoplay',
+     data() {
+         return {
+             testimonials: [{
+               imageUrl: "/assets/img/grid-img-1.png"
+             }, {
+                 imageUrl: "/assets/img/grid-img-2.png"
+                             }, {
+                imageUrl: "/assets/img/grid-img-3.png"
+                                     }]
+         }
+     },
+     components: {
+         Carousel,
+         Slide,
+         Pagination,
+     },
+ })
+</script>
