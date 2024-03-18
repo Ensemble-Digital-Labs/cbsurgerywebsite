@@ -103,27 +103,42 @@
             <button class="btn-fill-dark w-52 ">Book an Appointment</button>
         </router-link>
     </div> -->
-
-    <div class="fixed hidden md:block bottom-0 left-1/2 w-56">
+    <div class="fixed bottom-0 left-1/3  flex">
+    
+    <div
+        class=" hidden md:block shadow w-56">
+        <router-link to="/appointments">
+            <button class="float-btn-dark w-52 ">Book an Appointment</button>
+        </router-link>
+    </div>
+    <div class="hidden md:block  w-56">
         <router-link to="/am-i-candidate">
             <button class="float-btn-light w-52">Am I a Candidate</button>
         </router-link>
     </div>
     <div
-        class="fixed hidden md:block bottom-0 right-1/2 shadow w-56">
-        <router-link to="/appointments">
-            <button class="float-btn-dark w-52 ">Book an Appointment</button>
+        class=" hidden md:block shadow w-56">
+        <router-link to="#">
+            <button class="float-btn-dark w-52 ">Patient Portal</button>
         </router-link>
     </div>
+    </div>
+
+
     <div class="fixed bottom-0 flex w-full">
+        <div class="block md:hidden w-1/2">
+            <router-link to="/appointments">
+                <button class="btn-fill-dark w-full rounded-none">Book an Appointment</button>
+            </router-link>
+        </div>
         <div class="block md:hidden w-1/2">
             <router-link to="/am-i-candidate">
                 <button class="btn-fill-light w-full rounded-none">Am I a Candidate</button>
             </router-link>
         </div>
         <div class="block md:hidden w-1/2">
-            <router-link to="/appointments">
-                <button class="btn-fill-dark w-full rounded-none">Book an Appointment</button>
+            <router-link to="#">
+                <button class="btn-fill-dark w-full rounded-none">Patient Portal</button>
             </router-link>
         </div>
     </div>

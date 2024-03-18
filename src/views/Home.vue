@@ -243,10 +243,14 @@
                 Services
             </h2>
 
-            <div class="grid md:grid-cols-2 gap-10 my-10">
+            <div class="grid md:grid-cols-3 gap-10 my-10">
                 <ServiceCard :link="'/services/1'" :title="'Bariatrics Surgery'"
                     :description="' Bariatric surgery, commonly referred to as weight loss surgery, includes procedures designed to aid individuals facing obesity in attaining long-term weight reduction and enhancing their overall well-being.'"
                     :imageUrl="'/assets/img/grid-img-1.png'">
+                </ServiceCard>
+                <ServiceCard :link="'/services/2'" :title="'General Surgery'"
+                    :description="' General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.'"
+                    :imageUrl="'/assets/img/general-surgery.png'">
                 </ServiceCard>
                 <ServiceCard :link="'/services/2'" :title="'General Surgery'"
                     :description="' General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.'"
@@ -326,12 +330,12 @@
 
         <OurTeam></OurTeam>
 
-        <div class="py-10 bg-[#F1F8FF] w-full">
+        <div class="py-10 bg-extra-dark-teal w-full">
             <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
                     <div class="">
                         <h3
-                            class=" font-manrope text-[24px] md:text-[40px] text-extra-dark-teal text-center sm:text-right">
+                            class=" font-manrope text-[24px] md:text-[40px] text-[#F1F8FF] text-center sm:text-right">
                             Am I a Candidate ?
                         </h3>
                     </div>
@@ -463,8 +467,8 @@ export default {
         isVisible(newValue, oldValue) {
             if (newValue) {
                 gsap.to(this, { duration: 1, happyClients: 3000 || 0 })
-                gsap.to(this, { duration: 1, yearsOfExperience: 26 || 0 })
-                gsap.to(this, { duration: 1, staffs: 200 || 0 })
+                gsap.to(this, { duration: 1, yearsOfExperience: 20 || 0 })
+                gsap.to(this, { duration: 1, staffs: 300 || 0 })
             }
         }
     },
