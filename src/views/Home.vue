@@ -252,11 +252,11 @@
                     :description="' General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.'"
                     :imageUrl="'/assets/img/general-surgery.png'">
                 </ServiceCard>
-                <ServiceCard :link="'/services/1'" :title="'Endoscopy'"
+                <ServiceCard :link="'/services/1/#Endoscopy'" :title="'Endoscopy'"
                     :description="'Endoscopy is a medical procedure where an endoscope is used to examine the interior of the bodys hollow organs or cavities, offering direct visualization unlike other imaging methods. '"
                     :imageUrl="'/assets/img/endoscopy.png'">
                 </ServiceCard>
-                <ServiceCard :link="'/services/1'" :title="'Tummy Tuck'"
+                <ServiceCard :link="'/services/1/#TummyTuck'" :title="'Tummy Tuck'"
                     :description="' A tummy tuck, also called abdominoplasty, removes excess fat and skin from the abdomen, tightens muscles, and enhances the midsections appearance, commonly after weight loss or pregnancy.'"
                     :imageUrl="'/assets/img/tummy-tuck.png'">
                 </ServiceCard>
