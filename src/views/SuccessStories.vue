@@ -28,6 +28,23 @@
                     title="Video title"></iframe>
             </div>
         </div>
+
+        <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
+            <div class="grid md:grid-cols-3 gap">
+                <img :src="img" class="h-96 w-96 object-cover" v-for="img in testimonialArray" :key="img"
+                    @click="testimonialSelected(img)">
+
+                </img>
+            </div>
+        </div>
+        <Transition>
+            <div class="fixed w-screen h-screen top-0 grid place-content-center  backdrop-blur-md z-50"
+                v-if="showSelectedTestimonial" @click="showSelectedTestimonial = false">
+                <img :src="selectedTestimonial" class="h-[800px] w-[800px] object-cover rounded-xl">
+            </div>
+        </Transition>
+
+
         <TheTestimonial></TheTestimonial>
         <ContactSection></ContactSection>
 
@@ -40,3 +57,33 @@ import HeroSection from '@/components/HeroSection.vue';
 import TheTestimonial from '@/components/TheTestimonial.vue';
 import ContactSection from '@/components/ContactSection.vue';
 </script>
+<script>
+export default {
+    data() {
+        return {
+            testimonialArray: ['/assets/img/tummy-tuck.png', '/assets/img/testimonial-3.png'],
+            selectedTestimonial: '',
+            showSelectedTestimonial: false
+        }
+    },
+    methods: {
+        testimonialSelected(img) {
+            this.selectedTestimonial = img
+            this.showSelectedTestimonial = true
+
+        }
+    }
+}
+</script>
+<style scoped>
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+</style>
