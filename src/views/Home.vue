@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <div class="py-10 bg-[#F1F8FF] w-full">
+        <div class="py-10 bg-[#F1F8FF] w-full  xl:my-32">
             <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
                     <div class="">
@@ -132,7 +132,7 @@
             </div>
         </div>
 
-        <div class="max-w-screen-xl mx-auto my-20 px-8">
+        <div class="max-w-screen-xl mx-auto my-20 px-8  xl:my-32">
             <h6 class="text-center mb-4">
                 Why Choose Us
             </h6>
@@ -150,7 +150,7 @@
 
         </div>
 
-        <div class="py-10 bg-[#F1F8FF] w-full">
+        <div class="py-10 bg-[#F1F8FF] w-full ">
             <div class="max-w-screen-xl mx-auto px-4" ref="target">
                 <div class="grid grid-cols-3 gap-4 "
                     v-element-visibility="[onElementVisibility, { scrollTarget: target }]">
@@ -235,7 +235,7 @@
 
         </div>
 
-        <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
+        <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20  xl:my-32">
             <!-- <h2 class="mb-4 tracking-tight">
             Services
         </h2> -->
@@ -243,7 +243,7 @@
                 Services
             </h2>
 
-            <div class="grid md:grid-cols-3 gap-10 my-10">
+            <div class="grid md:grid-cols-2 gap-10 my-10">
                 <ServiceCard :link="'/services/1'" :title="'Bariatrics Surgery'"
                     :description="' Bariatric surgery, commonly referred to as weight loss surgery, includes procedures designed to aid individuals facing obesity in attaining long-term weight reduction and enhancing their overall well-being.'"
                     :imageUrl="'/assets/img/grid-img-1.png'">
@@ -252,23 +252,30 @@
                     :description="' General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.'"
                     :imageUrl="'/assets/img/general-surgery.png'">
                 </ServiceCard>
-                <ServiceCard :link="'/services/2'" :title="'General Surgery'"
-                    :description="' General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.'"
-                    :imageUrl="'/assets/img/general-surgery.png'">
+                <ServiceCard :link="'/services/1'" :title="'Endoscopy'"
+                    :description="'Endoscopy is a medical procedure where an endoscope is used to examine the interior of the bodys hollow organs or cavities, offering direct visualization unlike other imaging methods. '"
+                    :imageUrl="'/assets/img/endoscopy.png'">
+                </ServiceCard>
+                <ServiceCard :link="'/services/1'" :title="'Tummy Tuck'"
+                    :description="' A tummy tuck, also called abdominoplasty, removes excess fat and skin from the abdomen, tightens muscles, and enhances the midsections appearance, commonly after weight loss or pregnancy.'"
+                    :imageUrl="'/assets/img/tummy-tuck.png'">
                 </ServiceCard>
             </div>
         </div>
 
-        <div class="w-full bg-no-repeat bg-cover bg-center bg-extra-dark-teal my-10 md:my-20 py-10">
-            <div class="max-w-screen-xl mx-auto">
+        <div class="w-full bg-no-repeat bg-cover bg-center bg-extra-dark-teal my-10 md:my-20 py-10  xl:my-32 px-5 ">
+            <div class="max-w-screen-xl mx-auto my-10">
+                <h3 class="font-manrope text-white text-[32px] md:text-[52px] text-center font-extrabold">Robotic
+                    surgery
+                </h3>
+                <h4 class="font-manrope text-white text-xl mb-4 text-center font-bold py-4">Precision Surgery for
+                    Life-Changing
+                    Results
+                </h4>
                 <div class=" grid md:grid-cols-2 md:gap-10">
 
                     <div>
-                        <h3 class="font-manrope text-white text-[32px] md:text-[52px] font-extrabold">Robotic surgery
-                        </h3>
-                        <h4 class="font-manrope text-white text-xl font-bold py-4">Precision Surgery for Life-Changing
-                            Results
-                        </h4>
+
                         <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure
                             designed to
                             aid
@@ -283,6 +290,22 @@
                             food
                             and
                             some malabsorption of nutrients.</p>
+                        <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using
+                            robotic
+                            technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging
+                            systems
+                            that
+                            provide a magnified, 3-dimensional view of the surgical site. The procedure involves making
+                            a
+                            few
+                            small
+                            incisions through which robotic arms with surgical instruments are inserted and controlled.
+                            Your
+                            surgeon
+                            operates the robotic arms from a console near the operating table, allowing for highly
+                            precise
+                            movements.</p>
+
 
                     </div>
                     <div>
@@ -304,25 +327,22 @@
 
                 </div>
                 <div class="py-4">
-                    <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using
-                        robotic
-                        technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging systems
-                        that
-                        provide a magnified, 3-dimensional view of the surgical site. The procedure involves making a
-                        few
-                        small
-                        incisions through which robotic arms with surgical instruments are inserted and controlled. Your
-                        surgeon
-                        operates the robotic arms from a console near the operating table, allowing for highly precise
-                        movements.</p>
                     <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized
                         bariatric
-                        surgery, enabling procedures to be performed on individuals with higher body mass indices than
-                        previously possible with traditional methods. Robotic surgery offers benefits such as reduced
+                        surgery, enabling procedures to be performed on individuals with higher body mass indices
+                        than
+                        previously possible with traditional methods. Robotic surgery offers benefits such as
+                        reduced
                         operating
-                        time, postoperative pain, scarring, and recovery time. Additionally, the risk of complications
+                        time, postoperative pain, scarring, and recovery time. Additionally, the risk of
+                        complications
                         is
                         significantly minimized.</p>
+                </div>
+                <div class="grid grid-cols-3 gap-2 md:gap-4 my-10">
+                    <img src="@/assets/img/robotic-1.jpg" alt="" srcset="" class="h-auto w-auto">
+                    <img src="@/assets/img/robotic-2.jpg" alt="" srcset="" class="h-auto w-auto">
+                    <img src="@/assets/img/robotic-3.jpg" alt="" srcset=""  class="h-auto w-auto">
                 </div>
             </div>
 
@@ -332,7 +352,7 @@
 
         <div class="py-10 bg-extra-dark-teal w-full">
             <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
-                <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
+                <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 w-full">
                     <div class="">
                         <h3 class=" font-manrope text-[24px] md:text-[40px] text-[#F1F8FF] text-center sm:text-right">
                             Am I a Candidate ?
@@ -390,7 +410,7 @@
             </div>
         </div>
 
-        <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-40">
+        <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20  xl:my-32">
             <!-- <h2 class="mb-4 tracking-tight">
             Success Stories
         </h2> -->

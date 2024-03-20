@@ -1,5 +1,5 @@
 <template>
-    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
+    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20  xl:my-32">
         <div class="grid lg:grid-cols-2 gap-4">
             <div>
                 <h6 class=" mb-4 md:mb-8">

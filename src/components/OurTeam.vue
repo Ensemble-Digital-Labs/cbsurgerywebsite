@@ -1,5 +1,5 @@
 <template>
-    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
+    <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20  xl:my-32">
         <h2 class="mb-8 tracking-tight text-center">
             Our Team
         </h2>

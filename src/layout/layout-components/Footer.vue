@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-extra-dark-teal ">
-        <div class="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:pt-6">
+        <div class="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:pt-10">
             <div class="md:flex justify-around sm:gap-4 md:gap-10 lg:gap-20">
                 <div class="mb-6 md:mb-0">
                     <a href="/" class="flex items-center">
@@ -27,6 +27,10 @@
                             <li>
                                 <router-link to="/contact-us"
                                     class="text-white text-[15px] font-archivo">Contact</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/privacy-policy"
+                                    class="text-white text-[15px] font-archivo">HIPAA Policy</router-link>
                             </li>
                         </ul>
                     </div>
@@ -83,8 +87,8 @@
                     </div>
                 </div>
             </div>
-            <hr class="my-6 border-[#ffffff17] max-w-7xl sm:mx-auto lg:my-8" />
-            <div class="w-full mx-auto">
+            <hr class="my-6 border-[#ffffff17] max-w-7xl sm:mx-auto lg:my-6" />
+            <div class="w-full mx-auto pb-10">
                 <span class="text-sm text-white block mx-auto text-center">Copyright © 2024. All rights reserved</span>
             </div>
             <!-- Sticky button -->

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full content-center mx-auto my-20">
+    <div class="w-full content-center mx-auto my-20  xl:my-32">
         <div class="max-w-4xl mx-auto px-4 md:px-10">
             <h6 class="text-center">FAQ</h6>
             <h3
