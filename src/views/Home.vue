@@ -298,7 +298,7 @@
                                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                                 style="position:absolute;top:0;left:0;width:100%;height:100%;"
                                 title="Video title"></iframe></div>
-                        
+
 
                     </div>
 
@@ -334,8 +334,7 @@
             <div class="max-w-screen-2xl mx-auto px-4 grid place-content-center">
                 <div class="flex flex-col lg:flex-row items-center lg:gap-10 w-full">
                     <div class="">
-                        <h3
-                            class=" font-manrope text-[24px] md:text-[40px] text-[#F1F8FF] text-center sm:text-right">
+                        <h3 class=" font-manrope text-[24px] md:text-[40px] text-[#F1F8FF] text-center sm:text-right">
                             Am I a Candidate ?
                         </h3>
                     </div>
@@ -351,24 +350,23 @@
         </div>
         <TheTestimonial></TheTestimonial>
         <div class="w-full  h-[500px] relative my-10" id="dedicated">
-            <div class="w-full hidden lg:grid grid-cols-12 h-[500px]  bg-cover bg-top bg-white/90 bg-blend-overlay md:bg-blend-normal "
-                style="background-image: url('/assets/img/dedicated.png');">
-                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-8"
-                    style="background-image: url('/assets/img/design.png');">
+            <div class="w-full hidden lg:grid grid-cols-12 h-[500px]  bg-cover bg-top bg-blend-overlay bg-extra-dark-teal/20 "
+                style="background-image: url('/assets/img/news1.png');">
+                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-7" style="background-image: url('/assets/img/design1.png');">
                 </div>
                 <div>
 
                 </div>
             </div>
             <div class="w-full absolute top-0 left-0 h-[500px] grid place-content-center">
-                <div class="max-w-screen-xl mx-auto px-6 xl:px-0">
+                <div class="max-w-screen-xl mx-auto px-6 xl:px-0 bg-extra-dark-teal md:bg-transparent p-6 md:p-0">
                     <div class="">
                         <div>
-                            <h2 class="leading-[40px] md:leading-[60px] tracking-tight mb-6">
+                            <h2 class="leading-[40px] md:leading-[60px] tracking-tight mb-6  text-white">
                                 Dedicated to Give You<br />
                                 The Best Services
                             </h2>
-                            <p class="text-[#636571] md:w-1/2 mb-6">
+                            <p class="md:w-1/2 mb-6 text-white">
                                 We are committed to offering exceptional services personalized to your preferences, we
                                 strive to
                                 ensure your journey is smooth and gratifying. Our promise is to provide exceptional
@@ -426,11 +424,47 @@
         </div>
         <FAQ></FAQ>
         <ContactSectionVue></ContactSectionVue>
+        <Transition name="slide-fade">
+
+            <div class="fixed w-56 h-96 bottom-8 right-10 grid" v-if="showPopup">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-8 h-8 bg-white shadow-lg shadow-black rounded-full p-1 hover:bg-dark-teal -ml-2 cursor-pointer -mb-4 z-50" @click="showPopup = false">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+                <div style="padding:177.78% 0 0 0;position:relative;"><iframe
+                        src="https://player.vimeo.com/video/924940605?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        class="rounded-xl shadow-xl shadow-dark-teal" title="IMG_0530"></iframe>
+                </div>
+            </div>
+        </Transition>
+
     </PublicPageLayout>
 
 
 
 </template>
+<style>
+/*
+  Enter and leave animations can use different
+  durations and timing functions.
+*/
+.slide-fade-enter-active {
+    transition: all 1s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+</style>
 
 <script>
 import { ref } from 'vue'
@@ -453,11 +487,17 @@ const target = ref(null)
 import gsap from 'gsap'
 
 export default {
+    mounted() {
+        setTimeout(() => {
+            this.showPopup = true
+        }, 3000);
+    },
     data() {
         return {
             number: 0,
             happyClients: 0,
             yearsOfExperience: 0,
+            showPopup: false,
             staffs: 0,
             isVisible: false
         }

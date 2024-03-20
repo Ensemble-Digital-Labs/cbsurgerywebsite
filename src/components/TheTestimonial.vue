@@ -60,35 +60,20 @@ import 'vue3-carousel/dist/carousel.css'
 
 export default {
     async mounted() {
-        // fetch("/last-review-fetch-date.txt")
-        //     .then((res) => res.text())
-        //     .then((text) => {
-        //         const data = JSON.parse(text)
-        //         const today = new Date();
-        //         const date = new Date(data.date);
-        //         const diffTime = Math.abs(today - date);
-        //         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) - 1;
-        //         console.log(diffDays);
-        //         if (diffDays > 7) {
-        //             console.log(JSON.parse(data.reviews));
-        //             this.testimonials = data.reviews
-        //             axios.get('/getGoogleMapReviews.php').then(function (result) {
-        //                 this.testimonials = result.data
-        //                 console.log(this.testimonials.data);
-        //             }.bind(this))
-        //         } else {
-        //             console.log(JSON.parse(data.reviews));
-        //             this.testimonials = JSON.parse(data.reviews)
-        //         }
-        //     })
-        //     .catch((e) => console.error(e));
+        fetch("/last-review-fetch-date.txt")
+            .then((res) => res.text())
+            .then((text) => {
+                const data = JSON.parse(text)
 
-            axios.get('/getGoogleMapReviews.php').then(function (result) {
-                        this.testimonials = result.data
-                        console.log(this.testimonials.data);
-                    }.bind(this))
+                    console.log(JSON.parse(data.reviews));
+                    this.testimonials = JSON.parse(data.reviews)
+            })
+            .catch((e) => console.error(e));
 
-
+        // axios.get('/getGoogleMapReviews.php').then(function (result) {
+        //     this.testimonials = result.data
+        //     console.log(this.testimonials.data);
+        // }.bind(this))
     },
     data() {
         return {
