@@ -369,30 +369,29 @@
             </div>
         </div>
         <TheTestimonial></TheTestimonial>
+
+
         <div class="w-full  h-[500px] relative my-10" id="dedicated">
             <div class="w-full hidden lg:grid grid-cols-12 h-[500px]  bg-cover bg-top bg-blend-overlay bg-extra-dark-teal/20 "
-                style="background-image: url('/assets/img/news1.png');">
-                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-7" style="background-image: url('/assets/img/design1.png');">
+                style="background-image: url('/assets/img/news4.png');">
+                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-6" style="background-image: url('/assets/img/design1.png');">
                 </div>
                 <div>
 
                 </div>
             </div>
-            <div class="w-full absolute top-0 left-0 h-[500px] grid place-content-center">
-                <div class="max-w-screen-xl mx-auto px-6 xl:px-0 bg-extra-dark-teal md:bg-transparent p-6 md:p-0">
+            <div class="w-full absolute top-0 left-0 h-[500px] grid content-center">
+                <div class="max-w-screen-xl w-full mx-auto px-6 xl:px-0 bg-extra-dark-teal md:bg-transparent p-6 md:p-0 ">
                     <div class="">
                         <div>
                             <h2 class="leading-[40px] md:leading-[60px] tracking-tight mb-6  text-white">
                                 Dedicated to Give You<br />
                                 The Best Services
                             </h2>
-                            <p class="md:w-1/2 mb-6 text-white">
+                            <p class="md:w-1/4 mb-6 text-white">
                                 We are committed to offering exceptional services personalized to your preferences, we
                                 strive to
-                                ensure your journey is smooth and gratifying. Our promise is to provide exceptional
-                                service
-                                that is precisely crafted to your specifications, ensuring a seamless and rewarding
-                                experience.
+                                ensure your journey is smooth and gratifying.
 
                             </p>
                             <div>
