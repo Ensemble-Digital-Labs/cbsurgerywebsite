@@ -1,5 +1,6 @@
 <template>
     <PublicPageLayout>
+        
         <div class="max-w-screen-2xl mx-auto px-6 sm:px-0">
             <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row md:pl-10">
                 <div class="py-10 sm:pl-6 md:pl-0 sm:py-20  md:py-10 lg:py-40 grid content-center lg:w-6/12">
@@ -392,7 +393,6 @@
                                 We are committed to offering exceptional services personalized to your preferences, we
                                 strive to
                                 ensure your journey is smooth and gratifying.
-
                             </p>
                             <div>
                                 <router-link to="/services">
@@ -402,7 +402,6 @@
                                 </router-link>
                             </div>
                         </div>
-
                     </div>
                 </div>
 

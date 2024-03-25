@@ -112,18 +112,18 @@
     <div
         class=" hidden md:block shadow w-56">
         <router-link to="/appointments">
-            <button class="float-btn-dark w-52 ">Book an Appointment</button>
+            <button class="w-52" :class="getRoute === '/appointments' ? 'float-btn-light' : 'float-btn-dark'">Book an Appointment</button>
         </router-link>
     </div>
     <div class="hidden md:block  w-56">
         <router-link to="/am-i-candidate">
-            <button class="float-btn-light w-52">Am I a Candidate</button>
+            <button class="w-52" :class="getRoute === '/am-i-candidate' ? 'float-btn-light' : 'float-btn-dark'">Am I a Candidate</button>
         </router-link>
     </div>
     <div
         class=" hidden md:block shadow w-56">
         <router-link to="#">
-            <button class="float-btn-dark w-52 ">Patient Portal</button>
+            <button class="w-52" :class="getRoute === '/patient-portal' ? 'float-btn-light' : 'float-btn-dark'">Patient Portal</button>
         </router-link>
     </div>
     </div>
@@ -132,17 +132,17 @@
     <div class="fixed bottom-0 flex w-full">
         <div class="block md:hidden w-1/2">
             <router-link to="/appointments">
-                <button class="btn-fill-dark w-full rounded-none">Book an Appointment</button>
+                <button class="rounded-none  w-full" :class="getRoute === '/appointments' ? 'btn-fill-light' : 'btn-fill-dark'">Book an Appointment</button>
             </router-link>
         </div>
         <div class="block md:hidden w-1/2">
             <router-link to="/am-i-candidate">
-                <button class="btn-fill-light w-full rounded-none">Am I a Candidate</button>
+                <button class="w-full rounded-none" :class="getRoute === '/am-i-candidate' ? 'btn-fill-light' : 'btn-fill-dark'">Am I a Candidate</button>
             </router-link>
         </div>
         <div class="block md:hidden w-1/2">
             <router-link to="#">
-                <button class="btn-fill-dark w-full rounded-none">Patient Portal</button>
+                <button class="w-full rounded-none"  :class="getRoute === '/patient-portal' ? 'btn-fill-light' : 'btn-fill-dark'">Patient Portal</button>
             </router-link>
         </div>
     </div>
@@ -173,6 +173,11 @@ export default {
                     console.log(error);
                     this.message = "Oops!, Something wrong happend!"
                 }.bind(this));
+        }
+    },
+    computed: {
+        getRoute() {
+            return this.$route.path;
         }
     }
 }

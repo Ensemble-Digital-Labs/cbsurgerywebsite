@@ -33,10 +33,10 @@
             <div class="grid md:grid-cols-3 gap">
                 <img :src="img" class="h-96 w-96 object-cover" v-for="img in testimonialArray" :key="img"
                     @click="testimonialSelected(img)">
-
                 </img>
             </div>
         </div>
+        
         <Transition>
             <div class="fixed w-screen h-screen top-0 grid place-content-center  backdrop-blur-md z-50"
                 v-if="showSelectedTestimonial" @click="showSelectedTestimonial = false">
