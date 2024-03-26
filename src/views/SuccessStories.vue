@@ -61,7 +61,7 @@ import ContactSection from '@/components/ContactSection.vue';
 export default {
     data() {
         return {
-            testimonialArray: ['/assets/img/tummy-tuck.png', '/assets/img/testimonial-3.png'],
+            testimonialArray: ['/assets/img/tummy-tuck.png', '/assets/img/testimonial-3.png', '/assets/img/grid-img-2.png'],
             selectedTestimonial: '',
             showSelectedTestimonial: false
         }
