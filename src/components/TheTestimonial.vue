@@ -5,7 +5,7 @@
                 <h6 class=" mb-4 md:mb-8">
                     Our Testimonial
                 </h6>
-                <h2 class="leading-[40px] md:leading-[60px] tracking-tighter mb-6">
+                <h2 class="leading-[40px] md:leading-[60px] tracking-tighter md:mb-6">
                     The Honest Review<br />
                     From Our <span class="text-dark-teal"> Family</span>
                 </h2>

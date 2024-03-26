@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <p class="text-[#636571] hidden md:block lg:hidden md:px-6 lg:px-2">
+            <p class="text-[#636571] hidden md:block py-10 lg:hidden md:px-6 lg:px-4">
                 To enhance my skills in surgical technology, I pursued an Associate Degree at Austin Community
                 College in Texas from January 2003 to December 2004. Recognizing the importance of business
                 acumen in healthcare, I furthered my education with an MBA from the EMBA Washington University
@@ -56,14 +56,14 @@
                 Harvard Business School in Boston, Massachusetts, honing skills in operational design, strategy,
                 and innovation.
             </p>
-            <p class="text-[#636571] lg:block mt-0 lg:mt-10 md:px-6 lg:px-2">
+            <p class="text-[#636571] lg:block mt-0 lg:mt-10 md:px-6 lg:px-4">
                 Complementing my medical expertise, I also completed courses in Essentials of Health Law and the
                 Chief Medical Officer Academy, offered by the American College of Physician Executive, which
                 equipped me with crucial knowledge in healthcare regulations, quality improvement, and
                 leadership essentials.
             </p>
 
-            <p class="text-[#636571] lg:block md:px-6 lg:px-2">
+            <p class="text-[#636571] lg:block md:px-6 lg:px-4">
                 Additionally, the Surgeon as Leaders program by the American College of Surgeons further refined my
                 leadership skills, emphasizing attributes of effective leadership and strategies for organizational
                 transformation. To round out my leadership capabilities, I completed the Leadership for Physician
@@ -72,7 +72,7 @@
                 management, negotiation, and leading during times of change.
 
             </p>
-            <p class="text-[#636571] lg:block md:px-6 lg:px-2">
+            <p class="text-[#636571] lg:block md:px-6 lg:px-4">
                 My journey from the operating room to the boardroom has been shaped by a commitment to excellence in
                 healthcare delivery, leadership, and continuous learning, preparing me to drive positive change and
                 innovation in the healthcare industry.

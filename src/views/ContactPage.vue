@@ -4,9 +4,10 @@
         <div class="max-w-screen-xl mx-auto">
             <div class="grid md:grid-cols-12 lg:grid-cols-2 md:gap-4">
                 <div class="md:col-span-7 lg:col-span-1">
-                    <div >
-                        <form  @submit.prevent="contactFormSubmit()" class="py-10 space-y-4  px-4 sm:px-40 md:px-8 lg:px-10 xl:px-0">
-                        <!-- <form method="post" action="https://cbsurgery.getupsolutions.net/contactFormSubmitMail.php" class="py-10 space-y-4  px-4 sm:px-40 md:px-8 lg:px-10 xl:px-0"> -->
+                    <div>
+                        <form @submit.prevent="contactFormSubmit()"
+                            class="py-10 space-y-4  px-4 sm:px-40 md:px-8 lg:px-10 xl:px-0">
+                            <!-- <form method="post" action="https://cbsurgery.getupsolutions.net/contactFormSubmitMail.php" class="py-10 space-y-4  px-4 sm:px-40 md:px-8 lg:px-10 xl:px-0"> -->
                             <div>
                                 <div>
                                     <label for="firstName"
@@ -46,10 +47,17 @@
                                     placeholder="Type here..." required></textarea>
 
                             </div>
+                            <ChallengeV3 v-model="response" action="submit">
+                                <p>{{ response ? `Get response: ${response.slice(0, 6)}...` : 'click me' }}
+                                </p>
+                            </ChallengeV3>
                             <div>
-                                <button class="btn-fill-dark h-11 w-full md:w-auto mb-2" type="submit">
-                                    Send Message
-                                </button>
+                                <ChallengeV3 v-model="response" action="submit">
+                                    <button class="btn-fill-dark h-11 w-full md:w-auto mb-2" type="submit">
+                                        Send Message
+                                    </button>
+                                </ChallengeV3>
+
                                 <p class="text-dark-teal font-bold font-manrope" v-if="message">
                                     {{ message }}
                                 </p>
@@ -78,8 +86,7 @@
                         </div>
                         <div class="flex gap-2">
                             <img src="/src/assets/icons/email.svg" class="h-5 w-4">
-                            <a href="mailto:info@cbsurgery.com"
-                                class="font-archivo text-white">info@cbsurgery.com</a>
+                            <a href="mailto:info@cbsurgery.com" class="font-archivo text-white">info@cbsurgery.com</a>
                         </div>
                     </div>
                     <div>
@@ -106,19 +113,25 @@
 import axios from 'axios';
 import PublicPageLayout from '../layout/PublicPageLayout.vue';
 import HeroSectionVue from '@/components/HeroSection.vue';
+import { ref } from 'vue';
+const response = ref()
 </script>
+
 <script>
 export default {
     data() {
         return {
             contactInfo: {},
             message: '',
+            captcha:null,
         }
     },
     methods: {
         contactFormSubmit() {
             console.log(this.contactInfo);
-            axios.post('/contactFormSubmitMail.php', this.contactInfo)
+            console.log(this.$refs.response);
+            if(this.$refs.response) {
+                axios.post('/contactFormSubmitMail.php', this.contactInfo)
                 .then(function (response) {
                     console.log(response);
                     this.message = "Thank you for contacting us!"
@@ -128,6 +141,8 @@ export default {
                     console.log(error);
                     this.message = "Oops!, Something wrong happend!"
                 }.bind(this));
+            }   
+
         }
     }
 }

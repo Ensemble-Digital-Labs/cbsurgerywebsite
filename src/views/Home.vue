@@ -1,6 +1,6 @@
 <template>
     <PublicPageLayout>
-        
+
         <div class="max-w-screen-2xl mx-auto px-6 sm:px-0">
             <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row md:pl-10">
                 <div class="py-10 sm:pl-6 md:pl-0 sm:py-20  md:py-10 lg:py-40 grid content-center lg:w-6/12">
@@ -372,24 +372,24 @@
         <TheTestimonial></TheTestimonial>
 
 
-        <div class="w-full  h-[500px] relative my-10" id="dedicated">
-            <div class="w-full hidden lg:grid grid-cols-12 h-[500px]  bg-cover bg-top bg-blend-overlay bg-extra-dark-teal/20 "
-                style="background-image: url('/assets/img/news4.png');">
-                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-6" style="background-image: url('/assets/img/design1.png');">
+        <div class="w-full h-[300px]  md:h-[500px] relative my-10" id="dedicated">
+            <div class="w-full hidden md:grid grid-cols-12 md:h-[500px]  bg-cover bg-right bg-blend-overlay bg-extra-dark-teal/20 "
+                style="background-image: url('/assets/img/news5.png');">
+                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-7" style="background-image: url('/assets/img/design1.png');">
                 </div>
                 <div>
 
                 </div>
             </div>
-            <div class="w-full absolute top-0 left-0 h-[500px] grid content-center">
-                <div class="max-w-screen-xl w-full mx-auto px-6 xl:px-0 bg-extra-dark-teal md:bg-transparent p-6 md:p-0 ">
+            <div class="w-full absolute top-0 left-0 md:h-[500px] grid content-center">
+                <div class="max-w-screen-xl w-full mx-auto px-6 xl:px-0 bg-extra-dark-teal md:bg-transparent p-6 ">
                     <div class="">
                         <div>
-                            <h2 class="leading-[40px] md:leading-[60px] tracking-tight mb-6  text-white">
+                            <h2 class="leading-[40px] md:leading-[50px] tracking-tight mb-6  text-white">
                                 Dedicated to Give You<br />
                                 The Best Services
                             </h2>
-                            <p class="md:w-1/4 mb-6 text-white">
+                            <p class=" md:w-1/2 xl:w-1/4 mb-6 text-white">
                                 We are committed to offering exceptional services personalized to your preferences, we
                                 strive to
                                 ensure your journey is smooth and gratifying.
@@ -442,7 +442,7 @@
         </div>
         <FAQ></FAQ>
         <ContactSectionVue></ContactSectionVue>
-        <Transition name="slide-fade">
+        <!-- <Transition name="slide-fade">
 
             <div class="fixed w-56 h-96 bottom-8 right-10 grid" v-if="showPopup">
 
@@ -457,7 +457,7 @@
                         class="rounded-xl shadow-xl shadow-dark-teal" title="IMG_0530"></iframe>
                 </div>
             </div>
-        </Transition>
+        </Transition> -->
 
     </PublicPageLayout>
 

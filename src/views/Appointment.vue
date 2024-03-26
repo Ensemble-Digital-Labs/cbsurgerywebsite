@@ -77,7 +77,7 @@
                 </div>
 
                 <p class="py-4 md:flex items-center gap-4">
-                    <input id="inline-2-radio" type="radio" value=""
+                    <input id="inline-2-radio" type="checkbox" value=""
                         class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" required checked>
                     I consent to receiving email correspondence regarding my inquiry.<span
                         class="text-dark-teal">*</span>
@@ -87,7 +87,7 @@
                     <button class="btn-fill-dark h-11 w-full py-4 grid content-center" type="submit">
                         Submit
                     </button>
-                    <p class="text-dark-teal font-bold font-manrope" v-if="message">
+                    <p class="text-dark-teal mt-4 font-bold font-manrope" v-if="message">
                         {{ message }}
                     </p>
                 </div>
