@@ -70,7 +70,7 @@
                                     class="ml-2 shrink-0 rounded-md text-white bg-dark-teal text-[16px] px-6 py-3 text-sm font-medium font-archivo hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50"
                                     type="submit">Sign Up</button>
                             </form>
-                            <p class="text-dark-teal font-bold font-manrope" v-if="message">
+                            <p class="text-dark-teal mt-4 font-bold font-manrope" v-if="message">
                                     {{ message }}
                                 </p>
                         </div>
@@ -107,42 +107,42 @@
             <button class="btn-fill-dark w-52 ">Book an Appointment</button>
         </router-link>
     </div> -->
-    <div class="fixed bottom-0 left-1/3  flex">
+    <div class="fixed bottom-0 flex justify-center w-full">
     
     <div
         class=" hidden md:block shadow w-56">
         <router-link to="/appointments">
-            <button class="float-btn-dark w-52 ">Book an Appointment</button>
+            <button class="w-52" :class="getRoute === '/appointments' ? 'float-btn-light' : 'float-btn-dark'">Book an Appointment</button>
         </router-link>
     </div>
     <div class="hidden md:block  w-56">
         <router-link to="/am-i-candidate">
-            <button class="float-btn-light w-52">Am I a Candidate</button>
+            <button class="w-52" :class="getRoute === '/am-i-candidate' ? 'float-btn-light' : 'float-btn-dark'">Am I a Candidate</button>
         </router-link>
     </div>
     <div
         class=" hidden md:block shadow w-56">
         <router-link to="#">
-            <button class="float-btn-dark w-52 ">Patient Portal</button>
+            <button class="w-52" :class="getRoute === '/patient-portal' ? 'float-btn-light' : 'float-btn-dark'">Patient Portal</button>
         </router-link>
     </div>
     </div>
 
 
-    <div class="fixed bottom-0 flex w-full">
-        <div class="block md:hidden w-1/2">
+    <div class="fixed bottom-0 flex w-full divide-x-2 divide-light-teal">
+        <div class="block md:hidden w-1/3">
             <router-link to="/appointments">
-                <button class="btn-fill-dark w-full rounded-none">Book an Appointment</button>
+                <button class="rounded-none  w-full" :class="getRoute === '/appointments' ? 'btn-fill-light' : 'btn-fill-dark'">Book an Appointment</button>
             </router-link>
         </div>
-        <div class="block md:hidden w-1/2">
+        <div class="block md:hidden w-1/3">
             <router-link to="/am-i-candidate">
-                <button class="btn-fill-light w-full rounded-none">Am I a Candidate</button>
+                <button class="w-full rounded-none" :class="getRoute === '/am-i-candidate' ? 'btn-fill-light' : 'btn-fill-dark'">Am I a Candidate</button>
             </router-link>
         </div>
-        <div class="block md:hidden w-1/2">
+        <div class="block md:hidden w-1/3">
             <router-link to="#">
-                <button class="btn-fill-dark w-full rounded-none">Patient Portal</button>
+                <button class="w-full rounded-none"  :class="getRoute === '/patient-portal' ? 'btn-fill-light' : 'btn-fill-dark'">Patient Portal</button>
             </router-link>
         </div>
     </div>
@@ -166,13 +166,18 @@ export default {
             axios.post('/SubscriptionFormSubmitMail.php', this.mailInfo)
                 .then(function (response) {
                     console.log(response);
-                    this.message = "Thank you for your subscription!"
+                    this.message = "Thank you for subscribing!"
 
                 }.bind(this))
                 .catch(function (error) {
                     console.log(error);
                     this.message = "Oops!, Something wrong happend!"
                 }.bind(this));
+        }
+    },
+    computed: {
+        getRoute() {
+            return this.$route.path;
         }
     }
 }

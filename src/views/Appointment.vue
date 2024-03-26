@@ -1,6 +1,6 @@
 <template>
     <PublicPageLayout>
-        <HeroSection :title="'Make Appointment'"></HeroSection>
+        <HeroSection :title="'Book an Appointment'"></HeroSection>
         <div
             class="bg-white p-4 sm:p-16 w-full md:w-full lg:w-8/12 xl:w-5/12 md:shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
             <form @submit.prevent="appointmentFormSubmit()">
@@ -77,7 +77,7 @@
                 </div>
 
                 <p class="py-4 md:flex items-center gap-4">
-                    <input id="inline-2-radio" type="radio" value=""
+                    <input id="inline-2-radio" type="checkbox" value=""
                         class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" required checked>
                     I consent to receiving email correspondence regarding my inquiry.<span
                         class="text-dark-teal">*</span>
@@ -87,7 +87,7 @@
                     <button class="btn-fill-dark h-11 w-full py-4 grid content-center" type="submit">
                         Submit
                     </button>
-                    <p class="text-dark-teal font-bold font-manrope" v-if="message">
+                    <p class="text-dark-teal mt-4 font-bold font-manrope" v-if="message">
                         {{ message }}
                     </p>
                 </div>
