@@ -1,17 +1,19 @@
 <template>
     <PublicPageLayout>
-        <HeroSectionVue :title="'Endoscopic Tummy Tuck'">
-        <h6 class="mx-auto">Our Services > Endoscopic Tummy Tuck</h6>
+        <HeroSectionVue :title="'Endoscopy'">
+        <h6 class="mx-auto text-sm md:text-[20px]">Our Services > Endoscopy</h6>
         </HeroSectionVue>
-        <SingleServiceCard :title="'Inguinal Hernia'"
-            :description="' Lorem ipsum dolor sit amet consectetur. Diam nunc massa in nullam sit purus porta. Ridiculus blandit pulvinar rhoncus dolor diam iaculis semper sit. Malesuada nunc id quis lacus est ut. Velit in dapibus nisl nulla eleifend vel tortor sed. Faucibus sagittis ac tempus pulvinar odio nam amet est. In consequat arcu sit amet et aliquet sit consequat Tempus quam proin amet morbi convallis sapien. Eu ligula etiam convallis felis ultrices nascetur in nunc. Urna quis volutpat hendrerit nullam fusce viverra dolor. Fermentum parturient non vulputate faucibus convallis pretium lacus. In sit tortor nulla etiam pellentesque fermentum lacus magna enim. Quam mattis sed vitae velit justo sed venenatis. Integer quis tellus vehicula volutpat. Sem lorem vel at pellentesque nunc'">
+        
+       <SingleServiceCard id="Upper-Endoscopy" :title="'Upper Endoscopy'" :imageUrl="'/assets/img/endoscopy-1.jpg'"
+            :description="' Upper endoscopy (EGD) to evaluate the esophagus, stomach, and duodenum with a camera passed through the mouth. This is usually done to evaluate severe reflux disease, the tendency for stomach ulcers.'">
         </SingleServiceCard>
-        <SingleServiceCard :title="'Skin Surgery'"
-            :description="' Lorem ipsum dolor sit amet consectetur. Diam nunc massa in nullam sit purus porta. Ridiculus blandit pulvinar rhoncus dolor diam iaculis semper sit. Malesuada nunc id quis lacus est ut. Velit in dapibus nisl nulla eleifend vel tortor sed. Faucibus sagittis ac tempus pulvinar odio nam amet est. In consequat arcu sit amet et aliquet sit consequat Tempus quam proin amet morbi convallis sapien. Eu ligula etiam convallis felis ultrices nascetur in nunc. Urna quis volutpat hendrerit nullam fusce viverra dolor. Fermentum parturient non vulputate faucibus convallis pretium lacus. In sit tortor nulla etiam pellentesque fermentum lacus magna enim. Quam mattis sed vitae velit justo sed venenatis. Integer quis tellus vehicula volutpat. Sem lorem vel at pellentesque nunc'">
+        <SingleServiceCard id="Lower-Endoscopy" :title="'Lower Endoscopy'" :imageUrl="'/assets/img/endoscopy-2.png'"
+            :description="' Lower endoscopy (Colonoscopy) evaluates the large bowel (Colon) for changes or growth in the colon. This is usually done to screen for Colon cancer or investigate blood in stool or any colon diseases, like inflammatory bowel disease.'">
         </SingleServiceCard>
-        <SingleServiceCard :title="'Appendectomy'"
-            :description="' Lorem ipsum dolor sit amet consectetur. Diam nunc massa in nullam sit purus porta. Ridiculus blandit pulvinar rhoncus dolor diam iaculis semper sit. Malesuada nunc id quis lacus est ut. Velit in dapibus nisl nulla eleifend vel tortor sed. Faucibus sagittis ac tempus pulvinar odio nam amet est. In consequat arcu sit amet et aliquet sit consequat Tempus quam proin amet morbi convallis sapien. Eu ligula etiam convallis felis ultrices nascetur in nunc. Urna quis volutpat hendrerit nullam fusce viverra dolor. Fermentum parturient non vulputate faucibus convallis pretium lacus. In sit tortor nulla etiam pellentesque fermentum lacus magna enim. Quam mattis sed vitae velit justo sed venenatis. Integer quis tellus vehicula volutpat. Sem lorem vel at pellentesque nunc'">
-        </SingleServiceCard>
+
+        <!-- <SingleServiceCard id="TummyTuck" :title="'Tummy Tuck(Abdominoplasty)'" :imageUrl="'/assets/img/service-8.png'"
+            :description="' A tummy tuck (abdominoplasty) is usually done for patients to remove excess skin in the lower belly area after weight loss or other reasons. These procedures are usually approved by insurance about 1 year after weight loss surgery and if there is documented persistent skin irritation and infection under the pannus (loose skin)'">
+        </SingleServiceCard> -->
         <ContactSection></ContactSection>
 
 

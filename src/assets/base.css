@@ -17,7 +17,7 @@
     @apply font-archivo text-sm md:text-[16px] leading-6 text-paragraph-font font-normal;
   }
   h6{
-    @apply text-[14px] text-dark-teal font-manrope font-bold md:px-4;
+    @apply text-[24px] text-dark-teal font-manrope font-bold md:px-4;
   }
 }
 
@@ -44,3 +44,16 @@
     @apply bg-extra-light-teal hover:dark-teal text-white font-bold py-2 px-4 rounded-sm border-dark-teal;
   }
 } */
+
+/* Position reCAPTCHA badge */
+.grecaptcha-badge {
+  /* right: 10px !important; */
+  bottom: 10px !important;
+  z-index: 1000; 
+}
+
+@media (max-width: 768px) {
+  .grecaptcha-badge {
+    bottom: 60px !important;
+  }
+}

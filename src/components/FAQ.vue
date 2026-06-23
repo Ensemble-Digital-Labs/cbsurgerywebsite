@@ -13,7 +13,7 @@
                         class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE] focus:text-dark-teal hover:bg-gray-100  gap-3"
                         data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
                         aria-controls="accordion-collapse-body-1">
-                        <span class="text-left">Do your surgeons hold board certification?</span>
+                        <span class="text-left">Do your surgeons hold board certification? </span>
                         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -24,16 +24,12 @@
                 <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
                     <div class="p-5  border-[#EEEEEE]">
                         <p class="mb-2 text-gray-500">
-                            Our surgeon, Dr. Deepu Sudhakaran, is a distinguished graduate of American medical schools,
-                            holding a board certification from the American Board of Surgery. Dr. Sudhakaran's extensive
-                            credentials further demonstrate his commitment to excellence in the field. He is licensed to
-                            practice medicine in multiple states, including Louisiana, South Carolina, Illinois, and
-                            Missouri, and holds a training medical license in Florida. Furthermore, he possesses a
-                            permanent license to practice in India from the Medical Council of India, along with a
-                            medical license for Abu Dhabi, UAE. Dr. Sudhakaran's expertise is further validated by his
-                            certifications in General Surgery and Surgical Critical Care from the American Board of
-                            Surgery. Additionally, he is ECFMG Certified and holds a current DEA License, reflecting his
-                            dedication to providing exceptional care to his patients.</p>
+                            Indeed, our surgeon, Dr. Deepu Sudhakaran, holds certification from the American Board of
+                            Surgery, reflecting his dedication to superior standards in the field. His comprehensive
+                            credentials underscore his commitment to excellence. He is licensed to practice medicine in
+                            Louisiana, South Carolina, Illinois, and Missouri, with additional training in medical
+                            licensure in Florida. Moreover, he possesses permanent licensure from the Medical Council of
+                            India and holds a medical license in Abu Dhabi, UAE. </p>
                     </div>
                 </div>
                 <h3 id="accordion-collapse-heading-2" class="p-1">
@@ -52,10 +48,11 @@
                 </h3>
                 <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
                     <div class="p-5  border-[#EEEEEE] ">
-                        <p class="mb-2 text-gray-500">Due to our surgeons' extensive training and experience in
-                            laparoscopic procedures, nearly all operations are initiated and completed using
-                            laparoscopy. Laparoscopic surgery offers several advantages for clients, including reduced
-                            risk of wound infections, decreased pain, faster recovery, and shorter hospital stays.
+                        <p class="mb-2 text-gray-500">Thanks to our surgeons' extensive training and expertise in
+                            laparoscopic procedures, including advanced techniques like robotic surgery, most of our
+                            operations are conducted using advanced laparoscopy or robotic surgery. This approach offers
+                            numerous patient benefits, such as a decreased risk of wound infections, reduced pain,
+                            faster recovery times, and shorter hospital stays.
                         </p>
                     </div>
                 </div>
@@ -64,7 +61,7 @@
                         class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
                         data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
                         aria-controls="accordion-collapse-body-3">
-                        <span class="text-left">What bariatric procedures do your surgeons specialize in?</span>
+                        <span class="text-left">What bariatric procedures do your surgeons specialize in? </span>
                         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -74,9 +71,9 @@
                 </h3>
                 <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
                     <div class="p-5 border-[#EEEEEE] ">
-                        <p class="mb-2 text-gray-500">Our surgeons boast extensive expertise in bariatric surgery,
-                            demonstrating proficiency in the three primary procedures: gastric bypass surgery, gastric
-                            sleeve surgery, and robotic bariatric surgery.
+                        <p class="mb-2 text-gray-500">Our surgeons possess extensive expertise in bariatric surgery,
+                            showcasing proficiency in the three main procedures: gastric bypass surgery, gastric sleeve
+                            surgery, and revisional surgery.
                         </p>
                     </div>
                 </div>
@@ -85,7 +82,7 @@
                         class="flex items-left font-manrope justify-between w-full p-4 font-bold rtl:text-right text-gray-500 border rounded border-[#EEEEEE]   focus:text-dark-teal hover:bg-gray-100 gap-3"
                         data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
                         aria-controls="accordion-collapse-body-4">
-                        <span class="text-left">What is the mortality rate associated with the procedure?</span>
+                        <span class="text-left">What is the complication rate associated with the procedure?</span>
                         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -97,11 +94,10 @@
                     <div class="p-5 border-[#EEEEEE] ">
                         <p class="mb-2 text-gray-500">While every surgery and anesthesia carry inherent risks, including
                             potential death and other complications, we are pleased to report that our rates are
-                            significantly below the national average. For our fast track program, the mortality rate is
-                            an exceptional 0.0003%, far surpassing the national average. Specifically, the national
-                            average for the gastric sleeve procedure is 0.08%. It's worth noting that our mortality and
-                            complication rates are lower than those typically associated with gallbladder or hip
-                            replacement surgery.
+                            significantly below the national average. Our fast-track program's mortality rate is an
+                            exceptional 0.0005%, surpassing the national average. Specifically, the national average for
+                            the gastric sleeve procedure is 0.08%. It's worth noting that our mortality and complication
+                            rates are lower than those typically associated with gallbladder or hip replacement surgery.
                         </p>
                     </div>
                 </div>
@@ -111,8 +107,8 @@
                         data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
                         aria-controls="accordion-collapse-body-5">
                         <span class="text-left">Which bariatric procedure would be most suitable for me, and why?
-                            Additionally, what are the
-                            associated risks?</span>
+                            Additionally, what are the associated risks?
+                        </span>
                         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -127,6 +123,7 @@
                             procedure for your needs. While all surgeries involve inherent risks, including the risk of
                             mortality, it's important to note that the health risks and medical complications associated
                             with morbid obesity often outweigh those associated with weight loss surgery itself.
+
                         </p>
                     </div>
                 </div>

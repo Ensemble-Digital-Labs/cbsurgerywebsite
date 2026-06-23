@@ -6,7 +6,7 @@
                     Our Testimonial
                 </h6>
                 <h2 class="leading-[40px] md:leading-[60px] tracking-tighter md:mb-6">
-                    The Honest Review<br />
+                    Honest Reviews<br />
                     From Our <span class="text-dark-teal"> Family</span>
                 </h2>
                 <!-- <p class="text-[#636571]">
@@ -60,20 +60,20 @@ import 'vue3-carousel/dist/carousel.css'
 
 export default {
     async mounted() {
-        fetch("/last-review-fetch-date.txt")
-            .then((res) => res.text())
-            .then((text) => {
-                const data = JSON.parse(text)
+        // fetch("/last-review-fetch-date.txt")
+        //     .then((res) => res.text())
+        //     .then((text) => {
+        //         const data = JSON.parse(text)
 
-                    console.log(JSON.parse(data.reviews));
-                    this.testimonials = JSON.parse(data.reviews)
-            })
-            .catch((e) => console.error(e));
+        //             console.log(JSON.parse(data.reviews));
+        //             this.testimonials = JSON.parse(data.reviews)
+        //     })
+        //     .catch((e) => console.error(e));
 
-        // axios.get('/getGoogleMapReviews.php').then(function (result) {
-        //     this.testimonials = result.data
-        //     console.log(this.testimonials.data);
-        // }.bind(this))
+        axios.get('/getGoogleMapReviews.php').then(function (result) {
+            this.testimonials = result.data
+            console.log(this.testimonials.data);
+        }.bind(this))
     },
     data() {
         return {

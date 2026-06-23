@@ -1,8 +1,31 @@
 <template>
     <PublicPageLayout>
         <HeroSection :title="'Book an Appointment'"></HeroSection>
+        <div class="fixed h-screen w-screen top-0 grid place-content-center backdrop-blur-lg z-50" v-if="showPopup" @click="showPopup = false">
+            <div class="md:w-[500px] h-64 bg-white p-4 shadow-[0_0_35px_0] rounded-xl shadow-light-teal">
+                <div class="flex flex-col space-y-4">
+                    <!-- <button class="btn-fill-dark h-11 w-full py-4 grid content-center bg-gray-800 text-white rounded"
+                        @click="hidePopup">
+                        Book an appointment now online 
+                    </button> -->
+                    <img src="@/assets/cbs-logo.svg"
+                        class="w-56 mx-auto" alt="Chester logo" />
+                    <a href=" https://healow.com/apps/practice/physician-services-consulting-llc-saint-louis-mo-28777?v=2&t=1"
+                        target="_blank"
+                        class="btn-fill-dark text-center h-11 w-full py-4 grid content-center bg-gray-800 text-white rounded"
+                        @click="hidePopup">
+                        Book an appointment now online
+                    </a>
+                    <button
+                        class="btn-fill-dark  text-center h-11 w-full py-4 grid content-center bg-gray-800 text-white rounded"
+                        @click="hidePopup">
+                        Fill out the form and someone will contact you for booking
+                    </button>
+                </div>
+            </div>
+        </div>
         <div
-            class="bg-white p-4 sm:p-16 w-full md:w-full lg:w-8/12 xl:w-5/12 md:shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
+            class="bg-white p-4 sm:p-16 w-full md:w-full lg:w-8/12 xl:w-6/12 md:shadow-lg shadow-slate-200 md:-mt-20  mx-auto">
             <form @submit.prevent="appointmentFormSubmit()">
                 <div class="my-4">
                     <label for="firstName" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Your
@@ -11,34 +34,45 @@
                         class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Full name" required />
                 </div>
-                <div class="my-4">
+                <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-4">
+                    <div class="my-4">
 
-                    <div class="md:flex gap-2">
+
                         <label for="Gender"
                             class="block mb-2 pr-4 text-[16px] font-bold font-manrope text-zinc-800">Gender<span
                                 class="text-dark-teal">*</span></label>
-                        <div class="flex items-center me-4">
-                            <input id="Male" type="radio" value="Male" name="inline-radio-group"
-                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" checked v-model="AppointmentInfo.gender">
-                            <label for="inline-radio"
-                                class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Male</label>
-                        </div>
-                        <div class="flex items-center me-4">
-                            <input id="Female" type="radio" value="Female" name="inline-radio-group"
-                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" v-model="AppointmentInfo.gender">
-                            <label for="inline-2-radio"
-                                class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Female</label>
-                        </div>
-                        <div class="flex items-center me-4">
-                            <input id="Other" type="radio" value="Other" name="inline-radio-group"
-                                class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" v-model="AppointmentInfo.gender">
-                            <label for="inline-2-radio"
-                                class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Other</label>
+                        <div class="md:flex gap-2">
+                            <div class="flex items-center me-4">
+                                <input id="Male" type="radio" value="Male" name="gender" required
+                                    class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal"
+                                    v-model="AppointmentInfo.gender">
+                                <label for="Male"
+                                    class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Male</label>
+                            </div>
+                            <div class="flex items-center me-4">
+                                <input id="Female" type="radio" value="Female" name="gender"
+                                    class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal"
+                                    v-model="AppointmentInfo.gender">
+                                <label for="Female"
+                                    class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Female</label>
+                            </div>
+                            <div class="flex items-center me-4">
+                                <input id="Other" type="radio" value="Other" name="gender"
+                                    class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal"
+                                    v-model="AppointmentInfo.gender">
+                                <label for="Other"
+                                    class="ms-2 font-semibold font-manrope text-[16px] text-zinc-800 dark:text-gray-300">Other</label>
+                            </div>
                         </div>
                     </div>
-
+                    <div>
+                        <label for="insurance"
+                            class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Insurance</label>
+                        <input type="text" id="insurance" v-model="AppointmentInfo.insurance"
+                            class="bg-gray-50 border border-gray text-gray-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Add Insurance" />
+                    </div>
                 </div>
-
                 <div class="grid md:grid-cols-2 gap-y-4 md:gap-4 my-4">
                     <div>
                         <label for="dob" class="block mb-2 text-[16px] font-bold font-manrope text-zinc-800">Date Of
@@ -77,15 +111,19 @@
                 </div>
 
                 <p class="py-4 md:flex items-center gap-4">
-                    <input id="inline-2-radio" type="checkbox" value=""
+                    <input id="email-consent" type="checkbox" value="yes"
                         class="w-4 h-4 text-dark-teal border-gray bg-extra-light-teal" required checked>
-                    I consent to receiving email correspondence regarding my inquiry.<span
-                        class="text-dark-teal">*</span>
+                   <label for="email-consent" class="ml-2">I consent to receiving email correspondence regarding my inquiry.<span
+                        class="text-dark-teal">*</span></label> 
                 </p>
 
                 <div class="w-full">
-                    <button class="btn-fill-dark h-11 w-full py-4 grid content-center" type="submit">
-                        Submit
+                    <button
+                        class="btn-fill-dark h-11 w-full py-4 grid content-center disabled:opacity-60 disabled:cursor-not-allowed"
+                        type="submit"
+                        :disabled="isSubmitting"
+                    >
+                        {{ isSubmitting ? 'Submitting...' : 'Submit' }}
                     </button>
                     <p class="text-dark-teal mt-4 font-bold font-manrope" v-if="message">
                         {{ message }}
@@ -117,7 +155,10 @@
                         surgery could present a viable solution.</p>
                 </div>
                 <div>
-                    <img src="@/assets/img/am-i-candidate.png" class="rounded-xl h-full w-full object-cover" alt="">
+                    <!-- <img src="@/assets/img/bariatric1.png" class="rounded-xl h-full w-full object-cover" alt=""> -->
+                    <iframe class="w-full md:h-[400px]" src="https://player.vimeo.com/video/938490114" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        title="Robotic Surgery"></iframe>
                 </div>
 
             </div>
@@ -149,7 +190,7 @@
 
                     BMI is widely used as a screening tool to categorize individuals into different weight categories:
                 </h3>
-                <img src="@/assets/img/bmi.svg" class="mx-auto mb-10 md:mb-20" alt="" srcset="">
+                <img src="@/assets/img/bmi2.svg" class="mx-auto mb-10 md:mb-20" alt="" srcset="">
                 <p class="text-center w-full md:w-3/4 mx-auto px-6 md:px-0">
                     Although BMI serves as a helpful general reference for evaluating weight status, it does not
                     directly quantify body fat or consider factors like muscle mass, bone density, or fat distribution,
@@ -170,7 +211,7 @@
                         <h3
                             class="font-manrope text-[35px] sm:text-[60px] xl:text-[82px] lg:text-[76px] text-dark-teal text-center sm:text-left font-extrabold tracking-tight leading-[30px] sm:leading-[60px] lg:leading-[82px]">
                             Chesterfield Bariatric Surgery</h3>
-                        <router-link to="/services"><button
+                        <router-link to="/weight-loss-surgery/treatments"><button
                                 class="btn-fill-dark hidden sm:block md:hidden lg:block xl:hidden mt-10">View
                                 Services</button></router-link>
                     </div>
@@ -178,7 +219,7 @@
 
 
                     <div class="xl:w-1/3 sm:w-1/2 md:w-auto lg:w-1/2 md:hidden lg:block">
-                        <img src="@/assets/img/deepu-5.png" alt="" srcset=""
+                        <img src="@/assets/img/dr-deepu.png" alt="" srcset=""
                             class="lg:absolute lg:bottom-0 h-full md:h-auto md:w-auto lg:h-[510px] w-full object-cover ">
 
                     </div>
@@ -187,7 +228,7 @@
                         <h3
                             class="font-manrope tracking-tight font-semibold max-w-60 text-[#000A2D] text-3xl lg::text-5xl mb-8">
                             Dedicated to Give You the Best Treatment </h3>
-                        <router-link to="/services"><button class="btn-fill-dark w-full">View
+                        <router-link to="/weight-loss-surgery/treatments"><button class="btn-fill-dark w-full">View
                                 Services</button></router-link>
                     </div>
                 </div>
@@ -197,54 +238,89 @@
 
 </template>
 <script setup>
-import axios from 'axios';
 import PublicPageLayout from '../layout/PublicPageLayout.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 
-// initialize components based on data attribute selectors
 onMounted(() => {
     initFlowbite();
 })
 </script>
 <script>
-// export default {
-//     methods: {
-//         appointmentFormSubmit() {
-//             axios.post('appointmentFormSubmitMail.php', this.contactInfo)
-//                 .then(function (response) {
-//                     console.log(response);
-//                     this.message = "Thank you for contacting us!"
-//                 }.bind(this))
-//                 .catch(function (error) {
-//                     this.message = "Oops!, Something wrong happend!"
-//                 }.bind(this));
-//         }
-//     }
-// }
+import axios from 'axios';
+import { getRecaptchaToken, warmRecaptcha } from '@/utils/recaptcha';
+
+const WEBHOOK_URL = 'https://n8n-automation.techsoit.com/webhook/cbsWebsite';
 
 export default {
     data() {
         return {
-            AppointmentInfo: {},
+            AppointmentInfo: {
+                name: '',
+                gender: '',
+                insurance: '',
+                dob: '',
+                appointmentDate: '',
+                phoneNumber: '',
+                email: '',
+            },
             message: '',
+            showPopup: true,
+            isSubmitting: false,
         }
     },
+    mounted() {
+        warmRecaptcha();
+    },
     methods: {
-        appointmentFormSubmit() {
-            console.log(this.AppointmentInfo);
-            axios.post('/appointmentFormSubmitMail.php', this.AppointmentInfo)
-                .then(function (response) {
-                    console.log(response);
-                    this.message = "Thank you for contacting us!"
+        async appointmentFormSubmit() {
+            if (this.isSubmitting) return;
 
-                }.bind(this))
-                .catch(function (error) {
-                    console.log(error);
-                    this.message = "Oops!, Something wrong happend!"
-                }.bind(this));
-        }
-    }
+            if (!this.AppointmentInfo.gender) {
+                this.message = 'Please select a gender before submitting.';
+                return;
+            }
+
+            this.isSubmitting = true;
+            this.message = '';
+
+            try {
+                const token = await getRecaptchaToken();
+                const payload = {
+                    name: this.AppointmentInfo.name,
+                    gender: this.AppointmentInfo.gender,
+                    insurance: this.AppointmentInfo.insurance || '',
+                    dob: this.AppointmentInfo.dob,
+                    appointmentDate: this.AppointmentInfo.appointmentDate,
+                    phoneNumber: this.AppointmentInfo.phoneNumber,
+                    email: this.AppointmentInfo.email,
+                    formType: 'appointment',
+                    grecaptcha: token,
+                };
+
+                await axios.post(WEBHOOK_URL, payload);
+
+                this.message = 'Thank you for Booking with us!';
+                this.AppointmentInfo = {
+                    name: '',
+                    gender: '',
+                    insurance: '',
+                    dob: '',
+                    appointmentDate: '',
+                    phoneNumber: '',
+                    email: '',
+                };
+            } catch (error) {
+                console.error(error);
+                this.message = 'Oops!, Something wrong happend!';
+            } finally {
+                this.isSubmitting = false;
+            }
+        },
+        hidePopup() {
+            this.showPopup = false;
+        },
+    },
 }
 </script>

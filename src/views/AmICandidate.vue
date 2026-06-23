@@ -1,46 +1,49 @@
 <template>
     <PublicPageLayout>
-        <HeroSectionVue :title="'Am I Candidate'"></HeroSectionVue>
+        <HeroSectionVue :title="'Am I a Candidate?'"></HeroSectionVue>
         <div class="max-w-screen-xl mx-auto my-10 lg:my-20 px-6 xl:px-0">
             <div class="grid md:grid-cols-2 gap-8 md:gap-10">
                 <div class="grid gap-2">
                     <p>
-                        In the United States, more than 30% of adults are classified as obese. Obesity poses significant
-                        health risks beyond mere appearance, including diabetes, hypertension, elevated cholesterol
-                        levels,
-                        sleep disturbances, and osteoarthritis.
+                        In the United States, approximately 68% of adults are categorized as overweight or obese,
+                        presenting substantial health risks beyond cosmetic concerns, including diabetes, hypertension,
+                        elevated cholesterol, sleep disorders, and osteoarthritis.
+
                     </p>
-                    <p class="hidden lg:block"> A prevalent misconception regarding weight loss surgery is its exclusive
-                        suitability for severely obese individuals. Surprisingly, even if one is just 50 pounds
-                        overweight,
-                        they may qualify as a candidate for weight loss surgery. It's crucial to consider weight loss
-                        surgery before significant health issues arise.
+                    <p> A prevalent misconception about weight loss surgery is its exclusive
+                        suitability for severely obese individuals. Surprisingly, even those just 50 pounds overweight
+                        may quality. It's crucial to consider surgery before significant health complications arise.
+
                     </p>
-                    <p class="hidden lg:block"> Despite concerted efforts by many overweight and obese individuals to
-                        lose
-                        weight through dietary changes and physical activity, a considerable number face challenges.
-                        Sometimes, these difficulties extend beyond personal control, influenced by genetic factors or
-                        underlying medical conditions. If you find yourself in this situation, weight loss surgery could
-                        present a viable solution.</p>
+                    <p class="hidden lg:block"> Despite diligent efforts to lose weight through lifestyle changes, many
+                        face challenges beyond personal control, influenced by genetics or underlying medical
+                        conditions. In such cases, weight loss surgery could offer a viable solution.
+                    </p>
+                    <p class="hidden lg:block">Typically, individuals with a BMI over 35 and one comorbid condition such
+                        as diabetes,
+                        hypertension, sleep apnea, or hyperlipidemia, or those with a BMI over 40 and failed weight loss
+                        attempts, qualify for bariatric surgery.
+                    </p>
                 </div>
                 <div>
-                    <img src="@/assets/img/am-i-candidate.png" class="rounded-xl h-full w-full object-cover" alt="">
+                    <!-- <img src="@/assets/img/am-i-candidate.png" class="rounded-xl h-full w-full object-cover" alt=""> -->
+                    <iframe class="w-full md:h-[400px]" src="https://player.vimeo.com/video/938490114" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        title="Robotic Surgery"></iframe>
+                    <!-- <iframe title="vimeo-player" src="?h=8ddc6b2e58" width="640" height="360" frameborder="0"    allowfullscreen></iframe> -->
                 </div>
 
             </div>
             <div class="grid gap-6 lg:hidden my-8">
-                <p> A prevalent misconception regarding weight loss surgery is its exclusive suitability for severely
-                    obese
-                    individuals. Surprisingly, even if one is just 50 pounds overweight, they may qualify as a candidate
-                    for
-                    weight loss surgery. It's crucial to consider weight loss surgery before significant health issues
-                    arise.
+
+                <p> Despite diligent efforts to lose weight through lifestyle changes, many
+                    face challenges beyond personal control, influenced by genetics or underlying medical
+                    conditions. In such cases, weight loss surgery could offer a viable solution.
                 </p>
-                <p>Despite concerted efforts by many overweight and obese individuals to lose weight through dietary
-                    changes
-                    and physical activity, a considerable number face challenges. Sometimes, these difficulties extend
-                    beyond personal control, influenced by genetic factors or underlying medical conditions. If you find
-                    yourself in this situation, weight loss surgery could present a viable solution.</p>
+                <p>Typically, individuals with a BMI over 35 and one comorbid condition such as diabetes,
+                    hypertension, sleep apnea, or hyperlipidemia, or those with a BMI over 40 and failed weight loss
+                    attempts, qualify for bariatric surgery.
+                </p>
             </div>
         </div>
 
@@ -58,7 +61,7 @@
                     class="text-center tracking-tight mb-4 md:mb-10 font-manrope font-semibold text-[24px] text-extra-dark-teal">
                     Am I a Candidate?
                 </h3>
-                <div class="shadow-md rounded-xl shadow-zinc-500/20 p-4 max-w-4xl mx-auto">
+                <div class="shadow-[0_0_35px_0] rounded-xl shadow-zinc-500/20 p-4 max-w-4xl mx-auto">
                     <div class="grid md:grid-cols-4 gap-4 content-end mb-6">
                         <div>
                             <label for="weight"
@@ -90,17 +93,18 @@
                         </div>
 
                     </div>
-                    <!-- 
-                        <div>
+
+                    <div>
                         <h3 class="block text-[16px] font-bold font-manrope text-zinc-800 text-center" v-if=BMI>
-                            Your BMI is : {{ BMI }} <span class="text-red-600" v-if="BMI > 34.9">, Your BMI is very high,
-                                Would you like to <router-link to="/appointments" class="underline">book an
-                                    appointment</router-link>!</span>
+                            Your BMI is : {{ BMI }} <span class="text-red-600" v-if="BMI > 35">, You may qualify for
+                                bariatric surgery and change your health. Please contact <a href="tel:314-403-1016 " class="underline">314-403-1016 </a>to check your
+                                insurance coverage. Or call <a href="tel:314-500-2424" class="underline">314-500-2424</a> to make an appointment. You can also make an
+                                <router-link to="/appointments" class="underline">online appointment here.</router-link>!</span>
                         </h3>
                         <h3 class="block text-[16px] font-bold font-manrope text-red-500 text-center mt-6" v-if="error">
                             {{ error }}
                         </h3>
-                    </div> -->
+                    </div>
                 </div>
 
             </div>
@@ -109,7 +113,7 @@
 
                     BMI is widely used as a screening tool to categorize individuals into different weight categories:
                 </h3>
-                <img src="@/assets/img/bmi.svg" class="mx-auto mb-10 md:mb-20" alt="" srcset="">
+                <img src="@/assets/img/bmi2.svg" class="mx-auto mb-10 md:mb-20" alt="" srcset="">
                 <p class="text-center w-full md:w-3/4 mx-auto px-2 sm:px-6 md:px-0">
 
                     Although BMI serves as a helpful general reference for evaluating weight status, it does not
@@ -137,18 +141,18 @@ export default {
         }
     },
     methods: {
-        // calculateBMI() {
-        //     if (this.weight > 0 && (this.feet > 0 || this.inch > 0)) {
-        //         this.error = false
-        //         var height = Number(this.feet) * 12 + Number(this.inch)
-        //         console.log(height);
-        //         this.BMI = Number(this.weight) / (height ** 2) * 703
-        //         this.BMI = Math.round(this.BMI * 100) / 100
-        //     } else {
-        //         this.BMI = 0
-        //         this.error = 'Please enter Weight and Height to calculate BMI'
-        //     }
-        // }
+        calculateBMI() {
+            if (this.weight > 0 && (this.feet > 0 || this.inch > 0)) {
+                this.error = false
+                var height = Number(this.feet) * 12 + Number(this.inch)
+                console.log(height);
+                this.BMI = Number(this.weight) / (height ** 2) * 703
+                this.BMI = Math.round(this.BMI * 100) / 100
+            } else {
+                this.BMI = 0
+                this.error = 'Please enter Weight and Height to calculate BMI'
+            }
+        }
     }
 
 

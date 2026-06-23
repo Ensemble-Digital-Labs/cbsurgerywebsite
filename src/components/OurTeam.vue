@@ -10,10 +10,10 @@
         <div class="md:flex flex-row md:items-start gap-10 lg:gap-16">
             <div class="grid grid-rows-2 gap-2 lg:gap-10 w-full md:w-1/4">
 
-                <div class=" w-fit flex flex-col items-center justify-center mb-20 ">
+                <!-- <div class=" w-fit flex flex-col items-center justify-center mb-20 ">
                     <img src="@/assets/img/doctor-1.png">
-                    <div class=" bg-white w-4/5 md:w-2/3 py-2 md:py-4 -my-16 md:-my-24 ">
-                        <h3 class="text-center font-manrope text-[16px] md:text-xl font-bold text-extra-dark-teal">Dr.
+                    <div class=" bg-white w-4/5 md:w-3/4 py-2 md:py-4 -my-16 md:-my-24 ">
+                        <h3 class="text-center font-manrope text-[14px] md:text-[16px] lg:text-xl font-bold text-extra-dark-teal">Dr.
                             Sudhakaran</h3>
                         <h4 class="text-center font-manrope text-dark-teal text-sm md:text-[15px] font-bold">Surgeon
                         </h4>
@@ -23,13 +23,35 @@
 
                 <div class=" w-fit flex flex-col items-center justify-center mb-20 ">
                     <img src="@/assets/img/doctor-2.png">
-                    <div class=" bg-white w-4/5 md:w-2/3 py-2 md:py-4 -my-16 md:-my-24 ">
-                        <h3 class="text-center font-manrope text-[16px] md:text-xl font-bold text-extra-dark-teal">Emily
+                    <div class=" bg-white w- md:w-3/4 py-2 md:py-4 -my-16 md:-my-24 ">
+                        <h3 class="text-center font-manrope text-[14px] md:text-[16px] lg:text-xl font-bold text-extra-dark-teal">Emily DesBiens, PA-C
                         </h3>
-                        <h4 class="text-center font-manrope text-dark-teal text-sm md:text-[15px] font-bold">Dietitian
+                        <h4 class="text-center font-manrope text-dark-teal text-sm md:text-[15px] font-bold">Physician Assistant
+                        </h4>
+                    </div>
+                </div> -->
+
+                <div class=" w-fit flex flex-col items-center justify-center mb-20 lg:mb-10 ">
+                    <img src="@/assets/img/doctor-1.png">
+                    <div class="bg-gradient-to-b from-white to-gray w-full -my-16 md:-my-14 py-3">
+                        <h3 class="text-center font-manrope text-[14px] md:text-[16px] lg:text-xl font-bold text-extra-dark-teal">Dr.
+                            Sudhakaran</h3>
+                        <h4 class="text-center font-manrope text-dark-teal text-sm md:text-[15px] font-bold">Surgeon
                         </h4>
                     </div>
                 </div>
+
+
+                <div class=" w-fit flex flex-col items-center justify-center mb-20  lg:mb-10 ">
+                    <img src="@/assets/img/doctor-2.png">
+                    <div class="bg-gradient-to-b from-white to-gray  w-full  -my-16 md:-my-14 py-3">
+                        <h3 class="text-center font-manrope text-[14px] md:text-[16px] lg:text-xl font-bold text-extra-dark-teal">Emily DesBiens, PA-C
+                        </h3>
+                        <h4 class="text-center font-manrope text-dark-teal text-sm md:text-[15px] font-bold">Physician Assistant
+                        </h4>
+                    </div>
+                </div>
+
 
             </div>
             <div class="w-full md:w-3/4">
@@ -94,12 +116,15 @@
      data() {
          return {
              testimonials: [{
-               imageUrl: "/assets/img/grid-img-1.png"
+               imageUrl: "/assets/img/team-1.png"
              }, {
-                 imageUrl: "/assets/img/grid-img-2.png"
+                 imageUrl: "/assets/img/team-2.png"
                              }, {
-                imageUrl: "/assets/img/grid-img-3.png"
-                                     }]
+                imageUrl: "/assets/img/team-4.png"
+                                     }, {
+                imageUrl: "/assets/img/team-5.png"
+                                     }, 
+                                    ]
          }
      },
      components: {

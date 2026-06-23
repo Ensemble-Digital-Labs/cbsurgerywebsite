@@ -3,7 +3,7 @@
         <div class="max-w-screen-xl mx-auto mb-10 md:my-10 px-4 md:px-0 xl:px-0">
             <div class="grid md:grid-cols-12 md:gap-4 lg:gap-10">
                 <div class="md:col-span-6 sm:h-[400px] md:h-auto flex justify-end">
-                    <img src="@/assets/img/deepu-9.png"
+                    <img src="@/assets/img/deepu-7.png"
                         class="h-full w-full sm:w-8/12 md:w-full xl:max-h-[550px] xl:object-contain object-cover object-right sm:object-top md:object-right"
                         alt="" srcset="">
                 </div>
@@ -16,47 +16,34 @@
                         <h3 class=" font-manrope text-[#727272] text-[20px] font-extrabold mb-4">CEO & FOUNDER</h3>
                         <div
                             class="bg-dark-teal p-3 rounded-lg text-white font-manrope font-bold text-[18px] md:text-[20px] mb-4 w-fit">
-                            26 years of Medical Experience </div>
+                            20 years of Medical Experience </div>
                     </div>
                     <div class="grid gap-4">
                         <p class="text-[#636571]">
-                            <span class="font-bold text-dark-teal"></span> With a diverse and accomplished background
-                            spanning across various continents, I bring a wealth of experience to the field of medicine
-                            and
-                            healthcare administration. My journey began with earning an MBBS (Bachelor of Medicine and
-                            Surgery) from the Medical College in Thiruvananthapuram, India, solidifying my foundation in
-                            medicine. Building upon this, I delved into research as a Research Associate at Adelaide
-                            University and the Royal Adelaide Hospital in Australia from June 1999 to May 2002.
+                            <span class="font-bold text-dark-teal"></span> Dr. Deepu Sudhakaran, a certified bariatric
+                            surgeon with specialized fellowship training, is affiliated with Mercy Hospital South,
+                            bringing over 20 years of expertise to Southern Illinois and St. Louis communities.
+                            Recognized as a Center of Excellence Bariatric surgeon, his skills encompass various
+                            advanced surgical procedures, including endoscopy, weight loss, advanced laparoscopic,
+                            robotic, and revision surgeries. With more than a decade of professional experience, Dr.
+                            Sudhakaran has successfully conducted over 3000 surgeries, presently focusing on Robotic
+                            Surgery. His extensive international experience in the USA, Australia, LAE, and India
+                            enriches his diverse background, contributing to his commitment to excellence, leadership,
+                            and innovation in healthcare delivery. D.r Sudhakaran enjoys family time with his wife,
+                            Javitta Jayachandran, a professional photographer, and their two daughters, Daya and Ameya,
+                            along with outdoor activities and sports fandom.
                         </p>
                         <p class="text-[#636571] md:hidden lg:block">
-                            To enhance my skills in surgical technology, I pursued an Associate Degree at Austin
-                            Community
-                            College in Texas from January 2003 to December 2004. Recognizing the importance of business
-                            acumen in healthcare, I furthered my education with an MBA from the EMBA Washington
-                            University
-                            in St. Louis-Olin Business School, focusing on courses such as Financial Accounting,
-                            Negotiations & Conflict Management, and Corporate Strategy, among others. Seeking deeper
-                            insight
-                            into managing healthcare delivery, I completed the Managing Health Care Delivery program at
-                            Harvard Business School in Boston, Massachusetts, honing skills in operational design,
-                            strategy,
-                            and innovation.
+
                         </p>
 
                     </div>
                 </div>
             </div>
             <p class="text-[#636571] hidden md:block py-10 lg:hidden md:px-6 lg:px-4">
-                To enhance my skills in surgical technology, I pursued an Associate Degree at Austin Community
-                College in Texas from January 2003 to December 2004. Recognizing the importance of business
-                acumen in healthcare, I furthered my education with an MBA from the EMBA Washington University
-                in St. Louis-Olin Business School, focusing on courses such as Financial Accounting,
-                Negotiations & Conflict Management, and Corporate Strategy, among others. Seeking deeper insight
-                into managing healthcare delivery, I completed the Managing Health Care Delivery program at
-                Harvard Business School in Boston, Massachusetts, honing skills in operational design, strategy,
-                and innovation.
+
             </p>
-            <p class="text-[#636571] lg:block mt-0 lg:mt-10 md:px-6 lg:px-4">
+            <!-- <p class="text-[#636571] lg:block mt-0 lg:mt-10 md:px-6 lg:px-4">
                 Complementing my medical expertise, I also completed courses in Essentials of Health Law and the
                 Chief Medical Officer Academy, offered by the American College of Physician Executive, which
                 equipped me with crucial knowledge in healthcare regulations, quality improvement, and
@@ -76,7 +63,7 @@
                 My journey from the operating room to the boardroom has been shaped by a commitment to excellence in
                 healthcare delivery, leadership, and continuous learning, preparing me to drive positive change and
                 innovation in the healthcare industry.
-            </p>
+            </p> -->
 
 
             <!-- <div class="mt-4 lg:hidden md:px-4">
@@ -122,9 +109,9 @@
                 Care Philosophy
             </p>
             <p class="text-[#636571]">
-                “I'm a very family-oriented person. I want patients to feel like I will treat them like family. I'll
-                take
-                very personal care of you from the time you see me until you have reached your goal.”
+                “I prioritize family values, aiming for patients to feel embraced as part of our extended family. From
+                the moment you encounter me until your journey culminates in success expect personalized care akin to
+                that of a cherished family member.”
             </p>
         </div>
         <div class="max-w-screen-xl mx-auto md:my-10  px-4 md:px-10 xl:px-0 mb-10">
@@ -137,7 +124,7 @@
         </p> -->
             <!-- <Carousel v-bind="settings" :breakpoints="breakpoints" :autoplay="1000" :wrap-around="true">
             <Slide v-for="slide in 9" :key="slide">
-                <img :src="`/assets/img/logos/logo-${slide}.png`" class="mx-4 w-32" alt="" srcset="">
+                <img :src="`/assets/img/logos/logo-${slide}.png`" class="mx-2 w-32" alt="" srcset="">
             </Slide>
         </Carousel> -->
             <div class="overflow-x-hidden">
@@ -146,65 +133,65 @@
                         ul.insertAdjacentHTML('afterend', ul.outerHTML);
                         ul.nextSibling.setAttribute('aria-hidden', 'true');
                     })" class="py-12 inline-flex flex-nowrap">
-                    <!-- <span class=" text-4xl mx-4" v-for="slide in 9" :key="slide" x-ref="logos" > <img :src="`/assets/img/logos/logo-${slide}.png`" class="mx-4 w-32" alt="" srcset=""></span> -->
+                    <!-- <span class=" text-4xl mx-4" v-for="slide in 9" :key="slide" x-ref="logos" > <img :src="`/assets/img/logos/logo-${slide}.png`" class="mx-2 w-32" alt="" srcset=""></span> -->
                     <ul x-ref="logos"
-                        class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                        class="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll">
                         <li>
-                            <img src="/assets/img/logos/logo-1.png" class="mx-4 w-32" alt="Facebook" />
+                            <img src="/assets/img/logos/logo-1.png" class="mx-2 w-32" alt="Facebook" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-2.png" class="mx-4 w-32" alt="Disney" />
+                            <img src="/assets/img/logos/logo-2.png" class="mx-2 w-32" alt="Disney" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-3.png" class="mx-4 w-32" alt="Airbnb" />
+                            <img src="/assets/img/logos/logo-3.png" class="mx-2 w-32" alt="Airbnb" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-4.png" class="mx-4 w-32" alt="Apple" />
+                            <img src="/assets/img/logos/logo-4.png" class="mx-2 w-32" alt="Apple" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-5.png" class="mx-4 w-32" alt="Spark" />
+                            <img src="/assets/img/logos/logo-5.png" class="mx-2 w-32" alt="Spark" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-6.png" class="mx-4 w-32" alt="Samsung" />
+                            <img src="/assets/img/logos/logo-6.png" class="mx-2 w-32" alt="Samsung" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-7.png" class="mx-4 w-32" alt="Quora" />
+                            <img src="/assets/img/logos/logo-7.png" class="mx-2 w-32" alt="Quora" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-8.png" class="mx-4 w-32" alt="Sass" />
+                            <img src="/assets/img/logos/logo-8.png" class="mx-2 w-32" alt="Sass" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-9.png" class="mx-4 w-32" alt="Sass" />
+                            <img src="/assets/img/logos/logo-9.png" class="mx-2 w-32" alt="Sass" />
                         </li>
                     </ul>
-                    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+                    <ul class="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll"
                         aria-hidden="true">
                         <li>
-                            <img src="/assets/img/logos/logo-1.png" class="mx-4 w-32"   alt="Facebook" />
+                            <img src="/assets/img/logos/logo-1.png" class="mx-2 w-32" alt="Facebook" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-2.png" class="mx-4 w-32"  alt="Disney" />
+                            <img src="/assets/img/logos/logo-2.png" class="mx-2 w-32" alt="Disney" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-3.png" class="mx-4 w-32"  alt="Airbnb" />
+                            <img src="/assets/img/logos/logo-3.png" class="mx-2 w-32" alt="Airbnb" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-4.png" class="mx-4 w-32"  alt="Apple" />
+                            <img src="/assets/img/logos/logo-4.png" class="mx-2 w-32" alt="Apple" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-5.png" class="mx-4 w-32"  alt="Spark" />
+                            <img src="/assets/img/logos/logo-5.png" class="mx-2 w-32" alt="Spark" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-6.png" class="mx-4 w-32"  alt="Samsung" />
+                            <img src="/assets/img/logos/logo-6.png" class="mx-2 w-32" alt="Samsung" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-7.png" class="mx-4 w-32"  alt="Quora" />
+                            <img src="/assets/img/logos/logo-7.png" class="mx-2 w-32" alt="Quora" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-8.png" class="mx-4 w-32"  alt="Sass" />
+                            <img src="/assets/img/logos/logo-8.png" class="mx-2 w-32" alt="Sass" />
                         </li>
                         <li>
-                            <img src="/assets/img/logos/logo-9.png" class="mx-4 w-32"  alt="Sass" />
+                            <img src="/assets/img/logos/logo-9.png" class="mx-2 w-32" alt="Sass" />
                         </li>
                     </ul>
                 </div>
@@ -267,35 +254,7 @@
 
                         </div>
                     </div>
-
                     <div>
-                        <p class="font-bold text-dark-teal text-[20px] mb-4">
-                            Awards and Honors
-                        </p>
-                        <div>
-                            <ul class="list-disc font-archivo text-[16px] text-[#636571] list-inside space-y-2">
-                                <li>SSM Health’s senior leaders (System Leaders and Region Presidents) mention of
-                                    Exceptional Performance and have identified as going “above and beyond”. July 2021.
-                                </li>
-                                <li>Member of three-member team who obtained the first position in ‘Global Supply Chain
-                                    Management Simulation’, EMBA, Washington University in St. Louis, 2013.</li>
-                                <li>Academic Surgery Chief Resident, Louisiana State University, 2009-2010.</li>
-                                <li>Outstanding Intern of the Year, Jackson Memorial Hospital 2004-2005.</li>
-                                <li>Phi Theta Kappa- Honors Society-Member.</li>
-                                <li>The National Deans List- Member, 2004.</li>
-                                <li>Honors Student, Surgical Technology, Austin Community College, 2003.</li>
-                                <li>Outstanding District Rotaract Representative, Rotary International, 1997-98.</li>
-                                <li>Best President and Best Rotaract Club, Rotaract District 3210. 1996-97.</li>
-                                <li>The best presentation award at Clinical Club of Pediatrics, Medical College
-                                    Thiruvananthapuram, topic ‘Biliary Ascariasis.’</li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    
-                </div>
-                <div>
                         <p class="font-bold text-dark-teal text-[20px] mb-4">
                             Education
                         </p>
@@ -328,9 +287,9 @@
                                         class="text-dark-teal font-medium"> July 2014,</span> American College of
                                     Physician
                                     Executive.</li>
-                                <li><span class="font-bold">Surgeon as Leaders</span> – <span
-                                        class="text-dark-teal font-medium">“Operating room to Board room”</span>, May
-                                    2014,
+                                <li><span class="font-bold">Surgeon as Leaders</span> – “Operating room to Board
+                                    room”,<span class="text-dark-teal font-medium">May
+                                        2014,</span>
                                     American College of Surgeons.</li>
                                 <li><span class="font-bold">Leadership for Physician Executives,</span> <span
                                         class="text-dark-teal font-medium">April 2014,</span> Harvard Medical School and
@@ -338,14 +297,43 @@
                             </ul>
                         </div>
                     </div>
-                <!-- <div class="grid gap-10 place-content-start">
+
+                    <div>
+                        <p class="font-bold text-dark-teal text-[20px] mb-4">
+                            Awards and Honors
+                        </p>
+                        <div>
+                            <ul class="list-disc font-archivo text-[16px] text-[#636571] list-inside space-y-2">
+                                <li>SSM Health’s senior leaders (System Leaders and Region Presidents) mention of
+                                    Exceptional Performance and have identified as going “above and beyond”. July 2021.
+                                </li>
+                                <li>Member of three-member team who obtained the first position in ‘Global Supply Chain
+                                    Management Simulation’, EMBA, Washington University in St. Louis, 2013.</li>
+                                <li>Academic Surgery Chief Resident, Louisiana State University, 2009-2010.</li>
+                                <li>Outstanding Intern of the Year, Jackson Memorial Hospital 2004-2005.</li>
+                                <li>Phi Theta Kappa- Honors Society-Member.</li>
+                                <li>The National Deans List- Member, 2004.</li>
+                                <li>Honors Student, Surgical Technology, Austin Community College, 2003.</li>
+                                <li>Outstanding District Rotaract Representative, Rotary International, 1997-98.</li>
+                                <li>Best President and Best Rotaract Club, Rotaract District 3210. 1996-97.</li>
+                                <li>The best presentation award at Clinical Club of Pediatrics, Medical College
+                                    Thiruvananthapuram, topic ‘Biliary Ascariasis.’</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="grid gap-10 place-content-start">
                     <div>
                         <p class="font-bold text-dark-teal text-[20px] mb-4">
                             Work Experience
                         </p>
                         <div>
                             <ol
-                                class="list-decimal ml-2 md:ml-10 font-archivo text-[16px] text-[#636571] list-inside space-y-2">
+                                class="list-decimal ml-1 font-archivo text-[16px] text-[#636571] list-inside space-y-2">
                                 <li>
                                     <span class="font-bold">Mercy Hospitals, St. Louis, MO</span> - <span
                                         class="text-dark-teal font-medium">July 2021 – Current</span>,<br />
@@ -467,7 +455,7 @@
                             India.<br />
                         </div>
                     </div>
-                </div> -->
+                </div>
 
             </div>
 

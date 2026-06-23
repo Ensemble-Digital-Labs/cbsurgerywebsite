@@ -13,15 +13,15 @@
                         <hr class="text-white w-20 h-2 my-4">
                         <ul class="text-gray-500 dark:text-gray-400 font-medium space-y-1">
                             <li>
-                                <router-link to="/" class="text-white text-[15px] font-archivo">Request an
+                                <router-link to="/appointments" class="text-white text-[15px] font-archivo">Request an
                                     Appointment</router-link>
                             </li>
                             <li>
-                                <router-link to="/am-i-candidate" class="text-white text-[15px] font-archivo">Am
-                                    I A Candidate</router-link>
+                                <router-link to="/bariatricSurgeryStLouis/BMI-calculator" class="text-white text-[15px] font-archivo">Am
+                                    I A Candidate ?</router-link>
                             </li>
                             <li>
-                                <router-link to="/services"
+                                <router-link to="/weight-loss-surgery/treatments"
                                     class="text-white text-[15px] font-archivo">Services</router-link>
                             </li>
                             <li>
@@ -29,8 +29,12 @@
                                     class="text-white text-[15px] font-archivo">Contact</router-link>
                             </li>
                             <li>
-                                <router-link to="/privacy-policy"
-                                    class="text-white text-[15px] font-archivo">HIPAA Policy</router-link>
+                                <router-link to="/BariatricSurgeryStLouis/HIPPA" class="text-white text-[15px] font-archivo">HIPAA
+                                    Policy</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/BariatricSurgeryStLouis/Weight-Loss-Surgery-Cost" class="text-white text-[15px] font-archivo">Insurance and
+                                    Self Pay Options</router-link>
                             </li>
                         </ul>
                     </div>
@@ -40,20 +44,37 @@
                         <div class="flex flex-col gap-2">
                             <div class="flex items-start gap-2">
                                 <img src="/src/assets/icons/phone.svg" class="h-5 w-4">
-                                <a href="tel:314 412 4430" class=" font-archivo text-white  text-[15px]">314 412
-                                    4430</a>
+                                <a href="tel:+1 314 500 2424 " class=" font-archivo text-white  text-[15px]">+1 (314)
+                                    500 2424</a>
                             </div>
                             <div class="flex items-start gap-2">
                                 <img src="/src/assets/icons/location.svg" class="h-5 w-4">
                                 <span class=" font-archivo text-white text-[15px] ">10004 Kennerly Road,<br /> Suite
-                                    295B
+                                    370A
                                     Saint Louis,<br />
                                     MO 63128</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <img src="/src/assets/icons/location.svg" class="h-5 w-4">
+                                <span class=" font-archivo text-white text-[15px] ">Clarkson Executive Building,<br />16216 Baxter Road, Suite 110
+                                    Chesterfield,<br />
+                                    MO 63017</span>
                             </div>
                             <div class="flex gap-2 items-start">
                                 <img src="/src/assets/icons/email.svg" class="h-5 w-4">
                                 <a href="mailto:info@cbsurgery.com"
                                     class=" font-archivo text-white  text-[15px]">info@cbsurgery.com</a>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <a href="https://www.instagram.com/chesterfield_bariatric_surgery/" target="_blank"><img
+                                        src="/src/assets/social-media/instagram.svg" class=" h-8 w-8" alt="Logo" /></a>
+                                <a href="https://www.facebook.com/drsudhakaran1" target="_blank"><img
+                                        src="/src/assets/social-media/facebook.svg" class=" h-8 w-8" alt="Logo" /></a>
+                                <a href="https://twitter.com/chesterfield_bs" target="_blank"><img
+                                        src="/src/assets/social-media/twitter.svg" class=" h-8 w-8" alt="Logo" /></a>
+                                <a href="https://www.linkedin.com/company/100912652/admin/feed/posts/"
+                                    target="_blank"><img src="/src/assets/social-media/linkedin.svg" class=" h-8 w-8"
+                                        alt="Logo" /></a>
                             </div>
                         </div>
                     </div>
@@ -67,29 +88,30 @@
                                     class="w-full appearance-none border-none bg-extra-light-teal text-black text-sm focus:outline-none border-transparent focus:border-transparent focus:ring-0"
                                     placeholder="Email" required>
                                 <button
-                                    class="ml-2 shrink-0 rounded-md text-white bg-dark-teal text-[16px] px-6 py-3 text-sm font-medium font-archivo hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50"
-                                    type="submit">Sign Up</button>
+                                    class="ml-2 shrink-0 rounded-md text-white bg-dark-teal text-[16px] px-6 py-3 text-sm font-medium font-archivo hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50 disabled:opacity-60 disabled:cursor-not-allowed"
+                                    type="submit"
+                                    :disabled="isSubmitting"
+                                >{{ isSubmitting ? 'Signing Up...' : 'Sign Up' }}</button>
                             </form>
                             <p class="text-dark-teal mt-4 font-bold font-manrope" v-if="message">
-                                    {{ message }}
-                                </p>
+                                {{ message }}
+                            </p>
                         </div>
-                        <div class="flex gap-4 items-center">
-                            <a href="https://www.instagram.com/chesterfield_bariatric_surgery/" target="_blank"><img
-                                    src="/src/assets/social-media/instagram.svg" class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://www.facebook.com/drsudhakaran1" target="_blank"><img
-                                    src="/src/assets/social-media/facebook.svg" class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://twitter.com/chesterfield_bs" target="_blank"><img
-                                    src="/src/assets/social-media/twitter.svg" class=" h-8 w-8" alt="Logo" /></a>
-                            <a href="https://www.linkedin.com/company/100912652/admin/feed/posts/" target="_blank"><img
-                                    src="/src/assets/social-media/linkedin.svg" class=" h-8 w-8" alt="Logo" /></a>
+                        <div class=" max-w-xs mb-6">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.166194166706!2d-90.38285442403543!3d38.506877771809975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8cf366daaaaab%3A0x5c16237ba133ad82!2s10004%20Kennerly%20Rd%20Suite%20370A%2C%20St.%20Louis%2C%20MO%2063128!5e0!3m2!1sen!2sus!4v1728573690364!5m2!1sen!2sus"
+                                height="150" frameborder="0" scrolling="no" class=" w-full" marginheight="0"
+                                marginwidth="0" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
+
                     </div>
                 </div>
             </div>
             <hr class="my-6 border-[#ffffff17] max-w-7xl sm:mx-auto lg:my-6" />
             <div class="w-full mx-auto pb-10">
-                <span class="text-sm text-white block mx-auto text-center">Copyright © 2024. All rights reserved</span>
+                <span class="text-sm text-white block mx-auto text-center">Copyright © 2024. All rights reserved.
+                    Ensemble Digital Labs</span>
             </div>
             <!-- Sticky button -->
 
@@ -107,79 +129,106 @@
             <button class="btn-fill-dark w-52 ">Book an Appointment</button>
         </router-link>
     </div> -->
-    <div class="fixed bottom-0 flex justify-center w-full">
-    
-    <div
-        class=" hidden md:block shadow w-56">
-        <router-link to="/appointments">
-            <button class="w-52" :class="getRoute === '/appointments' ? 'float-btn-light' : 'float-btn-dark'">Book an Appointment</button>
-        </router-link>
-    </div>
-    <div class="hidden md:block  w-56">
-        <router-link to="/am-i-candidate">
-            <button class="w-52" :class="getRoute === '/am-i-candidate' ? 'float-btn-light' : 'float-btn-dark'">Am I a Candidate</button>
-        </router-link>
-    </div>
-    <div
-        class=" hidden md:block shadow w-56">
-        <router-link to="#">
-            <button class="w-52" :class="getRoute === '/patient-portal' ? 'float-btn-light' : 'float-btn-dark'">Patient Portal</button>
-        </router-link>
-    </div>
+    <div class="fixed bottom-0 flex gap-2 justify-center w-full">
+
+        <div class=" hidden md:block shadow w-52">
+            <router-link to="/appointments">
+                <button class="w-52" :class="getRoute === '/appointments' ? 'float-btn-light' : 'float-btn-dark'">Book
+                    an Appointment</button>
+            </router-link>
+        </div>
+        <div class="hidden md:block  w-52">
+            <router-link to="/bariatricSurgeryStLouis/BMI-calculator">
+                <button class="w-52" :class="getRoute === '/bariatricSurgeryStLouis/BMI-calculator' ? 'float-btn-light' : 'float-btn-dark'">Am I
+                    a Candidate ?</button>
+            </router-link>
+        </div>
+        <div class=" hidden md:block shadow w-52">
+            <a href="https://mycw220.ecwcloud.com/portal26606/jsp/100mp/login_otp.jsp" target="_blank">
+                <button class="w-52"
+                    :class="getRoute === ' https://mycw220.ecwcloud.com/portal26606/jsp/100mp/login_otp.jsp' ? 'float-btn-light' : 'float-btn-dark'">Patient
+                    Portal</button>
+            </a>
+        </div>
     </div>
 
 
     <div class="fixed bottom-0 flex w-full divide-x-2 divide-light-teal">
         <div class="block md:hidden w-1/3">
             <router-link to="/appointments">
-                <button class="rounded-none  w-full" :class="getRoute === '/appointments' ? 'btn-fill-light' : 'btn-fill-dark'">Book an Appointment</button>
+                <button class="rounded-none  w-full"
+                    :class="getRoute === '/appointments' ? 'btn-fill-light' : 'btn-fill-dark'">Book an
+                    Appointment</button>
             </router-link>
         </div>
         <div class="block md:hidden w-1/3">
-            <router-link to="/am-i-candidate">
-                <button class="w-full rounded-none" :class="getRoute === '/am-i-candidate' ? 'btn-fill-light' : 'btn-fill-dark'">Am I a Candidate</button>
+            <router-link to="/bariatricSurgeryStLouis/BMI-calculator">
+                <button class="w-full rounded-none"
+                    :class="getRoute === '/bariatricSurgeryStLouis/BMI-calculator' ? 'btn-fill-light' : 'btn-fill-dark'">Am I a
+                    Candidate ?</button>
             </router-link>
         </div>
         <div class="block md:hidden w-1/3">
-            <router-link to="#">
-                <button class="w-full rounded-none"  :class="getRoute === '/patient-portal' ? 'btn-fill-light' : 'btn-fill-dark'">Patient Portal</button>
-            </router-link>
+            <a href="https://mycw220.ecwcloud.com/portal26606/jsp/100mp/login_otp.jsp" target="_blank">
+                <button class="w-full rounded-none"
+                    :class="getRoute === 'https://mycw220.ecwcloud.com/portal26606/jsp/100mp/login_otp.jsp' ? 'btn-fill-light' : 'btn-fill-dark'">Patient
+                    Portal</button>
+            </a>
         </div>
     </div>
 
 
 </template>
-<script setup>
-import axios from 'axios';
-</script>
 <script>
+import axios from 'axios';
+import { getRecaptchaToken, warmRecaptcha } from '@/utils/recaptcha';
+
+const WEBHOOK_URL = 'https://n8n-automation.techsoit.com/webhook/cbsWebsite';
+
 export default {
     data() {
         return {
-            mailInfo: {},
+            mailInfo: {
+                email: '',
+            },
             message: '',
+            isSubmitting: false,
         }
     },
+    mounted() {
+        warmRecaptcha();
+    },
     methods: {
-        SubscriptionFormSubmit() {
-            console.log(this.contactInfo);
-            axios.post('/SubscriptionFormSubmitMail.php', this.mailInfo)
-                .then(function (response) {
-                    console.log(response);
-                    this.message = "Thank you for subscribing!"
+        async SubscriptionFormSubmit() {
+            if (this.isSubmitting) return;
 
-                }.bind(this))
-                .catch(function (error) {
-                    console.log(error);
-                    this.message = "Oops!, Something wrong happend!"
-                }.bind(this));
-        }
+            this.isSubmitting = true;
+            this.message = '';
+
+            try {
+                const token = await getRecaptchaToken();
+                const payload = {
+                    ...this.mailInfo,
+                    formType: 'subscription',
+                    grecaptcha: token,
+                };
+
+                await axios.post(WEBHOOK_URL, payload);
+
+                this.message = 'Thank you for subscribing!';
+                this.mailInfo = { email: '' };
+            } catch (error) {
+                console.error(error);
+                this.message = 'Oops!, Something wrong happend!';
+            } finally {
+                this.isSubmitting = false;
+            }
+        },
     },
     computed: {
         getRoute() {
             return this.$route.path;
-        }
-    }
+        },
+    },
 }
 </script>
-

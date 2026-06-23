@@ -1,29 +1,49 @@
-# chesterfield
+# CBS Surgery Website
 
-This template should help get you started developing with Vue 3 in Vite.
+Production website for [cbsurgery.com](https://cbsurgery.com) — Chesterfield Bariatric Surgery.
 
-## Recommended IDE Setup
+## Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Vue 3 + Vite
+- Vue Router
+- Tailwind CSS
+- GoDaddy hosting (static `dist/` + PHP helpers)
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Setup
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Production build
 
 ```sh
 npm run build
+```
+
+Output goes to `dist/`. Upload **contents of `dist/`** to GoDaddy `public_html` and rename `htaccess` → `.htaccess`.
+
+## Forms (n8n)
+
+All three site forms POST to:
+
+`https://n8n-automation.techsoit.com/webhook/cbsWebsite`
+
+| Form | Vue file | `formType` |
+|------|----------|------------|
+| Contact | `src/views/ContactPage.vue` | `contact` |
+| Appointment | `src/views/Appointment.vue` | `appointment` |
+| Footer subscribe | `src/layout/layout-components/Footer.vue` | `subscription` |
+
+Sample payloads: [`docs/n8n-form-payloads.sample.json`](docs/n8n-form-payloads.sample.json)
+
+Legacy PHP mail handlers in `public/` are kept for deploy compatibility; live forms use n8n.
+
+## Project layout
+
+```
+src/           Vue app source
+public/        Static assets + PHP (copied to dist on build)
+docs/          n8n payload samples
 ```

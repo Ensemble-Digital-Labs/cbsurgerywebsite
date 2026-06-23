@@ -1,3 +1,22 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Deploy archives (build locally with npm run build)
+*.zip
+
+# Old / duplicate project copies (not part of main site)
+dist 2/
+dist 3/
+cbs-vue/
+CBS-Landing-Page-main/
+untitled folder/
+untitled folder 2/
+untitled folder 3/
+
 # Logs
 logs
 *.log
@@ -7,17 +26,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# OS / editor
 .DS_Store
-dist
-dist-ssr
-coverage
-*.local
-
-/cypress/videos/
-/cypress/screenshots/
-
-# Editor directories and files
+Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -27,4 +38,12 @@ coverage
 *.sln
 *.sw?
 
+# Test / coverage
+coverage
+/cypress/videos/
+/cypress/screenshots/
+*.local
 *.tsbuildinfo
+
+# Misc junk
+ziVPp2rA

@@ -11,10 +11,12 @@
   "dependencies": {
     "@unhead/vue": "^1.9.1",
     "@vueuse/components": "^10.9.0",
+    "@vueuse/head": "^2.0.0",
     "axios": "^1.6.7",
     "flowbite": "^2.3.0",
     "gsap": "^3.12.5",
     "vue": "^3.4.15",
+    "vue-meta": "^3.0.0-alpha.2",
     "vue-recaptcha": "^3.0.0-alpha.2",
     "vue-router": "^4.3.0",
     "vue-star-rating": "^2.1.0",

@@ -8,24 +8,25 @@
         <div
             class="bg-white px-1 md:px-6 py-4 md:py-10 w-full md:w-4/5 shadow-lg shadow-slate-200 -mt-14 md:-mt-48  mx-auto">
             <div class="text-center px-4 md:px-5 py-5">
-                <p>
-                    Chesterfield Bariatric Surgery, under the expert management of Dr. Deepu Sudhakaran, MD, is a
-                    distinguished bariatric clinic located in Saint Louis. Bariatric surgery is a specialized procedure
-                    aimed at helping individuals who struggle with severe obesity and related health conditions. It
-                    involves surgical alterations to the digestive system to promote weight loss and improve overall
-                    health. This procedure is typically recommended for individuals who have been unsuccessful in
-                    achieving significant weight loss through diet, exercise, and other non-surgical methods. Bariatric
-                    surgery can lead to substantial weight loss, improvement in obesity-related health issues such as
-                    type 2 diabetes and high blood pressure, and enhanced quality of life.
+                <p class=" pb-3">
+                    Chesterfield Bariatric Surgery, led by Dr. Deepu Sudhakaran, MD, is a renowned clinic in Saint Louis
+                    that specializes in surgical weight management and general surgery.
+                    Our services encompass various bariatric surgeries, such as Sleeve Bypass and revisions, aimed at
+                    addressing severe obesity and associated health issues.
                 </p>
-                <p>
-                    Dr. Deepu Sudhakaran, a highly skilled general surgery specialist with 26 years of experience, is
-                    dedicated to providing exceptional care to patients seeking bariatric solutions. Dr. Sudhakaran
-                    obtained their medical degree from the Medical College Thiruvananthapuram, India, in 1997, and
-                    completed a rigorous residency at LSU Health Sciences Center New Orleans School Of Medicine.
-                    Currently practicing at Practice and affiliated with Mercy Hospital Jefferson and Mercy Hospital
-                    South, Dr. Sudhakaran possesses extensive experience in treating various conditions, including
-                    obesity, at varying frequencies.
+                <p class=" pb-3">
+                    Dr. Sudhakaran, a board-certified and fellowship-trained surgeon with two decades of experience, is
+                    committed to delivering exceptional care. He earned his medical degree from the Medical College
+                    Thiruvananthapuram, India, completed his residency at LSU Health Sciences Center New Orleans School
+                    of Medicine, and received specialized fellowship training in Bariatric Surgery from the University
+                    of South Carolina, Greenville. Affiliated with Mercy Hospital South and St. Louis, Dr. Sudhakaran is
+                    highly skilled in surgically treating obesity and performing minimally invasive procedures like
+                    Hiatal Hernia repair, Umbilical hernia repair, and Gallbladder removal surgery.
+                </p>
+                <p class=" pb-3">
+                    Emily Des Biens, PA, a board-certified graduate from SLU, is part of our team, offering extensive
+                    experience assisting with Bariatric and general surgical procedures, performing office procedures,
+                    and managing Medical and Surgical weight management patients.
                 </p>
                 <!-- <p>
                     Patients commend Dr. Sudhakaran, awarding an average rating of 4.5/5 based on 8 reviews. Their
@@ -64,9 +65,9 @@
                     <h3 class=" font-manrope text-[#727272] text-[20px] font-extrabold mb-2">CEO & FOUNDER</h3>
                     <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold mb-2">Care Philosophy</h3>
                     <p class="text-[#636571]">
-                        “I'm a very family-oriented person. I want patients to feel like I will treat them like family.
-                        I'll
-                        take very personal care of you from the time you see me until you have reached your goal.”
+                        “I prioritize family values, aiming for patients to feel embraced as part of our extended
+                        family. From the moment you encounter me until your journey culminates in success expect
+                        personalized care akin to that of a cherished family member.”
                     </p>
                     <div class="grid grid-cols gap-0 mb-2 sm:grid-cols-12">
                         <div class="py-2 sm:col-span-4 md:hidden lg:block">
@@ -88,6 +89,10 @@
                         </div>
                         <div class="py-2 sm:col-span-12 md:hidden lg:block">
                             <h3 class=" font-manrope text-sm md:text-xl text-dark-teal font-bold py-2">Education</h3>
+                            <h4 class=" font-archivo text-base font-normal text-[#636571]"><b>Fellowship</b>:
+                                University of South Carolina,Greenville Memorial Hospital</h4>
+                            <h4 class=" font-archivo text-base font-normal text-[#636571]"><b>Residency</b>:
+                                LSU Health Science Center</h4>
                             <h4 class=" font-archivo text-base font-normal text-[#636571]"><b>Medical School</b>:
                                 Medical
                                 College Of Thiruvananthapuram</h4>

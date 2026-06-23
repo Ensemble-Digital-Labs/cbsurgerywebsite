@@ -3,38 +3,55 @@
 
         <HeroSection :title="'Success Stories'"></HeroSection>
         <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
-            <div class="grid grid-cols-3 gap-2 md:gap-32 md:gap-y-20 my-10 md:py-10 mx-auto">
+            <div class="grid grid-cols-4 gap-2 md:gap-32 md:gap-y-20 my-10 md:py-10 mx-auto">
                 <img src="@/assets/img/success-story-1.png" alt="" srcset="">
                 <img src="@/assets/img/success-story-2.png" alt="" srcset="">
                 <img src="@/assets/img/success-story-3.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-4.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-5.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-6.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-7.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-8.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-9.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-10.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-11.png" alt="" srcset="">
                 <!-- <img src="@/assets/img/success-story-3.png" alt="" srcset=""> -->
             </div>
 
-            <div class="grid grid-cols-2 gap-2">
+            <!-- <div class="grid grid-cols-2 gap-2">
+              
                 <iframe class="w-full md:h-[400px]"
-                    src="https://player.vimeo.com/video/924526978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    src="https://player.vimeo.com/video/929420618?h=92c6790dd0"
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                     title="Video title"></iframe>
                 <iframe class="w-full md:h-[400px]"
-                    src="https://player.vimeo.com/video/924526978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    src="https://player.vimeo.com/video/929420591?h=a90fa24f8f"
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                     title="Video title"></iframe>
                 <iframe class="w-full md:h-[400px]"
-                    src="https://player.vimeo.com/video/924526978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    src="https://player.vimeo.com/video/929420568?h=980a928361"
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                     title="Video title"></iframe>
                 <iframe class="w-full md:h-[400px]"
-                    src="https://player.vimeo.com/video/924526978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    src="https://player.vimeo.com/video/929420542?h=d28e22c957"
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                     title="Video title"></iframe>
-            </div>
+                <iframe class="w-full md:h-[400px]"
+                    src="https://player.vimeo.com/video/929420515?h=46669c4251"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    title="Video title"></iframe>
+                <iframe class="w-full md:h-[400px]"
+                    src="https://player.vimeo.com/video/929420498?h=81abe6b005"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    title="Video title"></iframe>
+            </div> -->
         </div>
 
         <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20">
             <div class="grid grid-cols-3 md:grid-cols-8 gap-2 bg-extra-dark-teal p-4 rounded-xl ">
                 <img :src="`/assets/img/reviews/Untitled-${i}.jpg`"
                     class="h-48 w-full cursor-pointer object-cover shadow-xl shadow-black/30" :class="`rotate-${i % 4}`"
-                    v-for="i in 28" :key="i" @click="testimonialSelected(i)">
+                    v-for="i in 26" :key="i" @click="testimonialSelected(i)">
                 </img>
             </div>
         </div>

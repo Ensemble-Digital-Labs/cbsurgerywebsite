@@ -1,6 +1,8 @@
 <?php
+
 // Replace 'YOUR_API_KEY' with your actual API key
-$apiKey = 'AIzaSyAaAjLC53FAg8mynmJ2OytUVRM-S5zt7eQ';
+// $apiKey = 'AIzaSyAaAjLC53FAg8mynmJ2OytUVRM-S5zt7eQ';
+$apiKey = 'AIzaSyCTvdx1rHqF7E1QDdZwwFgsw99Jad6OK60';
 $placeId = 'ChIJB9liAFDP2IcRFOwbROP4i5Y';
 
 // Construct the API URL

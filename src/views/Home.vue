@@ -1,7 +1,34 @@
 <template>
     <PublicPageLayout>
 
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-0">
+        
+            <div class="max-screen-full max-h-screen">
+                <div class="relative bg-black overflow-hidden">
+                    <video class="w-full md:h-[800px] object-cover" autoplay muted loop playsinline>
+                        <source src="@/assets/video/banner-video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div
+                        class="absolute top-3/4 lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white w-3/4">
+                        <h1
+                            class="text-lg md:text-4xl lg:text-6xl font-extrabold leading-tight text-white font-manrope">
+                            Reclaim Your Vibrant Health
+                            <br />
+                            With Dr. Sudhakaran
+                        </h1>
+                        <p class="text-[12px] md:text-sm lg:text-lg py-4 lg:py-10 leading-tight text-white">
+                            Precision, Progress, Transformation.
+                            <br />
+                            Experience personalized care and innovative solutions for sustainable
+                            weight loss and vibrant health
+                        </p>
+                    </div>
+                </div>
+            </div>
+  
+
+
+        <!-- <div class="max-w-screen-2xl mx-auto px-6 sm:px-0">
             <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row md:pl-10">
                 <div class="py-10 sm:pl-6 md:pl-0 sm:py-20  md:py-10 lg:py-40 grid content-center lg:w-6/12">
                     <h1 class=" leading-[40px] md:leading-[65px] mb-8">
@@ -9,10 +36,9 @@
                         With Dr. Sudhakaran
                     </h1>
                     <p class="text-[#636571] md:w-1/2 lg:w-3/4">
-                        <!-- Precision, Progress, Transformation -->
+
                         Precision, Progress, Transformation.
-                        <!-- </p>
-                <p class="text-[#636571] md:w-1/2 lg:w-3/4"> -->
+
                         Experience personalized care and innovative solutions for sustainable weight loss and vibrant
                         health
                     </p>
@@ -22,23 +48,92 @@
                 <img src="@/assets/img/deepu-3.png" alt="" srcset=""
                     class="lg:w-6/12 object-cover object-left hidden sm:block md:hidden sm:w-5/12 lg:block xl:hidden">
             </div>
-        </div>
+        </div> -->
 
 
         <div class="max-w-screen-2xl mx-auto px-6 md:px-0">
-            <div class="flex flex-col  lg:flex-row xl:gap-10 mb-20 xl:my-32">
-                <div class="w-full lg:w-4/12 xl:w-5/12 md:h-[600px] md:-mt-36 lg:-mt-0 lg:h-auto">
+            <div class="flex flex-col lg:flex-row xl:gap-10 mb-20 xl:my-32">
+                <div class="w-full lg:w-4/12 xl:w-5/12 md:h-[600px] md:-mt-4 lg:-mt-0 lg:h-auto">
                     <!-- <img src="@/assets/img/deepu-2.png" alt="" srcset=""
                     class="w-full h-full object-cover md:object-contain lg:object-cover object-right  xl:object-contain xl:object-bottom"> -->
 
                     <img src="@/assets/img/deepu-7.png" alt="" srcset=""
-                        class="w-full h-full sm:w-1/2 md:w-full object-cover md:object-contain lg:object-cover object-right block sm:hidden md:block lg:hidden xl:block xl:object-right-bottom">
+                        class="w-full h-full sm:w-1/2 md:w-full object-cover md:object-contain lg:object-contain object-right block sm:hidden md:block lg:hidden xl:block xl:object-right-top">
+                    <div class="overflow-x-hidden mt-10 md:-mt-3 lg:-mt-20">
+                        <div x-data="{}" x-init="$nextTick(() => {
+                        let ul = $refs.logos;
+                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                        ul.nextSibling.setAttribute('aria-hidden', 'true');
+                    })" class="inline-flex flex-nowrap">
 
-                    <img src="@/assets/img/home-2.png" alt="" srcset=""
-                        class="w-full h-full object-cover md:object-contain lg:object-cover object-right hidden lg:block xl:hidden  xl:object-contain xl:object-bottom">
+                            <ul x-ref="logos"
+                                class="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll">
+                                <li>
+                                    <img src="/assets/img/logos/logo-1.png" class="mx-2 w-32" alt="Facebook" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-2.png" class="mx-2 w-32" alt="Disney" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-3.png" class="mx-2 w-32" alt="Airbnb" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-4.png" class="mx-2 w-32" alt="Apple" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-5.png" class="mx-2 w-32" alt="Spark" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-6.png" class="mx-2 w-32" alt="Samsung" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-7.png" class="mx-2 w-32" alt="Quora" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-8.png" class="mx-2 w-32" alt="Sass" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-9.png" class="mx-2 w-32" alt="Sass" />
+                                </li>
+                            </ul>
+                            <ul class="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll"
+                                aria-hidden="true">
+                                <li>
+                                    <img src="/assets/img/logos/logo-1.png" class="mx-2 w-32" alt="Facebook" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-2.png" class="mx-2 w-32" alt="Disney" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-3.png" class="mx-2 w-32" alt="Airbnb" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-4.png" class="mx-2 w-32" alt="Apple" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-5.png" class="mx-2 w-32" alt="Spark" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-6.png" class="mx-2 w-32" alt="Samsung" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-7.png" class="mx-2 w-32" alt="Quora" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-8.png" class="mx-2 w-32" alt="Sass" />
+                                </li>
+                                <li>
+                                    <img src="/assets/img/logos/logo-9.png" class="mx-2 w-32" alt="Sass" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <img src="@/assets/img/home-2.png" alt="" srcset=""
+                        class="w-full h-full object-cover md:object-contain lg:object-cover object-right hidden lg:block xl:hidden  xl:object-contain xl:object-bottom"> -->
+
                 </div>
 
-                <div class="grid content-center w-full lg:w-8/12 xl:w-7/12 mt-[40px] md:mt-0 md:p-10 lg:py-20 xl:p-0">
+                <div class="grid content-center w-full lg:w-8/12 xl:w-7/12 mt-[40px] md:mt-36 md:p-10 lg:py-20 xl:p-0">
                     <h6>More About Us</h6>
                     <h3
                         class="font-manrope text-[28px] md:text-[40px] text-extra-dark-teal font-extrabold tracking-tight">
@@ -54,22 +149,16 @@
                         <!-- Robotic Mastery for<br /> Your Weight Loss<br /> Success -->
                     </h2>
                     <p class="text-[#636571] sm:w-3/4 md:w-full xl:w-3/4 mb-2">
-                        Dr. Sudhakaran, a distinguished bariatric surgeon renowned for expertise in robotic surgery,
-                        offers
-                        a unique approach to weight loss solutions. With a focus on precision and innovation, Dr.
-                        Sudhakaran
-                        has mastered the art of robotic-assisted procedures, providing patients with unparalleled care
-                        and
-                        exceptional outcomes.
+                        Dr. Sudhakaran, renowned in bariatric surgery, offers a distinct approach to weight loss.
+                        Emphasizing precision and innovation, he excels in robotic-assisted procedures, ensuring
+                        remarkable outcomes.
 
                     </p>
                     <p class="text-[#636571] sm:w-3/4  md:w-full xl:w-3/4 mb-6">
-                        Specializing in minimally invasive techniques, Dr. Sudhakaran utilizes state-of-the-art robotic
-                        technology to perform bariatric surgeries with unmatched precision. This advanced approach
-                        ensures
-                        smaller incisions, reduced recovery times, and minimized discomfort for patients undergoing
-                        weight
-                        loss procedures.
+                        Utilizing cutting-edge robotic technology, he minimizes discomfort, ensuring faster recovery. He
+                        views patients as family. Prioritizing their well-being and providing compassionate support
+                        throughout their medical journey, fostering trust and respect.
+
                     </p>
                     <div class="grid md:grid-cols-2 gap-4 w-3/4 mb-6">
                         <div class="flex items-center gap-x-2">
@@ -86,11 +175,11 @@
                         </div>
                         <div class="flex  items-center gap-x-2">
                             <img src="@/assets/icons/tick.png" alt="" srcset="">
-                            <p class="text-extra-dark-teal font-bold font-manrope">Family like Enviorment</p>
+                            <p class="text-extra-dark-teal font-bold font-manrope">Supportive Environment</p>
                         </div>
                     </div>
                     <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
-                        <router-link to="/about-us">
+                        <router-link to="/chesterfield-weight-loss-surgeon/meet-the-doctor">
                             <button class="btn-fill-dark">
                                 Learn More
                             </button>
@@ -125,28 +214,34 @@
                         </h3>
                     </div>
                     <div>
-                        <button class="btn-fill-dark">
-                            Learn More
-                        </button>
+                        <router-link to="/BariatricSurgeryStLouis/Weight-Loss-Surgery-Cost">
+                            <button class="btn-fill-dark">
+                                Learn More
+                            </button>
+                        </router-link>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="max-w-screen-xl mx-auto my-20 px-8  xl:my-32">
-            <h6 class="text-center mb-4">
+            <h6 class="text-center mb-4 text-xl">
                 Why Choose Us
             </h6>
             <h2 class="tracking-tight mb-6 text-[30px] leading-[40px] md:leading-[52px] md:text-[44px] text-center">
-                Guiding Your Bariatric Journey with <span class=" text-dark-teal">Family</span> Care
+                Guiding your <span class=" text-dark-teal"> Bariatric journey</span> with ease
             </h2>
             <p class="text-[#636571] md:w-3/4 mb-6 mx-auto text-center">
-                Our program offers a streamlined and cost-effective approach to weight loss surgery within a short
+                Our program provides an efficient and economical path to weight loss surgery in a brief period.
+                No referrals, clearances, or pre-surgical testing are needed for making the initial appointment. We'll
+                assist you throughout,
+                including insurance authorization, ensuring a seamless journey.
+                <!-- Our program offers a streamlined and cost-effective approach to weight loss surgery within a short
                 timeframe. No referrals, clearances, or pre-surgical testing are needed before your visit. We handle
                 everything in-house, from comprehensive consultation to testing and surgery, all completed in as little
                 as 2
                 days. Additionally, we provide hotel accommodations and VIP ground transportation to and from all
-                appointments for your convenience.
+                appointments for your convenience. -->
             </p>
 
         </div>
@@ -192,7 +287,7 @@
             <div>
                 <div class="grid md:grid-cols-2 md:h-1/2 ">
                     <div class="bg-cover bg-no-repeat bg-center p-32"
-                        style="background-image: url('/assets/img/grid-img-og1.jpg')">
+                        style="background-image: url('/assets/img/grid-img-og1.png')">
 
                     </div>
                     <div class=" bg-dark-teal grid place-content-center p-16">
@@ -210,7 +305,7 @@
                 </div>
                 <div class="grid md:grid-cols-2 h-1/2">
                     <div class="bg-cover bg-no-repeat bg-center p-32 md:hidden"
-                        style="background-image: url('/assets/img/grid-img-og1.jpg')">
+                        style="background-image: url('/assets/img/grid-img-og2.png')">
                     </div>
 
                     <div class=" bg-extra-dark-teal grid place-content-center p-16 bg-cover">
@@ -219,19 +314,19 @@
                                 Expert Doctor
                             </h3>
                             <p class="text-white text-center text-[16px] font-medium">
-                                With a commitment to personalized care, Dr. Sudhakaran takes the time to understand each
+                                With a commitment to personalized care, Dr.Sudhakaran takes the time to understand each
                                 patient's unique needs and goals.</p>
                         </div>
                     </div>
                     <div class="bg-cover bg-no-repeat bg-center p-32 hidden md:block"
-                        style="background-image: url('/assets/img/grid-img-og2.jpg')">
+                        style="background-image: url('/assets/img/grid-img-og2.png')">
 
                     </div>
                 </div>
             </div>
 
             <div class="bg-cover hidden xl:block bg-no-repeat  bg-left p-32"
-                style="background-image: url('/assets/img/grid-img-3.png')">
+                style="background-image: url('/assets/img/grid-img-3.webp')">
             </div>
 
         </div>
@@ -245,21 +340,17 @@
             </h2>
 
             <div class="grid md:grid-cols-2 gap-10 my-10">
-                <ServiceCard :link="'/services/1'" :title="'Bariatrics Surgery'"
+                <ServiceCard :link="'/services/1'" :title="'Bariatrics Surgery(Weightloss Surgery)'"
                     :description="' Bariatric surgery, commonly referred to as weight loss surgery, includes procedures designed to aid individuals facing obesity in attaining long-term weight reduction and enhancing their overall well-being.'"
-                    :imageUrl="'/assets/img/grid-img-1.png'">
+                    :imageUrl="'/assets/img/rs-1.png'">
                 </ServiceCard>
                 <ServiceCard :link="'/services/2'" :title="'General Surgery'"
                     :description="' General surgery covers a wide range of surgical procedures that primarily address abdominal organs like the stomach, liver, intestines, and gallbladder, along with surgeries involving other parts of the body.'"
-                    :imageUrl="'/assets/img/general-surgery.png'">
+                    :imageUrl="'/assets/img/gs-1.png'">
                 </ServiceCard>
-                <ServiceCard :link="'/services/1/#Endoscopy'" :title="'Endoscopy'"
+                <ServiceCard :link="'/services/3/#Upper-Endoscopy'" :title="'Endoscopy'"
                     :description="'Endoscopy is a medical procedure where an endoscope is used to examine the interior of the bodys hollow organs or cavities, offering direct visualization unlike other imaging methods. '"
                     :imageUrl="'/assets/img/endoscopy.png'">
-                </ServiceCard>
-                <ServiceCard :link="'/services/1/#TummyTuck'" :title="'Tummy Tuck'"
-                    :description="' A tummy tuck, also called abdominoplasty, removes excess fat and skin from the abdomen, tightens muscles, and enhances the midsections appearance, commonly after weight loss or pregnancy.'"
-                    :imageUrl="'/assets/img/tummy-tuck.png'">
                 </ServiceCard>
             </div>
         </div>
@@ -277,7 +368,7 @@
 
                     <div>
 
-                        <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure
+                        <!-- <p class="text-white font-light leading-6 py-4">Bariatric and gastric surgery is a procedure
                             designed to
                             aid
                             weight loss in morbidly obese individuals who have not seen success with traditional diet
@@ -290,8 +381,8 @@
                             less
                             food
                             and
-                            some malabsorption of nutrients.</p>
-                        <p class="text-white font-light leading-6 py-4">Today, these surgeries can be performed using
+                            some malabsorption of nutrients.</p> -->
+                        <p class="text-white font-light leading-6 py-4">Today, surgeries can be performed using
                             robotic
                             technology, which offers numerous advantages. Robotic surgery utilizes advanced imaging
                             systems
@@ -306,10 +397,22 @@
                             operates the robotic arms from a console near the operating table, allowing for highly
                             precise
                             movements.</p>
+                        <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized
+                            bariatric
+                            surgery, enabling procedures to be performed on individuals with higher body mass indices
+                            than
+                            previously possible with traditional methods. Robotic surgery offers benefits such as
+                            reduced
+                            operating
+                            time, postoperative pain, scarring, and recovery time. Additionally, the risk of
+                            complications
+                            is
+                            significantly minimized.</p>
 
 
                     </div>
                     <div>
+
                         <!-- 
                         <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700"
                             controls>
@@ -317,18 +420,25 @@
                             Your browser does not support the video tag.
                         </video> -->
 
-                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-                                src="https://player.vimeo.com/video/924526978?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe
+                                src="https://player.vimeo.com/video/938567142?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                                 style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                                title="Video title"></iframe></div>
+                                title="Video title"></iframe>
+                            <!-- <img src="/assets/img/video-img.png" alt="" srcset="" class=" w-5/6 h-80"
+                                style="position:absolute;top:0;left:0;"> -->
+
+                            <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/938567142?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Robotic surgery"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
+
+                        </div>
 
 
                     </div>
 
                 </div>
                 <div class="py-4">
-                    <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized
+                    <!-- <p class="text-white font-light leading-6 py-4">This innovative technology has revolutionized
                         bariatric
                         surgery, enabling procedures to be performed on individuals with higher body mass indices
                         than
@@ -338,12 +448,12 @@
                         time, postoperative pain, scarring, and recovery time. Additionally, the risk of
                         complications
                         is
-                        significantly minimized.</p>
+                        significantly minimized.</p> -->
                 </div>
                 <div class="grid grid-cols-3 gap-2 md:gap-4 my-10">
-                    <img src="@/assets/img/robotic-1.jpg" alt="" srcset="" class="h-auto w-auto">
-                    <img src="@/assets/img/robotic-2.jpg" alt="" srcset="" class="h-auto w-auto">
-                    <img src="@/assets/img/robotic-3.jpg" alt="" srcset=""  class="h-auto w-auto">
+                    <img src="@/assets/img/robotic1.png" alt="" srcset="" class=" h-full w-full">
+                    <img src="@/assets/img/robotic2.png" alt="" srcset="" class="h-full w-full">
+                    <img src="@/assets/img/robotic3.png" alt="" srcset="" class="h-full w-full">
                 </div>
             </div>
 
@@ -360,7 +470,7 @@
                         </h3>
                     </div>
                     <div>
-                        <router-link to="/am-i-candidate/#calculate-bmi">
+                        <router-link to="/bariatricSurgeryStLouis/BMI-calculator/#calculate-bmi">
                             <button class="btn-fill-dark">
                                 Check Now
                             </button>
@@ -372,10 +482,11 @@
         <TheTestimonial></TheTestimonial>
 
 
-        <div class="w-full h-[300px]  md:h-[500px] relative my-10" id="dedicated">
+        <!-- <div class="w-full h-[300px]  md:h-[500px] relative my-10" id="dedicated">
             <div class="w-full hidden md:grid grid-cols-12 md:h-[500px]  bg-cover bg-right bg-blend-overlay bg-extra-dark-teal/20 "
                 style="background-image: url('/assets/img/news5.png');">
-                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-7" style="background-image: url('/assets/img/design1.png');">
+                <div class=" bg-cover hidden md:block col-span-10 lg:col-span-7"
+                    style="background-image: url('/assets/img/design1.png');">
                 </div>
                 <div>
 
@@ -406,7 +517,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <div class=" max-w-screen-xl mx-auto px-4 md:px-6 my-10 md:my-20  xl:my-32">
             <!-- <h2 class="mb-4 tracking-tight">
@@ -426,8 +537,8 @@
                     </h2>
                 </div>
                 <div class="md:col-span-4 flex md:justify-end">
-                    <router-link to="/success-stories">
-                        <button class="btn-fill-light">
+                    <router-link to="/BariatricSurgeryStLouis/weightlossclinic">
+                        <button class="btn-fill-light h-11">
                             View All
                         </button>
                     </router-link>
@@ -435,29 +546,55 @@
 
             </div>
             <div class="grid grid-cols-3 gap-2 md:gap-4 my-10">
-                <img src="@/assets/img/success-story-1.png" alt="" srcset="">
-                <img src="@/assets/img/success-story-2.png" alt="" srcset="">
-                <img src="@/assets/img/success-story-3.png" alt="" srcset="">
+                <img src="@/assets/img/success-story-4.png" alt="" class="w-full h-90 object-cover">
+                <img src="@/assets/img/success-story-5.png" alt="" class="w-full h-90 object-cover">
+                <img src="@/assets/img/success-story-7.png" alt="" class="w-full h-90 object-cover">
             </div>
         </div>
         <FAQ></FAQ>
         <ContactSectionVue></ContactSectionVue>
-        <!-- <Transition name="slide-fade">
+        <Transition name="slide-fade">
 
-            <div class="fixed w-56 h-96 bottom-8 right-10 grid" v-if="showPopup">
+            <!-- <div class="fixed w-56 h-96 bottom-8 right-10 grid" v-if="showPopup">
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-8 h-8 bg-white shadow-lg shadow-black rounded-full p-1 hover:bg-dark-teal -ml-2 cursor-pointer -mb-4 z-50" @click="showPopup = false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                    class="w-8 h-8 bg-white shadow-lg shadow-black rounded-full p-1 hover:bg-dark-teal -ml-2 cursor-pointer -mb-4 z-50"
+                    @click="showPopup = false">
                     <path
                         d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                 </svg>
-                <div style="padding:177.78% 0 0 0;position:relative;"><iframe
+                <div style="padding:177.78% 0 0 0;position:relative;">
+                    <iframe
                         src="https://player.vimeo.com/video/924940605?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                         frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                         style="position:absolute;top:0;left:0;width:100%;height:100%;"
                         class="rounded-xl shadow-xl shadow-dark-teal" title="IMG_0530"></iframe>
+                    <iframe src="https://player.vimeo.com/video/938567142?h=0938636e8b" width="640"
+                        height="360" frameborder="0" allowfullscreen allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"  class="rounded-xl shadow-xl shadow-dark-teal" title="IMG_0530"></iframe>
+                </div>
+            </div> -->
+            <div class="fixed w-80 h-44 bottom-16 right-10 grid" v-if="showPopup">
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                        class="absolute w-8 h-8 bg-white shadow-lg shadow-black rounded-full p-1 hover:bg-dark-teal -ml-2 cursor-pointer -mb-4 z-50 "
+                        @click="showPopup = false">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                    <div style="padding-top: 56.25%; width: 100%;">
+                        <iframe src="https://player.vimeo.com/video/938567142?autoplay=1&loop=1&muted=1&background=1"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                            class="rounded-xl shadow-lg shadow-dark-teal" title="Robotic surgery"></iframe>
+                    </div>
                 </div>
             </div>
-        </Transition> -->
+
+
+
+
+        </Transition>
 
     </PublicPageLayout>
 

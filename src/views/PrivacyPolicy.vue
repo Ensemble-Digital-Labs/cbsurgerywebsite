@@ -296,7 +296,7 @@
                 <p class="py-2">
                     <p class="font-manrope font-bold tracking-tight text-md py-2"> For More Information/Whom to Contact:</p>
                     If you have any questions about HIPAA or your privacy rights, please contact our Privacy Officer at
-                    <a href="tel:314 412 4430" class="font-semibold text-extra-dark-teal">314 412 4430</a> or <a href="mailto:info@cbsurgery.com" class="font-semibold text-extra-dark-teal">info@cbsurgery.com</a> You can also find a complete copy of our Notice of Privacy Practices
+                    <a href="tel:314 500 2424" class="font-semibold text-extra-dark-teal">+1(314) 500 2424</a> or <a href="mailto:info@cbsurgery.com" class="font-semibold text-extra-dark-teal">info@cbsurgery.com</a> You can also find a complete copy of our Notice of Privacy Practices
                 on our website www.cbsurgery.com/privacy-policy.
                 </p>
                 <ul class="pl-10 list-disc font-archivo text-sm md:text-[16px] leading-6 text-paragraph-font font-normal">
